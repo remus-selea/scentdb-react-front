@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    .nav-item-list {
+        margin: 0;
+        padding: 0;
+    
+        list-style: none;
+    
+        display: flex;
+        justify-content: space-between;
+    }
+      
+    
+    .nav-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        height: 56px;
+        font-size: 20px;
+    
+        color: black;
+        text-decoration: none;
+        font-family: 'Elsie', cursive;
+    }
+    
+    .nav-item {
+        margin: 0 1rem 0 1rem;
+    }
+
+
+    .nav-user-actions{
+        display: flex;
+        align-items: stretch;
+        .nav-item-user-action {
+            margin: 0 1rem 0 1rem;
+
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+
