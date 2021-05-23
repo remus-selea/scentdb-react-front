@@ -1,0 +1,38 @@
+.grid-item {
+    width: 315px;
+
+
+    .thumbnail-link {
+        margin-bottom:1rem;
+        display: block;
+
+        .product-image {
+
+        }
+    }
+
+
+    .product-info {
+
+        .product-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+
+            transition: all 0.3s ease;
+            color:inherit;
+        }
+
+        .product-name {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-link:hover {
+            color: rosybrown;
+            text-decoration: underline;           
+        }
+    }
+
+}

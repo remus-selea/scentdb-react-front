@@ -1,0 +1,19 @@
+.year-filter-wrapper {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+
+    .year-filter-input {
+        width: 100%;
+    }
+
+    .year-row {
+        width: 7rem;
+    }
+
+    .year-controls {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+}

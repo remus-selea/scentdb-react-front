@@ -1,10 +1,13 @@
 import './App.scss';
-import Header from './components/Header';
+import Header from './components/header/Header';
 import Main from './components/Main';
-import Footer from './components/Footer';
+import Footer from './components/footer/Footer';
 import Home from './components/Home';
-import About from './components/About';
-import Shop from './components/Shop';
+import Perfumes from './components/perfumes/Perfumes';
+import React from "react";
+import 'primereact/resources/primereact.min.css'
+import 'primeicons/primeicons.css';
+import 'primereact/resources/themes/mdc-light-deeppurple/theme.css'
 
 
 import {
@@ -18,24 +21,20 @@ import {
 function App() {
 
   return (
+    
     <Router>
       <div className="App">
       <Header/> 
-
         <Switch>
           <Route exact path="/">
             <Home />
           </Route>
 
-          <Route path="/about">
-            <About />
-          </Route>
-
-          <Route path="/shop">
-            <Shop />
+          <Route path="/perfumes">
+            <Perfumes />
           </Route>
         </Switch>
-        
+
       </div>
     </Router>
   );

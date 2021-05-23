@@ -1,8 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import './Header.scss';
-import userIcon from './user.svg'
-import searchIcon from './search.svg'
+import { IconContext } from "react-icons";
+import { AiOutlineSearch, AiOutlineUser } from "react-icons/ai";
 
 function Header(props) {
     return (
@@ -14,10 +14,10 @@ function Header(props) {
                 <Link className="nav-link" to="/">ScentDB</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link"  to="/about">PERFUMES</Link>
+                <Link className="nav-link"  to="/perfumes">PERFUMES</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link"  to="/shop">NOTES</Link>
+                <Link className="nav-link"  to="/notes">NOTES</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link"  to="/perfumers">PERFUMERS</Link>
@@ -29,15 +29,19 @@ function Header(props) {
           </nav>
 
           <nav className="nav-user-actions">
-            <ul className="nav-item-list">
+            <ul className="nav-item-list nav-item-list-actions">
               <li className="nav-item-user-action">
                 <a href="#" className="nav-link">
-                  <img src={searchIcon} />
+                   <IconContext.Provider value={{ size: '24px' }}>
+                        <AiOutlineSearch />
+                    </IconContext.Provider>
                 </a>
               </li>
               <li className="nav-item-user-action">
                 <a href="#" className="nav-link">
-                  <img src={userIcon} />
+                    <IconContext.Provider value={{ size: '24px' }}>
+                          <AiOutlineUser />
+                    </IconContext.Provider>
                 </a>
               </li>
             </ul>

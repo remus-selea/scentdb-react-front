@@ -1,0 +1,19 @@
+.main {
+    display:flex;
+    .filters {
+        flex: 1;
+        min-width: 240px;
+        max-width:300px;
+    }
+}
+
+.products{
+    flex: 1;
+    .product-grid {
+        --n:5; /* the max number of columns */
+        display:grid;
+        grid-template-columns:repeat(auto-fill,minmax(max(350px,100%/var(--n)),1fr));
+        grid-gap: 10px;
+    
+    }
+}

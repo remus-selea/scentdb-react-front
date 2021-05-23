@@ -1,0 +1,47 @@
+{
+    "data": [
+      {
+        "id": 1000,
+        "brand": {
+          "name": "Zara",
+          "code": "dz"
+        }
+      },
+      {
+        "id": 1001,
+        "brand": {
+          "name": "Yves Saint Laurent",
+          "code": "eg"
+        }
+      },
+      {
+        "id": 1002,
+        "brand": {
+          "name": "Dior",
+          "code": "pa"
+        }
+      },
+      {
+        "id": 1003,
+        "brand": {
+          "name": "BVLGARI",
+          "code": "fr"
+        }
+      },
+      {
+        "id": 1004,
+        "brand": {
+          "name": "HUGO BOSS",
+          "code": "dd"
+        }
+      },
+      {
+        "id": 1005,
+        "brand": {
+          "name": "Dolge&Gabanna",
+          "code": "dd"
+        }
+      }
+    ]
+  }
+  
