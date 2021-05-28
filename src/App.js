@@ -8,6 +8,7 @@ import React from "react";
 import 'primereact/resources/primereact.min.css'
 import 'primeicons/primeicons.css';
 import 'primereact/resources/themes/mdc-light-deeppurple/theme.css'
+import PerfumeDetails from './components/perfumes/PerfumeDetails';
 
 
 import {
@@ -30,9 +31,14 @@ function App() {
             <Home />
           </Route>
 
-          <Route path="/perfumes">
+          <Route exact path="/perfumes">
             <Perfumes />
           </Route>
+
+          <Route path="/perfumes/:name">
+            <PerfumeDetails />
+          </Route>
+          
         </Switch>
 
       </div>

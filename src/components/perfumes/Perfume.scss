@@ -1,19 +1,21 @@
 .grid-item {
     width: 315px;
 
-
     .thumbnail-link {
-        margin-bottom:1rem;
+        margin-bottom: 1rem;
         display: block;
 
-        .product-image {
+        width: 300px;
+        height: 300px;
 
+        .product-image {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
         }
     }
 
-
     .product-info {
-
         .product-link {
             display: flex;
             flex-direction: column;
@@ -21,7 +23,7 @@
             text-decoration: none;
 
             transition: all 0.3s ease;
-            color:inherit;
+            color: inherit;
         }
 
         .product-name {
@@ -31,8 +33,7 @@
 
         .product-link:hover {
             color: rosybrown;
-            text-decoration: underline;           
+            text-decoration: underline;
         }
     }
-
 }

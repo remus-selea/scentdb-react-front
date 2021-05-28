@@ -1,0 +1,79 @@
+.perfume-details {
+    display: flex;
+
+    .perfume-name {
+        font-size: 3.125rem;
+    }
+
+    .perfume-brand {
+        font-size: 1.75rem;
+        margin-top:1rem;
+    }
+
+    .perfume-content {
+        padding-left: 10px;
+
+        .rating-component {
+            display: flex;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            align-items: center;
+            .rating {
+                margin-right: 0.75rem;
+            }
+        }
+
+        .perfume-details-actions {
+            display: flex;
+
+            .perfume-action {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-right: 2rem;
+            }
+
+            .action-name {
+                margin-bottom: 0.35rem;
+            }
+
+            .action-icon {
+                margin-bottom: 0.35rem;
+            }
+        }
+
+        .stores-panel {
+            margin-top: 3.3rem;
+
+            .stores-heading {
+                margin: 1rem 0;
+            }
+
+            .store-icon {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+
+            .store-item {
+                margin: 1rem 0;
+                display: flex;
+            }
+
+            .buy-button-wrapper {
+                margin-left: 3rem;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .buy-notice {
+                font-size:0.75rem;
+            }
+        }
+    }
+}
+
+.divider {
+    border-top: 1px rgba(0, 0, 0, 0.12);
+    border-top-style: solid;
+}
