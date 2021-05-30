@@ -10,10 +10,81 @@ p {
     font-weight: 400;
 }
 
+body{
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+  "Helvetica Neue", sans-serif;
+}
+
 h3 {
     font-size: 1.125rem;
 }
 
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+
+.mt-3{
+  margin-top: 0.75rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
+}
+
+
+.mt-5{
+  margin-top: 1.5rem;
+}
+
+.mt-6{
+  margin-top: 2rem;
+}
+
+.mt-7{
+  margin-top: 3rem;
+}
+.mt-8{
+  margin-top: 5rem;
+}
+
+
+.p-lr-1{
+  padding: 0 0.25rem;
+}
+
+.p-lr-2{
+  padding: 0 0.5rem;
+}
+
+
+.p-lr-3{
+  padding: 0 0.75rem;
+}
+
+.p-lr-4{
+  padding: 0 1rem;
+}
+
+
+.p-lr-5{
+  padding: 0 1.5rem;
+}
+
+.p-lr-6{
+  padding: 0 2rem;
+}
+
+.p-lr-7{
+  padding: 0 3rem;
+}
+.p-lr-8{
+  padding: 0 5rem;
+}
 
 
 .container,

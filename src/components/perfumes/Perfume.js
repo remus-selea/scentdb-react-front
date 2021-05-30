@@ -1,5 +1,4 @@
 import "./Perfume.scss"
-import PerfumeDetails from './PerfumeDetails'
 import { Link } from "react-router-dom";
 
 function Perfume(props) {
@@ -21,10 +20,16 @@ function Perfume(props) {
             </Link>
 
             <div className="product-info">
-                <a className="product-link" href="#" >
+                <Link className="product-link"
+                    to={{
+                        pathname: "/perfumes/" + perfume.perfumeId,
+                        state: { perfumeId: perfume.perfumeId }
+                    }}
+                >
                     <div className="product-name">{perfume.title}</div>
                     <div className="product-brand">{perfume.brand}</div>
-                </a>
+
+                </Link>
             </div>
         </div>
     );

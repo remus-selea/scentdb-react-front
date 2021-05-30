@@ -1,0 +1,90 @@
+.rating-row {
+    display: flex;
+    margin: 0 0 1rem 0;
+    align-items: center;
+    font-size: 0.9rem;
+
+    .p-progressbar {
+        position: static;
+        height: 10px;
+        width: 300px;
+        margin-left: 2rem;
+        background-color: #e3e3e3;
+    }
+
+    .p-progressbar-determinate .p-progressbar-value {
+        height: 10px;
+        position: static;
+
+        background: black;
+    }
+}
+
+.rating-component {
+    display: flex;
+
+    .rating {
+        margin-right: 0.75rem;
+    }
+
+    .rating-count {
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.review-stars-summary {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 0.9rem;
+
+    .stars-average {
+        font-size: 30px;
+        margin-bottom: 0.75rem;
+    }
+
+    .ratings {
+        margin-bottom: 1rem;
+    }
+}
+
+.rating-parameter-row {
+    display: flex;
+    margin: 0 0 1rem 0;
+    align-items: center;
+    font-size: 0.9rem;
+
+    .progressbar-segment {
+        margin-right: 2px;
+    }
+
+    .p-progressbar {
+        position: static;
+        height: 10px;
+        width: 58px;
+
+        background-color: #e3e3e3;
+    }
+
+    .p-progressbar-determinate .p-progressbar-value {
+        height: 10px;
+        position: static;
+
+        background: black;
+    }
+
+    .rating-parameter-name {
+        margin-left: 2rem;
+    }
+}
+
+.reviews-summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-parameters-heading {
+    height: 24px;
+}

@@ -20,7 +20,7 @@ function Perfumes(props) {
   }, []);
 
 
-  let emptyResult = (data == null || (data.perfumes.length < 1 || data.perfumes == undefined));
+  let emptyResult = (data == null || (data.perfumes.length < 1 || data.perfumes === undefined));
 
 
   const renderResults = () => {

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import { createSlides } from "@splidejs/react-splide/dist/js/utils/slides";
 import "./CarouselSlider.scss"
 
 
@@ -25,13 +24,13 @@ export default class ThumbnailsExample extends React.Component {
         return (
             <>
                 <SplideSlide >
-                    <img src={this.props.perfume.imgPath} className="slide-image" />
+                    <img src={this.props.perfume.imgPath} className="slide-image" alt="" />
                 </SplideSlide>
                 <SplideSlide >
-                    <img src={this.props.perfume.imgPath} className="slide-image" />
+                    <img src={this.props.perfume.imgPath} className="slide-image" alt=""/>
                 </SplideSlide>
                 <SplideSlide >
-                    <img src={this.props.perfume.imgPath} className="slide-image" />
+                    <img src={this.props.perfume.imgPath} className="slide-image" alt="" />
                 </SplideSlide>
             </>
         );
@@ -54,10 +53,10 @@ export default class ThumbnailsExample extends React.Component {
 			perMove   : 1,
 			gap       : '1rem',
 			pagination: true,
-            fixedWidth: 800,
+            fixedWidth: 700,
             fixedHeight: 300,
-            width: 800,
-            height:600,
+            width: 700,
+            height: 500,
         };
 
         const secondaryOptions = {
@@ -66,7 +65,7 @@ export default class ThumbnailsExample extends React.Component {
             pagination: false,
             fixedWidth: 100,
             fixedHeight: 100,
-            height: 600,
+            height: 500,
             width: '100px',
             cover: true,
             focus: 'top',

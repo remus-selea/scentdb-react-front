@@ -1,9 +1,9 @@
 import { Panel } from 'primereact/panel';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { Button } from 'primereact/button';
 import GenderFilter from './GenderFilter';
 import BrandFilter from './BrandFilter';
-import YearFilter from '../perfumes/YearFilter';
+import YearFilter from './YearFilter';
 
 import "./Filters.scss"
 

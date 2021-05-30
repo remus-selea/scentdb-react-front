@@ -7,8 +7,4 @@ export class BrandService {
                 .then(res => res.data.data);
     }
 
-    // getCustomers(params) {
-    //     return axios.get('https://www.primefaces.org/data/brands',{params: params})
-    //             .then(res => res.data)
-    // }
 }
