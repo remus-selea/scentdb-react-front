@@ -115,7 +115,7 @@ function Reviewer(props) {
                     <div>
                         <p>{field.name}</p>
 
-                        <div className="individual-rating">
+                        <div className="individual-rating star-component">
                             <StarRating
                                 value={fieldData[i].stars}
                                 onChange={(newValue) => {
@@ -123,6 +123,7 @@ function Reviewer(props) {
                                     handleFieldStarChange(newValue, i)
                                 }}
                             />
+                              <div className="rating-count">{starValue}</div>
                         </div>
 
 

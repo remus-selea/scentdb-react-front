@@ -1,31 +1,33 @@
 import { Checkbox } from 'primereact/checkbox';
 import React, { useState } from 'react';
+import { GenderFilterContext } from '../../contexts/GenderFilterContext'
+
 
 function GenderFilter(props) {
-    const [genders, setGenders] = useState([]);
+    const { genders, setGenders, reset } = React.useContext(GenderFilterContext)
 
     const onGenderChange = (e) => {
-        let selectedGenders = [...genders];
+        let checkedGenders = [...genders];
         if (e.checked)
-            selectedGenders.push(e.value);
+            checkedGenders.push(e.value);
         else
-            selectedGenders.splice(selectedGenders.indexOf(e.value), 1);
+            checkedGenders.splice(checkedGenders.indexOf(e.value), 1);
 
-        setGenders(selectedGenders);
+        setGenders(checkedGenders);
     }
 
     return (
         <>
-            <div className="gender-filter-group">
-                <Checkbox inputId="cb1" value="Male" onChange={onGenderChange} checked={genders.includes('Male')}></Checkbox>
+            <div className="checkbox-filter-group">
+                <Checkbox inputId="cb1" value="MEN" onChange={onGenderChange} checked={genders.includes('MEN')}></Checkbox>
                 <label htmlFor="cb1" className="p-checkbox-label">Male</label>
             </div>
-            <div className="gender-filter-group">
-                <Checkbox inputId="cb2" value="Female" onChange={onGenderChange} checked={genders.includes('Female')}></Checkbox>
+            <div className="checkbox-filter-group">
+                <Checkbox inputId="cb2" value="WOMEN" onChange={onGenderChange} checked={genders.includes('WOMEN')}></Checkbox>
                 <label htmlFor="cb2" className="p-checkbox-label">Female</label>
             </div>
-            <div className="gender-filter-group">
-                <Checkbox inputId="cb3" value="Unisex" onChange={onGenderChange} checked={genders.includes('Unisex')}></Checkbox>
+            <div className="checkbox-filter-group">
+                <Checkbox inputId="cb3" value="UNISEX" onChange={onGenderChange} checked={genders.includes('UNISEX')}></Checkbox>
                 <label htmlFor="cb3" className="p-checkbox-label">Unisex</label>
             </div>
         </>

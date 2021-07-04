@@ -1,9 +1,10 @@
-import axios from "axios";
+import axios, { post } from 'axios';
 
-const axiosApiCall = async (url, method, payload = null, params = null) => {
+
+const axiosApiCall = async (url, method, payload = null, params = null, headers = null, data = null) => {
     try {
         const response = await axios({
-            method, url, payload, params
+            method, url, payload, params, headers, data
         });
 
         // console.log(response);

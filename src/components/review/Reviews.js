@@ -2,8 +2,6 @@ import { ProgressBar } from 'primereact/progressbar';
 import React, { useState } from 'react';
 import "./Reviews.scss"
 import RatingComponent from '../RatingComponent'
-import { Button } from 'primereact/button';
-import { Dialog } from 'primereact/dialog';
 import ReviewDialog from './ReviewDialog'
 
 function Reviews(props) {
@@ -13,12 +11,7 @@ function Reviews(props) {
     const [twoStarReviewValue, setTwoStarReviewValue] = useState(7);
     const [oneStarReviewValue, setOneStarReviewValue] = useState(9);
 
-    const [displayBasic, setDisplayBasic] = useState(false);
-    const [position, setPosition] = useState('center');
-
-
     const fieldData = ['Longevity', 'Sillage', 'Bottle appearance', 'Value for money']
-
 
     return (
         <div className="reviews-summary">
@@ -32,10 +25,7 @@ function Reviews(props) {
                 </div>
 
                 <div>
-
-
                     <ReviewDialog fieldData={fieldData} />
-
                 </div>
 
             </div>

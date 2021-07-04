@@ -2,28 +2,42 @@ import React, { useState, useRef, useEffect } from 'react';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { InputText } from 'primereact/inputtext';
-import { BrandService } from './BrandService';
-
+import {GET_ALL_COMPANIES_URL} from './../../util/constants'
+import axiosApiCall from '../../util/axiosService'
+import { BrandFilterContext } from '../../contexts/BrandFilterContext'
 
 function BrandFilter(props) {
-    const {selectedBrands, setSelectedBrands, inputValue, setInputValue} = props;
-
+    const { inputValue, setInputValue } = props;
     const [brands, setBrands] = useState([]);
+    const { selectedBrands, setSelectedBrands, reset } = React.useContext(BrandFilterContext)
 
     const dt = useRef(null);
 
-    const brandService = new BrandService();
-
     useEffect(() => {
-        brandService.getBrands().then(data => setBrands(data));
-    }, []); // eslint-disable-line react-hooks/exhaustive-deps
+        const fetchData = async () => {
+            const params = new URLSearchParams();
+            
+            await fetchCompanies(params);
+        };
+
+        fetchData();
+    }, []);
+
+    
+  const fetchCompanies = async (params) => {
+    const result = await axiosApiCall(GET_ALL_COMPANIES_URL, 'get', null, params);
+    // console.log("the result of the call to get all companies is:")
+    // console.log(result)
+
+    setBrands(result);
+  }
+
 
     const brandBodyTemplate = (rowData) => {
-        let { name } = rowData.brand;
         return (
             <React.Fragment>
                 <span>
-                    {name}
+                    {rowData.name}
                 </span>
             </React.Fragment>
         );
@@ -40,9 +54,10 @@ function BrandFilter(props) {
 
 
     const onBrandInputChange = (event) => {
-        dt.current.filter(event.target.value, 'brand.name', 'custom');
+        dt.current.filter(event.target.value, 'name', 'custom');
         setInputValue(event.target.value);
     }
+
 
     return (
         <>
@@ -50,20 +65,20 @@ function BrandFilter(props) {
                 ref={dt}
                 value={brands}
                 className="p-datatable-brands"
-                dataKey="id"
+                dataKey="companyId"
                 rowHover
-                selection={selectedBrands}
+                selection={selectedBrands   }
                 onSelectionChange={e => setSelectedBrands(e.value)}
                 emptyMessage="No brands found"
                 scrollable
-                scrollHeight="200px"
+                scrollHeight="210px"
             >
                 <Column selectionMode="multiple"
                     headerClassName="brands-filter-header" />
                 <Column
                     // sortable
-                    sortField="brand.name"
-                    filterField="brand.name"
+                    sortField="name"
+                    filterField="name"
                     body={brandBodyTemplate}
                     filter
                     filterMatchMode="custom" filterFunction={brandFilterFunction}

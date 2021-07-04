@@ -1,10 +1,10 @@
 import "./Perfume.scss"
 import { Link } from "react-router-dom";
 
-function Perfume(props) {
+function PerfumeCard(props) {
     const { perfume } = props;
 
-    // console.log(perfume);
+    // console.log("perfume in perfumeCard", perfume);
     return (
 
         <div className="grid-item">
@@ -15,8 +15,7 @@ function Perfume(props) {
                     state: { perfumeId: perfume.perfumeId }
                 }}
             >
-
-                <img className="product-image" src={perfume.imgPath} alt="perfume image" />
+                <img className="product-image" src={perfume.images[0].imagePath} alt="perfume" />
             </Link>
 
             <div className="product-info">
@@ -35,4 +34,4 @@ function Perfume(props) {
     );
 }
 
-export default Perfume;
+export default PerfumeCard;

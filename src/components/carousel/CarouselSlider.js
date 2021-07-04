@@ -3,11 +3,13 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import "./CarouselSlider.scss"
 
 
-export default class ThumbnailsExample extends React.Component {
+export default class CarouselSlider extends React.Component {
 
     constructor(props) {
         super(props);
 
+        console.log(props);
+        
         this.primaryRef = React.createRef();
         this.secondaryRef = React.createRef();
     }
@@ -19,32 +21,20 @@ export default class ThumbnailsExample extends React.Component {
         this.primaryRef.current.sync(this.secondaryRef.current.splide);
     }
 
-
     renderSlides() {
         return (
             <>
-                <SplideSlide >
-                    <img src={this.props.perfume.imgPath} className="slide-image" alt="" />
-                </SplideSlide>
-                <SplideSlide >
-                    <img src={this.props.perfume.imgPath} className="slide-image" alt=""/>
-                </SplideSlide>
-                <SplideSlide >
-                    <img src={this.props.perfume.imgPath} className="slide-image" alt="" />
-                </SplideSlide>
+                {
+                    this.props.perfume.images.map( perfumeImage =>
+                    <SplideSlide key={perfumeImage.perfumeImageId} >
+                        <img src={perfumeImage.imagePath} className="slide-image" alt="" />
+                    </SplideSlide>
+                        )
+                }
+             
             </>
         );
     };
-
-
-    // renderSlides() {
-    //     return createSlides().map(slide => (
-    //         <SplideSlide key={slide.src}>
-    //             <img src={slide.src} alt={slide.alt}  />
-    //         </SplideSlide>
-    //     ));
-    // };
-
 
     render() {
         const primaryOptions = {

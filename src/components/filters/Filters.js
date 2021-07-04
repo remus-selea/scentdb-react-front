@@ -4,21 +4,23 @@ import { Button } from 'primereact/button';
 import GenderFilter from './GenderFilter';
 import BrandFilter from './BrandFilter';
 import YearFilter from './YearFilter';
+import PerfumeTypeFilter from './PerfumeTypeFilter';
+import { BrandFilterContext } from '../../contexts/BrandFilterContext'
 
 import "./Filters.scss"
 
 
 function Filters(props) {
-    const [genderPanelCollapsed, setGenderPanelCollapsed] = useState(true);
-    const [brandPanelCollapsed, setBrandPanelCollapsed] = useState(true);
+    const [genderPanelCollapsed, setGenderPanelCollapsed] = useState(false);
+    const [brandPanelCollapsed, setBrandPanelCollapsed] = useState(false);
 
     const dt = useRef(null);
-    const [selectedBrands, setSelectedBrands] = useState(null);
     const [inputValue, setInputValue] = useState([]);
+    const {setSelectedBrands} = React.useContext(BrandFilterContext)
 
     const reset = () => {
         setSelectedBrands(null);
-        setInputValue('');
+        setInputValue('');  
         if (dt.current != null) {
             dt.current.reset();
         }
@@ -37,9 +39,13 @@ function Filters(props) {
             <Panel header="Gender" toggleable collapsed={genderPanelCollapsed} onToggle={(e) => setGenderPanelCollapsed(e.value)}>
                 <GenderFilter />
             </Panel>
+            
+            <Panel header="Type" toggleable>
+                <PerfumeTypeFilter />
+            </Panel>
 
             <Panel header="Brand" toggleable collapsed={brandPanelCollapsed} onToggle={(e) => setBrandPanelCollapsed(e.value)}>
-                <BrandFilter selectedBrands={selectedBrands} setSelectedBrands={setSelectedBrands} inputValue={inputValue} setInputValue={setInputValue} />
+                <BrandFilter inputValue={inputValue} setInputValue={setInputValue} />
             </Panel>
 
             <Panel header="Year" toggleable>

@@ -1,19 +1,42 @@
 .main {
-    display:flex;
+    display: flex;
     .filters {
         flex: 1;
         min-width: 240px;
-        max-width:300px;
+        max-width: 300px;
     }
 }
 
-.products{
+.perfumes-search {
+    flex:1;
+    min-width: 240px;
+    max-width: 265px;
+}
+
+
+.products {
     flex: 1;
     .product-grid {
-        --n:5; /* the max number of columns */
-        display:grid;
-        grid-template-columns:repeat(auto-fill,minmax(max(350px,100%/var(--n)),1fr));
+        --n: 5; /* the max number of columns */
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(max(250px, 100% / var(--n)), 1fr));
         grid-gap: 10px;
-    
     }
+}
+
+.user-actions-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding-left:16px;
+}
+
+.add-perfume-link {
+    text-decoration: none;
+}
+
+
+.paginator-container{
+    display:flex;
+    justify-content: center;
 }

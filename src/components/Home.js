@@ -1,6 +1,6 @@
 function Home(props) {
     return (
-      <div className="Home">Home</div>   
+      <div className="container home">Home</div>   
     );
 }
   

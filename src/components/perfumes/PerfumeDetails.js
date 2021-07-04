@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from "react-router-dom";
 
-import { PERFUME_BY_ID_URL, TOP_NOTES, MIDDLE_NOTES, BASE_NOTES, PERFUME_TYPES } from '../../util/constants';
+import { GET_PERFUME_BY_ID_URL, TOP_NOTES, MIDDLE_NOTES, BASE_NOTES, PERFUME_TYPES } from '../../util/constants';
 import axiosApiCall from '../../util/axiosService'
-import CarouselSlider from './CarouselSlider';
+import CarouselSlider from '../carousel/CarouselSlider';
 import RatingComponent from '../RatingComponent'
 
 import { ReactComponent as WishIcon } from '../../assets/icons/wish.svg';
@@ -15,7 +15,7 @@ import StoresPanel from './StoresPanel';
 
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 import "./PerfumeDetails.scss"
-import Reviews from './Reviews';
+import Reviews from '../review/Reviews';
 
 function PerfumeDetails(props) {
   const location = useLocation();
@@ -27,7 +27,7 @@ function PerfumeDetails(props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axiosApiCall(PERFUME_BY_ID_URL + perfumeId, 'get',);
+      const result = await axiosApiCall(GET_PERFUME_BY_ID_URL + perfumeId, 'get',);
       setData(result);
 
       result.perfumes[0].perfumeNotes.forEach(perfumeNote => {
@@ -164,8 +164,7 @@ function PerfumeDetails(props) {
                     }
                   </td>
                 </tr>
-
-
+                
                 <tr>
                   <th className="about-heading">Base Notes</th>
                   <td className="about-data">

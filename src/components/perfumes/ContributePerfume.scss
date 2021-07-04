@@ -1,0 +1,41 @@
+.flex-container {
+    display: flex;
+
+    .guidelines-panel {
+        flex: 1 1 auto;
+
+        max-width: 300px;
+        .guidelines-link {
+            margin-top: 1rem;
+        }
+    }
+
+    .details-panel {
+        max-width: 966px;
+
+        flex: 1 1 auto;
+    }
+
+    .input-wrapper {
+        margin-bottom: 1rem;
+    }
+
+    .add-perfume-form {
+        margin-top: 1rem;
+    }
+
+    .bottle-size-multiselect {
+        max-width: 1000px;
+    }
+
+    .p-inputgroup > .p-component,
+    .p-inputgroup > .p-inputwrapper > .p-inputtext,
+    .p-inputgroup > .p-float-label > .p-component {
+        border-radius: 4px;
+    }
+    .year-input-label {
+        .p-inputnumber {
+            width: 100%;
+        }
+    }
+}

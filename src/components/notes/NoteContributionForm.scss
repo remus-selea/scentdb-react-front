@@ -1,0 +1,18 @@
+.upload-empty-template {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-preview {
+    width: 200px;
+    height: auto;
+}
+
+.p-fileupload-buttonbar {
+
+    button.p-button.p-component:not(.custom-cancel-btn) {
+        display: none;
+    }
+}
