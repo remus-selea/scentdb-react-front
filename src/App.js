@@ -9,7 +9,7 @@ import 'primereact/resources/primereact.min.css'
 import 'primeicons/primeicons.css';
 import 'primereact/resources/themes/mdc-light-deeppurple/theme.css'
 import PerfumeDetails from './components/perfumes/PerfumeDetails';
-import ContributePerfume from './components/perfumes/ContributePerfume';
+import PerfumeContributionForm from './components/perfumes/contribution/PerfumeForm';
 import {
   BrowserRouter as Router,
   Switch,
@@ -29,7 +29,6 @@ import PerfumerContributionForm from './components/perfumers/PerfumerContributio
 
 
 function App() {
-
 
   return (
 
@@ -54,7 +53,7 @@ function App() {
           </Route>
 
           <Route exact path="/perfumes/new">
-            <ContributePerfume />
+            <PerfumeContributionForm />
           </Route>
 
           <Route exact path="/notes">

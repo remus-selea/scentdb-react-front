@@ -33,9 +33,28 @@
     .p-inputgroup > .p-float-label > .p-component {
         border-radius: 4px;
     }
+
+    .p-inputnumber-buttons-stacked {
+        .p-inputnumber-input {
+            border-bottom-right-radius: 0 !important;
+            border-top-right-radius: 0 !important;
+        }
+    }
+
+    .p-field,
+    .p-editor-container,
+    .p-fileupload {
+        width: 100%;
+    }
+
     .year-input-label {
         .p-inputnumber {
             width: 100%;
         }
+    }
+
+    .button-row{
+        display:flex;
+        justify-content: flex-end;
     }
 }

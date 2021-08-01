@@ -15,7 +15,7 @@ function PerfumeCard(props) {
                     state: { perfumeId: perfume.perfumeId }
                 }}
             >
-                <img className="product-image" src={perfume.images[0].imagePath} alt="perfume" />
+                <img className="product-image" src={perfume.images[0]?.imagePath} alt="perfume" />
             </Link>
 
             <div className="product-info">

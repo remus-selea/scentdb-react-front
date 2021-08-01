@@ -11,7 +11,10 @@ import { ReactComponent as OwnIcon } from '../../assets/icons/own.svg';
 import { ReactComponent as WearIcon } from '../../assets/icons/wear.svg';
 import { Panel } from 'primereact/panel';
 import StoresPanel from './StoresPanel';
-
+import DOMPurify from "dompurify";
+import 'quill/dist/quill.core.css';
+import 'quill/dist/quill.bubble.css';
+import 'quill/dist/quill.snow.css';
 
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 import "./PerfumeDetails.scss"
@@ -164,7 +167,7 @@ function PerfumeDetails(props) {
                     }
                   </td>
                 </tr>
-                
+
                 <tr>
                   <th className="about-heading">Base Notes</th>
                   <td className="about-data">
@@ -182,7 +185,7 @@ function PerfumeDetails(props) {
 
         {!emptyResult &&
           <Panel header="Description">
-            {data.perfumes[0].description}
+            <div className="ql-editor" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(data.perfumes[0].description) }} />
           </Panel>
         }
 
