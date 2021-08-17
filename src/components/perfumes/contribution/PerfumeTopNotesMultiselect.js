@@ -8,19 +8,22 @@ export function PerfumeTopNotesMultiselect(props) {
 
     return (<div className="p-inputgroup input-wrapper top-notes-multiselect">
         <span className="p-float-label">
-            <Controller name="topNotes" control={props.control} rules={{
-                required: 'Top Notes are required.'
-            }} render={({
-                field, fieldState
-            }) => <MultiSelect value={field.value} options={props.notes} onChange={e => {
-                field.onChange(e.value);
-                props.onTopNotesChange(e);
-            }} optionLabel="name" filter display="chip" className={classNames({
-                'p-invalid': fieldState.invalid
-            })} />} />
-            <label htmlFor="topNotes" className={classNames({
-                'p-error': errors.topNotes
-            })}>Top Notes</label>
+            <Controller name="topNotes" control={props.control} 
+            rules={{required: 'Top Notes are required.'}} 
+            render={({field, fieldState}) => 
+                <MultiSelect value={field.value} 
+                    options={props.notes} 
+                    onChange={e => {
+                        field.onChange(e.value);
+                        props.onTopNotesChange(e);
+                    }} 
+                    optionLabel="name" 
+                    filter 
+                    display="chip" 
+                    className={classNames({'p-invalid': fieldState.invalid})} 
+                />} 
+            />
+            <label htmlFor="topNotes" className={classNames({'p-error': errors.topNotes})}>Top Notes*</label>
         </span>
     </div>);
 }

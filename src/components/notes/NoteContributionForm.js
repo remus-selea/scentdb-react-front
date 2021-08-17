@@ -9,8 +9,6 @@ import { Toast } from 'primereact/toast';
 import { Tooltip } from 'primereact/tooltip';
 import { SAVE_NOTE_URL } from '../../util/constants';
 
-import './NoteContributionForm.scss'
-
 function NoteContributionForm(props) {
     const [name, setName] = useState("");
     const [description, setDescription] = useState('');

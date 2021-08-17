@@ -57,7 +57,8 @@ export function PerfumeDescriptionEditor(props) {
             name="description"
             control={props.control}
             render={({ field }) =>
-                <Editor headerTemplate={header}
+                <Editor
+                    headerTemplate={header}
                     style={{ height: '320px' }}
                     onTextChange={e => {
                         if (quill.getLength() < maxDescriptionLength) {
@@ -67,7 +68,7 @@ export function PerfumeDescriptionEditor(props) {
                         }
                     }}
                     onLoad={quill => setQuill(quill)}
-                    placeholder="Type your description here"
+                    placeholder="Type your description here."
                 />}
         />
     </div>);

@@ -52,10 +52,6 @@ function App() {
             </GenderFilterProvider>
           </Route>
 
-          <Route exact path="/perfumes/new">
-            <PerfumeContributionForm />
-          </Route>
-
           <Route exact path="/notes">
             <Notes />
           </Route>
@@ -66,6 +62,10 @@ function App() {
 
           <Route exact path="/brands">
             <Brands />
+          </Route>
+
+          <Route exact path="/perfumes/new">
+            <PerfumeContributionForm />
           </Route>
 
           <Route exact path="/notes/new">

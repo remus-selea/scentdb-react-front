@@ -31,11 +31,9 @@ export function PerfumeBottleSizesMultiselect(props) {
 
     return (<div className="p-inputgroup input-wrapper bottle-size-multiselect">
         <span className="p-float-label">
-            <Controller name="bottleSizes" control={props.control} rules={{
-                required: 'Bottle Size is required.'
-            }} render={({
-                field, fieldState
-            }) =>
+            <Controller name="bottleSizes" control={props.control}
+             rules={{required: 'Bottle Size is required.'}} 
+             render={({field, fieldState}) =>
                 <MultiSelect
                     value={field.value}
                     options={bottleSizes}
@@ -50,7 +48,7 @@ export function PerfumeBottleSizesMultiselect(props) {
                 />}
             />
 
-            <label htmlFor="bottleSizes" className={classNames({ 'p-error': errors.bottleSizes })}>Bottle sizes</label>
+            <label htmlFor="bottleSizes" className={classNames({ 'p-error': errors.bottleSizes })}>Bottle sizes*</label>
         </span>
     </div>);
 }

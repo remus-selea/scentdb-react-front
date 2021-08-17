@@ -20,20 +20,22 @@ export function PerfumeTypeDropdown(props) {
 
     return (<div className="p-inputgroup input-wrapper">
         <span className="p-float-label">
-
-            <Controller name="perfumeType" control={props.control} rules={{
-                required: 'Perfume Type is required.'
-            }} render={({
-                field, fieldState
-            }) => <Dropdown value={field.value} onChange={e => {
-                field.onChange(e.value);
-                props.setSelectedPerfumeTypeCode(e.value.code);
-            }} options={perfumeTypes} optionLabel="perfumeType" placeholder="&#8205;" className={classNames({
-                'p-invalid': fieldState.invalid
-            })} />} />
-            <label htmlFor="perfumeType" className={classNames({
-                'p-error': errors.perfumeType
-            })}>Perfume type</label>
+            <Controller name="perfumeType" 
+            control={props.control} 
+            rules={{required: 'Perfume Type is required.'}} 
+            render={({field, fieldState}) => 
+                <Dropdown value={field.value} 
+                    onChange={e => {
+                        field.onChange(e.value);
+                        props.setSelectedPerfumeTypeCode(e.value.code);
+                    }} 
+                    options={perfumeTypes} 
+                    optionLabel="perfumeType" 
+                    placeholder="&#8205;" 
+                    className={classNames({'p-invalid': fieldState.invalid})} 
+                />}
+            />
+            <label htmlFor="perfumeType" className={classNames({'p-error': errors.perfumeType})}>Perfume type*</label>
         </span>
     </div>);
 }

@@ -39,19 +39,26 @@ export function PerfumeGenderDropdown(props) {
 
     return (<div className="p-inputgroup input-wrapper ">
         <span className="p-float-label">
-            <Controller name="gender" control={props.control} rules={{
-                required: 'Gender is required.'
-            }} render={({
-                field, fieldState
-            }) => <Dropdown id={field.name} value={field.value} onChange={e => {
-                field.onChange(e.value);
-                props.setSelectedGenderCode(e.value.code);
-            }} options={genders} optionLabel="gender" placeholder="&#8205;" valueTemplate={selectedGenderTemplate} itemTemplate={genderOptionTemplate} className={classNames({
-                'p-invalid': fieldState.invalid
-            })} />} />
-            <label htmlFor="gender" className={classNames({
-                'p-error': errors.gender
-            })}>Gender</label>
+            <Controller 
+                name="gender" 
+                control={props.control} 
+                rules={{required: 'Gender is required.'}} 
+                render={({field, fieldState}) => 
+                <Dropdown id={field.name} 
+                    value={field.value} 
+                    onChange={e =>  {
+                        field.onChange(e.value); 
+                        props.setSelectedGenderCode(e.value.code);
+                    }} 
+                options={genders} 
+                optionLabel="gender"
+                placeholder="&#8205;" 
+                valueTemplate={selectedGenderTemplate} 
+                itemTemplate={genderOptionTemplate} 
+                className={classNames({'p-invalid': fieldState.invalid })} />} 
+            />
+
+            <label htmlFor="gender" className={classNames({'p-error': errors.gender})}>Gender*</label>
         </span>
     </div>);
 }

@@ -20,7 +20,20 @@ import "./PerfumeForm.scss"
 
 
 function PerfumeContributionForm(props) {
-    const { formState: { errors }, handleSubmit, control } = useForm();
+    const { formState: { errors }, handleSubmit, control, reset } = useForm({
+        defaultValues: {
+            baseNotes: "",
+            bottleSizes: "",
+            company: "",
+            gender: "",
+            middleNotes: "",
+            name: "",
+            perfumer: "",
+            topNotes: "",
+            perfumeType: "",
+            year: ""
+        }
+    });
 
     const [selectedGenderCode, setSelectedGenderCode] = useState(null);
     const [selectedPerfumeTypeCode, setSelectedPerfumeTypeCode] = useState(null);
@@ -33,8 +46,7 @@ function PerfumeContributionForm(props) {
     const [companies, setCompanies] = useState([]);
     const [perfumers, setPerfumers] = useState([]);
     const [notes, setNotes] = useState([]);
-
-    const fileuploader = useRef(null);
+    const [imgFiles, setImgFiles] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -104,7 +116,7 @@ function PerfumeContributionForm(props) {
         const body = {
             title: data.name,
             launchYear: data.year,
-            description: JSON.stringify(data.description.htmlValue),
+            description: JSON.stringify(data.description?.htmlValue),
             gender: selectedGenderCode,
             perfumeType: selectedPerfumeTypeCode,
             bottleSizes: selectedBottleSizesStr,
@@ -129,8 +141,8 @@ function PerfumeContributionForm(props) {
         let bodyFormData = new FormData();
         bodyFormData.append("perfume", JSON.stringify(body));
 
-        if (fileuploader.current.files) {
-            fileuploader.current.files.forEach(file => {
+        if (imgFiles.length != 0) {
+            imgFiles.forEach(file => {
                 bodyFormData.append("image", file);
             })
 
@@ -146,6 +158,8 @@ function PerfumeContributionForm(props) {
         const result = await axiosApiCall(SAVE_PERFUME_URL, 'post', null, null, headers, data);
         console.log("the result of the request to save a perfume is:")
         console.log(result)
+
+        reset();
     }
 
     const maxYear = new Date().getFullYear();
@@ -185,7 +199,7 @@ function PerfumeContributionForm(props) {
 
                     <PerfumeDescriptionEditor control={control} errors={errors}></PerfumeDescriptionEditor>
 
-                    <PerfumeImagesUploader fileuploader={fileuploader}></PerfumeImagesUploader>
+                    <PerfumeImagesUploader imgFiles={imgFiles} setImgFiles={setImgFiles} ></PerfumeImagesUploader>
 
                     <div className="button-row">
                         <Button label="Submit" type="submit" className="p-button" />

@@ -12,11 +12,10 @@ export function PerfumeNameInput(props) {
                 name="name"
                 control={props.control}
                 rules={{ required: 'Name is required.' }}
-                defaultValue="" render={({ field, fieldState }) => <InputText
-                    id={field.name}
-                    {...field}
-                    autoFocus
-                    className={classNames({ 'p-invalid': fieldState.invalid })} />} />
+                defaultValue=""
+                render={ ({ field, fieldState })=> 
+                    <InputText id={field.name}{...field} autoFocus className={classNames({ 'p-invalid': fieldState.invalid })} />}
+            />
             <label htmlFor="name" className={classNames({ 'p-error': errors.name })}>Name*</label>
         </span>
     </div>);
