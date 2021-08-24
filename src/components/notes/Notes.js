@@ -41,11 +41,12 @@ function Notes(props) {
 
   const getNotes = async (params) => {
     const result = await axiosApiCall(SEARCH_NOTES_URL, 'get', null, params);
-    console.log("the result of the notes search request is:")
-    console.log(result)
+    // console.log("the result of the notes search request is:", result)
 
-    setData(result);
-    setTotalRecords(result.totalElements)
+    if(result){
+      setData(result);
+      setTotalRecords(result.totalElements)
+    }
   }
 
 

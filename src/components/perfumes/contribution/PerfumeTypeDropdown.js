@@ -24,14 +24,15 @@ export function PerfumeTypeDropdown(props) {
             control={props.control} 
             rules={{required: 'Perfume Type is required.'}} 
             render={({field, fieldState}) => 
-                <Dropdown value={field.value} 
+                <Dropdown 
+                    value={field.value} 
                     onChange={e => {
                         field.onChange(e.value);
                         props.setSelectedPerfumeTypeCode(e.value.code);
                     }} 
                     options={perfumeTypes} 
                     optionLabel="perfumeType" 
-                    placeholder="&#8205;" 
+                    placeholder="&#8205;"
                     className={classNames({'p-invalid': fieldState.invalid})} 
                 />}
             />

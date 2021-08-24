@@ -29,6 +29,27 @@ export function PerfumeBottleSizesMultiselect(props) {
     ];
 
 
+    const panelFooterTemplate = (selectedNotes) => {
+        const selectedItems = selectedNotes;
+        const length = selectedItems ? selectedItems.length : 0;
+
+        if (bottleSizes.length == 0) {
+            return (
+                <div className="multiselect-footer">
+                    <ul className="multiselect-items">
+                        <li className="multiselect-empty-message">No bottle sizes found</li>
+                    </ul>
+                </div>
+            );
+        } else {
+            return (
+                <div className="multiselect-footer">
+                    <b>{length}</b> bottle{length != 1 ? 's' : ''} selected.
+                </div>
+            );
+        }
+    }
+
     return (<div className="p-inputgroup input-wrapper bottle-size-multiselect">
         <span className="p-float-label">
             <Controller name="bottleSizes" control={props.control}
@@ -43,9 +64,12 @@ export function PerfumeBottleSizesMultiselect(props) {
                     }}
                     optionLabel="size"
                     placeholder="&#8205;"
-                    filter display="chip"
+                    filter
+                    display="chip"
                     className={classNames({ 'p-invalid': fieldState.invalid })}
-                />}
+                    filterPlaceholder="Type to filter results"
+                    panelFooterTemplate={panelFooterTemplate(field.value)}
+                    />}
             />
 
             <label htmlFor="bottleSizes" className={classNames({ 'p-error': errors.bottleSizes })}>Bottle sizes*</label>

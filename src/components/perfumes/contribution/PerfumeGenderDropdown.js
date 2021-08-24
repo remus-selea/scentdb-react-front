@@ -50,7 +50,7 @@ export function PerfumeGenderDropdown(props) {
                         field.onChange(e.value); 
                         props.setSelectedGenderCode(e.value.code);
                     }} 
-                options={genders} 
+                options={genders}
                 optionLabel="gender"
                 placeholder="&#8205;" 
                 valueTemplate={selectedGenderTemplate} 

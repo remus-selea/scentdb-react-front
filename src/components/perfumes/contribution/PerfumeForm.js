@@ -44,7 +44,7 @@ function PerfumeContributionForm(props) {
     const [selectedMiddleNotesIds, setSelectedMiddleNotesIds] = useState(null);
     const [selectedBaseNotesIds, setSelectedBaseNotesIds] = useState(null);
     const [companies, setCompanies] = useState([]);
-    const [perfumers, setPerfumers] = useState([]);
+    const [perfumers, setPerfumers] = useState(undefined);
     const [notes, setNotes] = useState([]);
     const [imgFiles, setImgFiles] = useState([]);
 
@@ -60,17 +60,23 @@ function PerfumeContributionForm(props) {
 
     const fetchCompanies = async (params) => {
         const result = await axiosApiCall(GET_ALL_COMPANIES_URL, 'get', null, params);
-        setCompanies(result);
+        if (result) {
+            setCompanies(result);
+        }
     }
 
     const fetchPerfumers = async (params) => {
         const result = await axiosApiCall(GET_ALL_PERFUMERS_URL, 'get', null, params);
-        setPerfumers(result);
+        if (result) {
+            setPerfumers(result);
+        }
     }
 
     const fetchNotes = async (params) => {
         const result = await axiosApiCall(GET_ALL_NOTES_URL, 'get', null, params);
-        setNotes(result);
+        if (result) {
+            setNotes(result);
+        }
     }
 
     const onTopNotesChange = (e) => {

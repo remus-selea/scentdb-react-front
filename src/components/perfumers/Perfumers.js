@@ -20,11 +20,12 @@ function Perfumers(props) {
 
   const getPerfumers = async (params) => {
     const result = await axiosApiCall(SEARCH_PERFUMERS_URL, 'get', null, params);
-    // console.log("the result of the perfumers search request is:")
-    // console.log(result)
+    // console.log("the result of the perfumers search request is: ", result)
 
-    setData(result);
-    setTotalRecords(result.totalElements)
+    if (result) {
+      setData(result);
+      setTotalRecords(result.totalElements)
+    }
   }
 
   const onCustomPageChange = async (event) => {
@@ -48,7 +49,7 @@ function Perfumers(props) {
     params.append('size', rows)
     params.append('page', page)
 
-    await getPerfumers(params);  
+    await getPerfumers(params);
   }
 
   useEffect(() => {
@@ -97,12 +98,12 @@ function Perfumers(props) {
     if (emptyResult) {
       return <div><h2>No perfumers found.</h2></div>
     } else {
-      return data.content.map(perfumer =>{
+      return data.content.map(perfumer => {
         return <PerfumerCard key={perfumer.perfumerId} perfumer={perfumer} />
       })
     }
   }
-  
+
 
   return (
     <div className="container">

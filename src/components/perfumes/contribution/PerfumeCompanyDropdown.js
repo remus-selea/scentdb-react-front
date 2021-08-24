@@ -21,9 +21,11 @@ export function PerfumeCompanyDropdown(props) {
                     }}
                 optionLabel="name"
                 filter
-                showClear
+                // showClear={field.value ? true : false}
                 filterBy="name"
                 className={classNames({'p-invalid': fieldState.invalid})} 
+                filterPlaceholder="Type to filter results"
+                emptyMessage="No companies found"
                 />} 
             />
             <label htmlFor="company" className={classNames({'p-error': errors.company})}>Company*</label>

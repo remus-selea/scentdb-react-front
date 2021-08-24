@@ -19,11 +19,12 @@ function Brands(props) {
 
   const fetchBrands = async (params) => {
     const result = await axiosApiCall(SEARCH_COMPANIES_URL, 'get', null, params);
-    // console.log("the result of the companies search request is:")
-    // console.log(result)
+    // console.log("the result of the companies search request is: ", result)
 
-    setData(result);
-    setTotalRecords(result.totalElements)
+    if (result) {
+      setData(result);
+      setTotalRecords(result.totalElements)
+    }
   }
 
   useEffect(() => {
@@ -45,7 +46,7 @@ function Brands(props) {
     params.append('size', rows)
     params.append('page', page)
 
-    await fetchBrands(params);  
+    await fetchBrands(params);
   }
 
   const onCustomPageChange = async (event) => {
@@ -96,12 +97,12 @@ function Brands(props) {
     if (emptyResult) {
       return <div><h2>No companies found.</h2></div>
     } else {
-      return data.content.map(company =>{
+      return data.content.map(company => {
         return <CompanyCard key={company.companyId} company={company} />
       })
     }
   }
-  
+
 
   return (
     <div className="container">
@@ -152,6 +153,5 @@ function Brands(props) {
   );
 
 }
-  
+
 export default Brands;
-  

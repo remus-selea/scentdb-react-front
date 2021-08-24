@@ -31,11 +31,12 @@ function Perfumes(props) {
 
   const fetchPerfumes = async (params) => {
     const result = await axiosApiCall(SEARCH_PERFUMES_URL, 'get', null, params);
-    // console.log("the result of the call is:")
-    // console.log(result)
+    // console.log("the result of the call is:", result)
 
-    setData(result.content[0]);
-    setTotalRecords(result.totalElements)
+    if(result) {
+      setData(result.content[0]);
+      setTotalRecords(result.totalElements)
+    }
   }
 
   useEffect(() => {

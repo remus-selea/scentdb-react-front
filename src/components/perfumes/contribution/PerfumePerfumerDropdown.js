@@ -5,6 +5,7 @@ import { classNames } from 'primereact/utils';
 
 export function PerfumePerfumerDropdown(props) {
     const { errors } = props;
+    // console.log("perfumer props", props)
 
     return (<div className="p-inputgroup input-wrapper ">
         <span className="p-float-label">
@@ -22,9 +23,11 @@ export function PerfumePerfumerDropdown(props) {
                     }} 
                     optionLabel="name"
                     filter 
-                    showClear 
+                    // showClear={field.value ? true : false}
                     filterBy="name" 
                     className={classNames({'p-invalid': fieldState.invalid})} 
+                    filterPlaceholder="Type to filter results"
+                    emptyMessage="No perfumers found"
                 />}
             />
             <label htmlFor="perfumer" className={classNames({'p-error': errors.perfumer})}>Perfumer*</label>

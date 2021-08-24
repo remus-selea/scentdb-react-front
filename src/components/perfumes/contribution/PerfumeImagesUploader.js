@@ -11,8 +11,6 @@ import { confirmPopup } from 'primereact/confirmpopup';
 import { MdCropFree } from "react-icons/md";
 import { Slider } from 'primereact/slider';
 
-
-import 'react-image-crop/dist/ReactCrop.css';
 import './PerfumeImagesUploader.scss'
 
 export function PerfumeImagesUploader(props) {
