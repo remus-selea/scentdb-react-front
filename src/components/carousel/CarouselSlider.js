@@ -8,7 +8,7 @@ export default class CarouselSlider extends React.Component {
     constructor(props) {
         super(props);
 
-        console.log(props);
+        // console.log(props);
         
         this.primaryRef = React.createRef();
         this.secondaryRef = React.createRef();

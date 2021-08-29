@@ -30,7 +30,7 @@ export default function GenderFilterProvider({ children }) {
         setGenders: value => {
             dispatch({ type: actions.SET_GENDERS, value })
         },
-        reset: () => {
+        resetGenders: () => {
             dispatch({ type: actions.RESET })
         }
     };

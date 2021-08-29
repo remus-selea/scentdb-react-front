@@ -36,7 +36,7 @@ function Brands(props) {
     };
 
     fetchData();
-  }, []);
+  }, [rows]);
 
   const searchCompanies = async () => {
     setPage(0);

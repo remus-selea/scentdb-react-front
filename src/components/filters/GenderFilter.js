@@ -1,10 +1,10 @@
 import { Checkbox } from 'primereact/checkbox';
-import React, { useState } from 'react';
+import React from 'react';
 import { GenderFilterContext } from '../../contexts/GenderFilterContext'
 
 
 function GenderFilter(props) {
-    const { genders, setGenders, reset } = React.useContext(GenderFilterContext)
+    const { genders, setGenders } = React.useContext(GenderFilterContext)
 
     const onGenderChange = (e) => {
         let checkedGenders = [...genders];

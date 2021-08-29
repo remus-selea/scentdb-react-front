@@ -27,10 +27,10 @@ export default function GenderFilterProvider({ children }) {
 
     const value = {
         perfumeTypes: state.perfumeTypes,
-        setPerfumesTypes: value => {
+        setPerfumeTypes: value => {
             dispatch({ type: actions.SET_PERFFUME_TYPES, value })
         },
-        reset: () => {
+        resetPerfumeTypes: () => {
             dispatch({ type: actions.RESET })
         }
     };

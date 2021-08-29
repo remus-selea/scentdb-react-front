@@ -25,7 +25,17 @@
 }
 
 .clear-filters {
-    padding: 0.5rem 1rem;
+    width: 100%;
+    padding: 0 1.25rem;
+
+    .p-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .p-button-label {
+            flex:0;
+        }
+    }
 }
 
 .p-datatable .p-datatable-tbody > tr > td {
@@ -39,4 +49,3 @@
         margin-left: 0.75rem;
     }
 }
-

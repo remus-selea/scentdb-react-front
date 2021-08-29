@@ -30,7 +30,7 @@ export default function BrandilterProvider({ children }) {
         setSelectedBrands: value => {
             dispatch({ type: actions.SET_SELECTED_BRANDS, value })
         },
-        reset: () => {
+        resetSelectedBrands: () => {
             dispatch({ type: actions.RESET })
         }
     };

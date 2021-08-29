@@ -5,7 +5,7 @@ import { PerfumeTypeFilterContext } from '../../contexts/PerfumeTypeFilterContex
 
 
 function PerfumeTypeFilter(props) {
-    const { perfumeTypes, setPerfumesTypes } = React.useContext(PerfumeTypeFilterContext)
+    const { perfumeTypes, setPerfumeTypes } = React.useContext(PerfumeTypeFilterContext)
 
     const onPerfumeTypeChange = (e) => {
         let checkedPerfumeTypes = [...perfumeTypes];
@@ -14,7 +14,7 @@ function PerfumeTypeFilter(props) {
         else
             checkedPerfumeTypes.splice(checkedPerfumeTypes.indexOf(e.value), 1);
 
-        setPerfumesTypes(checkedPerfumeTypes);
+        setPerfumeTypes(checkedPerfumeTypes);
     }
 
     return (

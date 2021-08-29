@@ -64,8 +64,11 @@ function PerfumeDetails(props) {
       Object.entries(PERFUME_TYPES).map(
         ([key, value]) => {
           if (key === data.perfumes[0].perfumeType) {
-            return <span> {value}</span>;
+            return (
+              <span key={key}> {value}</span>
+            );
           }
+          return null;
         }
 
       )

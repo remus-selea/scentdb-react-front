@@ -79,4 +79,5 @@ export const baseNotesMultiselectEmptyMessage = "No base notes found";
 export const bottleSizesMultiselectEmptyMessage = "No bottle sizes found";
 export const filterPlaceholder= "Type to filter results";
 
+export const minYear = 1900;
 export const maxYear = new Date().getFullYear() + 10;

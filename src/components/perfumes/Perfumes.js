@@ -33,7 +33,7 @@ function Perfumes(props) {
     const result = await axiosApiCall(SEARCH_PERFUMES_URL, 'get', null, params);
     // console.log("the result of the call is:", result)
 
-    if(result) {
+    if (result) {
       setData(result.content[0]);
       setTotalRecords(result.totalElements)
     }
@@ -60,8 +60,7 @@ function Perfumes(props) {
     };
 
     fetchFilteredPerfumes();
-  }, [genders.length, yearRangeValues[0], yearRangeValues[1], JSON.stringify(perfumeTypes), JSON.stringify(selectedBrands)]);
-
+  }, [genders, perfumeTypes, selectedBrands, yearRangeValues]);
 
 
   useEffect(() => {
@@ -73,7 +72,7 @@ function Perfumes(props) {
     };
 
     fetchData();
-  }, []);
+  }, [rows]);
 
   const onCustomPageChange = async (event) => {
     setPage(event.page);
@@ -153,7 +152,7 @@ function Perfumes(props) {
       }
     }
 
-    if (filter != filterName + ':') {
+    if (filter !== filterName + ':') {
       params.append(filterUrlParamName, filter + ';');
     }
   }
@@ -166,7 +165,7 @@ function Perfumes(props) {
           <div className="p-inputgroup">
             <InputText className="p-inputtext-sm" value={searchQuery}
               onChange={
-                (e) => setSearchQuery(e.target.value)}
+                (event) => setSearchQuery(event.target.value)}
               placeholder="Search" />
             <Button icon="pi pi-search" className="search-button" onClick={() => searchPerfumes()} />
           </div>

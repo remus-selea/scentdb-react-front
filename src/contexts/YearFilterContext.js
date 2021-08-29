@@ -1,9 +1,10 @@
 import React from 'react';
+import { minYear, maxYear } from '../util/constants'
 
 export const YearFilterContext = React.createContext();
 
 const initialState = {
-    yearRangeValues: [1920, 2021]
+    yearRangeValues: [minYear, maxYear]
 }
 
 const actions = {
@@ -30,7 +31,7 @@ export default function YearFilterProvider({ children }) {
         setYearRangeValues: value => {
             dispatch({ type: actions.SET_YEAR_RANGE, value })
         },
-        reset: () => {
+        resetYearRangeValues: () => {
             dispatch({ type: actions.RESET })
         }
     };

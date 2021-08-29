@@ -2,36 +2,34 @@ import React, { useState, useRef, useEffect } from 'react';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { InputText } from 'primereact/inputtext';
-import {GET_ALL_COMPANIES_URL} from './../../util/constants'
-import axiosApiCall from '../../util/axiosService'
+
 import { BrandFilterContext } from '../../contexts/BrandFilterContext'
+import { GET_ALL_COMPANIES_URL } from './../../util/constants'
+import axiosApiCall from '../../util/axiosService'
 
 function BrandFilter(props) {
-    const { inputValue, setInputValue } = props;
+    const { brandFilterInputValue, setBrandFilterInputValue } = props;
     const [brands, setBrands] = useState([]);
-    const { selectedBrands, setSelectedBrands, reset } = React.useContext(BrandFilterContext)
+    const { selectedBrands, setSelectedBrands } = React.useContext(BrandFilterContext)
 
-    const dt = useRef(null);
+    const dataTableRef = useRef(null);
 
     useEffect(() => {
         const fetchData = async () => {
             const params = new URLSearchParams();
-            
+
             await fetchCompanies(params);
         };
 
         fetchData();
     }, []);
 
-    
-  const fetchCompanies = async (params) => {
-    const result = await axiosApiCall(GET_ALL_COMPANIES_URL, 'get', null, params);
-    // console.log("the result of the call to get all companies is:")
-    // console.log(result)
+    const fetchCompanies = async (params) => {
+        const result = await axiosApiCall(GET_ALL_COMPANIES_URL, 'get', null, params);
+        // console.log("the result of the call to get all companies is:", result)
 
-    setBrands(result);
-  }
-
+        setBrands(result);
+    }
 
     const brandBodyTemplate = (rowData) => {
         return (
@@ -49,26 +47,26 @@ function BrandFilter(props) {
 
     const brandFilter = <div className="p-input-icon-left">
         <i className="pi pi-search" />
-        <InputText className="brand-search" type="search" placeholder="Search Brands" value={inputValue} onChange={(e) => onBrandInputChange(e)} />
+        <InputText className="brand-search" type="search" placeholder="Search Brands" value={brandFilterInputValue} onChange={(e) => onBrandInputChange(e)} />
     </div>;
 
 
     const onBrandInputChange = (event) => {
-        dt.current.filter(event.target.value, 'name', 'custom');
-        setInputValue(event.target.value);
+        dataTableRef.current.filter(event.target.value, 'name', 'custom');
+        setBrandFilterInputValue(event.target.value);
     }
 
 
     return (
         <>
             <DataTable
-                ref={dt}
+                ref={dataTableRef}
                 value={brands}
                 className="p-datatable-brands"
                 dataKey="companyId"
                 rowHover
-                selection={selectedBrands   }
-                onSelectionChange={e => setSelectedBrands(e.value)}
+                selection={selectedBrands}
+                onSelectionChange={event => setSelectedBrands(event.value)}
                 emptyMessage="No brands found"
                 scrollable
                 scrollHeight="210px"
