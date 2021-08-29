@@ -54,7 +54,6 @@ function PerfumerContributionForm(props) {
             imgFiles.forEach(file => {
                 bodyFormData.append("image", file);
             })
-
         }
 
         console.log("request body", body)
