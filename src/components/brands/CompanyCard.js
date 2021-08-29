@@ -15,7 +15,7 @@ function CompanyCard(props) {
                     state: { companyId: company.companyId }
                 }}
             >
-                <img className="card-image" src={company.imagePath} alt="company image" />
+                <img className="card-image" src={company.imagePath} alt="company" />
             </Link>
 
             <div className="card-info">

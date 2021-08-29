@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import PerfumeCard from './PerfumeCard'
-import "./Perfumes.scss"
 import Filters from '../filters/Filters'
 import axiosApiCall from '../../util/axiosService'
 import { SEARCH_PERFUMES_URL } from '../../util/constants';
@@ -15,6 +14,7 @@ import { YearFilterContext } from '../../contexts/YearFilterContext'
 import { PerfumeTypeFilterContext } from '../../contexts/PerfumeTypeFilterContext'
 import { BrandFilterContext } from '../../contexts/BrandFilterContext'
 
+import "./Perfumes.scss"
 
 function Perfumes(props) {
   const [data, setData] = useState(null);

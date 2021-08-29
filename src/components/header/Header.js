@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
-import './Header.scss';
 import { IconContext } from "react-icons";
-import { AiOutlineSearch, AiOutlineUser } from "react-icons/ai";
-import { InputText } from 'primereact/inputtext';
-import { Button } from "primereact/button";
+import {  AiOutlineUser } from "react-icons/ai";
+
+import './Header.scss';
 
 function Header(props) {
-  const [value3, setValue3] = useState('');
+  // const [value3, setValue3] = useState('');
   // const [searchInputState, setSearchInputState] = useState(false);
 
 
@@ -62,7 +61,7 @@ function Header(props) {
 
             </li>
             <li className="nav-item-user-action">
-              <a href="#" className="nav-link">
+              <a href="http://localhost:3000/" className="nav-link">
                 <IconContext.Provider value={{ size: '24px' }}>
                   <AiOutlineUser />
                 </IconContext.Provider>

@@ -1,4 +1,4 @@
-import axios, { post } from 'axios';
+import axios from 'axios';
 
 
 const axiosApiCall = async (url, method, payload = null, params = null, headers = null, data = null) => {

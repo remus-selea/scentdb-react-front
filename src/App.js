@@ -1,32 +1,26 @@
-import './App.scss';
 import Header from './components/header/Header';
-import Main from './components/Main';
-import Footer from './components/footer/Footer';
 import Home from './components/Home';
 import Perfumes from './components/perfumes/Perfumes';
 import React from "react";
-import 'primereact/resources/primereact.min.css'
-import 'primeicons/primeicons.css';
-import 'primereact/resources/themes/mdc-light-deeppurple/theme.css'
+
 import PerfumeDetails from './components/perfumes/PerfumeDetails';
-import PerfumeContributionForm from './components/perfumes/contribution/PerfumeForm';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import PerfumeContributionForm from './components/perfumes/PerfumeContributionForm';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Notes from './components/notes/Notes'
 import NoteContributionForm from './components/notes/NoteContributionForm'
 import CompanyContributionForm from './components/brands/CompanyContributionForm'
 import Perfumers from './components/perfumers/Perfumers'
 import Brands from './components/brands/Brands'
-
 import GenderFilterProvider from './contexts/GenderFilterContext'
 import YearFilterProvider from './contexts/YearFilterContext';
 import PerfumeTypeFilterProvider from './contexts/PerfumeTypeFilterContext';
 import BrandFilterProvider from './contexts/BrandFilterContext';
 import PerfumerContributionForm from './components/perfumers/PerfumerContributionForm';
 
+import './App.scss';
+import 'primereact/resources/primereact.min.css'
+import 'primeicons/primeicons.css';
+import 'primereact/resources/themes/mdc-light-deeppurple/theme.css'
 
 function App() {
 

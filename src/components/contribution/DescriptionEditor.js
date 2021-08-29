@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Editor } from 'primereact/editor';
 import { Controller } from "react-hook-form";
 
-export function PerfumeDescriptionEditor(props) {
+export function DescriptionEditor(props) {
     const maxDescriptionLength = 10000;
     const [quill, setQuill] = useState(null);
 

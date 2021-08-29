@@ -30,3 +30,53 @@ export const PERFUME_TYPES = {
     EAU_DE_COLOGNE: "Eau de Cologne",
     EAU_FRAICHE: "Eau Fraiche",
 }
+
+export const bottleSizes = [
+    { size: '200ml', code: '200ml' },
+    { size: '175ml', code: '175ml' },
+    { size: '150ml', code: '150ml' },
+    { size: '125ml', code: '125ml' },
+    { size: '100ml', code: '100ml' },
+    { size: '75ml', code: '75ml' },
+    { size: '60ml', code: '60ml' },
+    { size: '50ml', code: '50ml' },
+    { size: '40ml', code: '40ml' },
+    { size: '35ml', code: '35ml' },
+    { size: '30ml', code: '30ml' },
+    { size: '25ml', code: '25ml' },
+    { size: '20ml', code: '20ml' },
+    { size: '15ml', code: '15ml' },
+    { size: '10ml', code: '10ml' },
+    { size: '7.5ml', code: '7.5ml' },
+    { size: '5ml', code: '5ml' },
+    { size: '1.5ml', code: '1.5ml' },
+    { size: '1ml', code: '1ml' },
+];
+
+export const genders = [
+    { gender: 'Male', code: 'MALE' },
+    { gender: 'Female', code: 'FEMALE' },
+    { gender: 'Unisex', code: 'UNISEX' },
+];
+
+export const perfumeTypes = [
+    { perfumeType: PERFUME_TYPES.EXTRAIT_DE_PARFUM, code: Object.keys(PERFUME_TYPES)[0] },
+    { perfumeType: PERFUME_TYPES.ESPIRIT_DE_PARFUM, code: Object.keys(PERFUME_TYPES)[1] },
+    { perfumeType: PERFUME_TYPES.EAU_DE_PARFUM, code: Object.keys(PERFUME_TYPES)[2] },
+    { perfumeType: PERFUME_TYPES.EAU_DE_TOILETTE, code: Object.keys(PERFUME_TYPES)[3] },
+    { perfumeType: PERFUME_TYPES.EAU_DE_COLOGNE, code: Object.keys(PERFUME_TYPES)[4] },
+    { perfumeType: PERFUME_TYPES.EAU_FRAICHE, code: Object.keys(PERFUME_TYPES)[5] },
+];
+
+export const companyTypes = [
+    { companyType: 'Niche', code: 'NICHE' },
+    { companyType: 'Designer', code: 'DESIGNER' },
+];
+
+export const middleNotesMultiselectEmptyMessage = "No middle notes found";
+export const topNotesMultiselectEmptyMessage = "No top notes found";
+export const baseNotesMultiselectEmptyMessage = "No base notes found";
+export const bottleSizesMultiselectEmptyMessage = "No bottle sizes found";
+export const filterPlaceholder= "Type to filter results";
+
+export const maxYear = new Date().getFullYear() + 10;

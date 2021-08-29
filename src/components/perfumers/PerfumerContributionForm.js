@@ -1,29 +1,26 @@
 import { Button } from 'primereact/button';
-import React, { useState, useRef, useEffect } from 'react';
-import { InputText } from 'primereact/inputtext';
+import React, { useState, useEffect } from 'react';
 import { Panel } from 'primereact/panel';
-import { Editor } from 'primereact/editor';
+import { useForm } from "react-hook-form";
 import { SAVE_PERFUMER_URL, GET_ALL_COMPANIES_URL } from '../../util/constants';
-import { FileUpload } from 'primereact/fileupload';
-import { Dropdown } from 'primereact/dropdown';
-
+import { DescriptionEditor } from '../contribution/DescriptionEditor';
+import { CompanyDropdown } from '../contribution/CompanyDropdown';
 import axiosApiCall from '../../util/axiosService'
+import { NameInput } from '../contribution/NameInput';
+import { ImageCropper } from '../contribution/ImageCropper';
 
 function PerfumerContributionForm(props) {
-    const [name, setName] = useState("");
-    const [details, setDetails] = useState('');
-    const [selectedCompany, setSelectedCompany] = useState(null);
+    const [selectedCompanyId, setSelectedCompanyId] = useState(null);
     const [companies, setCompanies] = useState([]);
+    const [imgFiles, setImgFiles] = useState([]);
+    const [curImgFile, setCurImgFile] = useState(null);
 
-    const fileuploader = useRef(null);
-
-    const fetchCompanies = async (params) => {
-        const result = await axiosApiCall(GET_ALL_COMPANIES_URL, 'get', null, params);
-        // console.log("the result of the call to get all companies is:")
-        // console.log(result)
-
-        setCompanies(result);
-    }
+    const { formState: { errors }, handleSubmit, control, reset } = useForm({
+        defaultValues: {
+            name: "",
+            company: "",
+        }
+    });
 
     useEffect(() => {
         const fetchData = async () => {
@@ -33,18 +30,34 @@ function PerfumerContributionForm(props) {
         fetchData();
     }, []);
 
-    const handlePerfumerSubmit = (e) => {
+    
+    const fetchCompanies = async (params) => {
+        const result = await axiosApiCall(GET_ALL_COMPANIES_URL, 'get', null, params);
+
+        setCompanies(result);
+    }
+
+    const handlePerfumerSubmit = (data) => {
+        console.log(data);
+
         const body = {
-            name: name,
-            details: details,
-            companyId: selectedCompany.companyId,
+            name: data.name,
+            details: JSON.stringify(data.description?.htmlValue),
+            companyId: selectedCompanyId,
             perfumeIdList: [],
         }
 
         let bodyFormData = new FormData();
         bodyFormData.append("perfumer", JSON.stringify(body));
-        bodyFormData.append("image", fileuploader.current.files[0]);
 
+        if (imgFiles.length !== 0) {
+            imgFiles.forEach(file => {
+                bodyFormData.append("image", file);
+            })
+
+        }
+
+        console.log("request body", body)
         const headers = { "Content-Type": "multipart/form-data" };
 
         savePerfumer(bodyFormData, headers)
@@ -52,41 +65,13 @@ function PerfumerContributionForm(props) {
 
     const savePerfumer = async (data, headers) => {
         const result = await axiosApiCall(SAVE_PERFUMER_URL, 'post', null, null, headers, data);
-        console.log("the result of the request to save a perfumer is:")
-        console.log(result)
+        console.log("the result of the request to save a perfumer is: ", result)
+
+        
+        setCurImgFile(null);
+        setImgFiles([]);
+        reset();
     }
-
-    const emptyTemplate = () => {
-        return (
-            <div className="upload-empty-template">
-                <i className="pi pi-image p-mt-3 p-p-5" style={{ 'fontSize': '5em', borderRadius: '50%', backgroundColor: 'var(--surface-b)', color: 'var(--surface-d)' }}></i>
-                <span style={{ 'fontSize': '1.2em', color: 'var(--text-color-secondary)' }} className="mt-5">Add an image of the perfumer</span>
-            </div>
-        )
-    }
-
-    const cancelOptions = { className: 'custom-cancel-btn' };
-
-    const onCompanyChange = (e) => {
-        console.log(e.value);
-        setSelectedCompany(e.value);
-    }
-
-    const selectedCompanyTemplate = (option, props) => {
-        if (option) {
-            return (
-                <div className="company-item company-item-value">
-                    <div>{option.name}</div>
-                </div>
-            );
-        }
-        return (
-            <span>
-                {props.placeholder}
-            </span>
-        );
-    }
-
 
     return (
         <div className="container flex-container">
@@ -99,27 +84,19 @@ function PerfumerContributionForm(props) {
             </Panel>
 
             <Panel className="details-panel">
-                <form className="add-company-form" onSubmit={(e) => handlePerfumerSubmit(e)}>
+                <form className="add-company-form" onSubmit={handleSubmit(handlePerfumerSubmit)}>
 
-                    <div className="p-inputgroup input-wrapper ">
-                        <span className="p-float-label">
-                            <InputText id="name" value={name} onChange={(e) => setName(e.target.value)} />
-                            <label htmlFor="name">Name</label>
-                        </span>
+                    <NameInput control={control} errors={errors} />
 
+                    <CompanyDropdown control={control} errors={errors} companies={companies} setSelectedCompanyId={setSelectedCompanyId} />
+
+                    <DescriptionEditor control={control} errors={errors} />
+
+                    <ImageCropper curImgFile={curImgFile} setCurImgFile={setCurImgFile} imgFiles={imgFiles} setImgFiles={setImgFiles} emptyMessage={"No perfumer image selected."} />
+
+                    <div className="button-row">
+                        <Button label="Submit" type="submit" className="p-button" />
                     </div>
-
-                    <div className="p-inputgroup input-wrapper ">
-                        <Dropdown value={selectedCompany} options={companies} onChange={onCompanyChange} optionLabel="name" filter showClear filterBy="name" placeholder="Select a Company"
-                            valueTemplate={selectedCompanyTemplate} />
-                    </div>
-
-
-                    <Editor style={{ height: '320px' }} value={details} onTextChange={(e) => setDetails(e.htmlValue)} placeholder="Type details regarding the perfumer here" />
-
-                    <FileUpload mode="advanced" accept="image/*" maxFileSize={1000000} emptyTemplate={emptyTemplate} ref={fileuploader} cancelOptions={cancelOptions} />
-
-                    <Button label="Submit" type="submit" value="Submit" className="p-button-outlined" />
 
                 </form>
             </Panel>

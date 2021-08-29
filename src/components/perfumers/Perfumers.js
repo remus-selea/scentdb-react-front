@@ -61,7 +61,7 @@ function Perfumers(props) {
     };
 
     fetchData();
-  }, []);
+  }, [rows]);
 
 
   const onChangeItemsToDisplay = (options) => {

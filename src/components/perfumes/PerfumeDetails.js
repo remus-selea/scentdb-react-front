@@ -63,7 +63,7 @@ function PerfumeDetails(props) {
     return (
       Object.entries(PERFUME_TYPES).map(
         ([key, value]) => {
-          if (key == data.perfumes[0].perfumeType) {
+          if (key === data.perfumes[0].perfumeType) {
             return <span> {value}</span>;
           }
         }
@@ -72,7 +72,7 @@ function PerfumeDetails(props) {
     )
   }
 
-  let emptyResult = (data == null || (data.perfumes.length < 1 || data.perfumes === undefined));
+  let emptyResult = (data === null || (data.perfumes.length < 1 || data.perfumes === undefined));
   let hasBaseNotes = (baseNotes != null);
   let hasMiddleNotes = (middleNotes != null);
   let hasTopNotes = (topNotes != null);

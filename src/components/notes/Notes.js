@@ -36,7 +36,7 @@ function Notes(props) {
     };
 
     fetchData();
-  }, []);
+  }, [rows]);
 
 
   const getNotes = async (params) => {

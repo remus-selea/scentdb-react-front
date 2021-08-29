@@ -1,5 +1,5 @@
 import { Button } from 'primereact/button';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { InputText } from 'primereact/inputtext';
 import { Panel } from 'primereact/panel';
 import { Editor } from 'primereact/editor';

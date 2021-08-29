@@ -1,47 +1,52 @@
-import { Button } from 'primereact/button';
-import React, { useState, useRef } from 'react';
-import { InputText } from 'primereact/inputtext';
+import React, { useState } from 'react';
 import { Panel } from 'primereact/panel';
-import { Dropdown } from 'primereact/dropdown';
-import { Editor } from 'primereact/editor';
-import { SAVE_COMPANY_URL } from '../../util/constants';
-import { FileUpload } from 'primereact/fileupload';
+import { Button } from 'primereact/button';
+import { useForm } from "react-hook-form";
+import { NameInput } from '../contribution/NameInput';
+import { CompanyTypeDropdown } from '../contribution/CompanyTypeDropdown';
+import { WebsiteInput } from '../contribution/WebsiteInput';
+import { DescriptionEditor } from '../contribution/DescriptionEditor';
+import { ImageCropper } from '../contribution/ImageCropper';
 
+import { SAVE_COMPANY_URL } from '../../util/constants';
 import axiosApiCall from '../../util/axiosService'
 
 function CompanyContributionForm(props) {
-    const [name, setName] = useState("");
-    const [website, setWebsite] = useState("");
-    const [selectedCompanyType, setSelectedComapnyType] = useState(null);
+    const [selectedCompanyTypeCode, setSelectedCompanyTypeCode] = useState(null);
+    const [imgFiles, setImgFiles] = useState([]);
+    const [curImgFile, setCurImgFile] = useState(null);
 
-    const [description, setDescription] = useState('');
-    const fileuploader = useRef(null);
+    const { formState: { errors }, handleSubmit, control, reset } = useForm({
+        defaultValues: {
+            name: "",
+            companyType: "",
+            website: ""
+        }
+    });
 
+    const handleCompanySubmit = (data) => {
+        console.log(data);
 
-    const companyTypes = [
-        { companyType: 'Niche', code: 'NICHE' },
-        { companyType: 'Designer', code: 'DESIGNER' },
-    ];
-
-
-    const onCompanyTypeChange = (e) => {
-        setSelectedComapnyType(e.value);
-    }
-
-    const handleSubmit = (e) => {
         const body = {
-            name: name,
-            description: description,
-            companyType: selectedCompanyType.code,
-            website: website,
+            name: data.name,
+            description: JSON.stringify(data.description?.htmlValue),
+            companyType: selectedCompanyTypeCode,
+            website: data.website,
             perfumeIdList: [],
             perfumerIdList: []
         }
 
         let bodyFormData = new FormData();
         bodyFormData.append("company", JSON.stringify(body));
-        bodyFormData.append("image", fileuploader.current.files[0]);
 
+        if (imgFiles.length !== 0) {
+            imgFiles.forEach(file => {
+                bodyFormData.append("image", file);
+            })
+
+        }
+
+        console.log("request body", body)
         const headers = { "Content-Type": "multipart/form-data" };
 
         saveCompany(bodyFormData, headers)
@@ -49,21 +54,12 @@ function CompanyContributionForm(props) {
 
     const saveCompany = async (data, headers) => {
         const result = await axiosApiCall(SAVE_COMPANY_URL, 'post', null, null, headers, data);
-        console.log("the result of the request to save a company is:")
-        console.log(result)
+        console.log("the result of the request to save a company is: ", result)
+
+        setCurImgFile(null);
+        setImgFiles([]);
+        reset();
     }
-
-    const emptyTemplate = () => {
-        return (
-            <div className="upload-empty-template">
-                <i className="pi pi-image p-mt-3 p-p-5" style={{ 'fontSize': '5em', borderRadius: '50%', backgroundColor: 'var(--surface-b)', color: 'var(--surface-d)' }}></i>
-                <span style={{ 'fontSize': '1.2em', color: 'var(--text-color-secondary)' }} className="mt-5">Add a company logo image</span>
-            </div>
-        )
-    }
-
-    const cancelOptions = {className: 'custom-cancel-btn' };
-
 
     return (
         <div className="container flex-container">
@@ -76,45 +72,26 @@ function CompanyContributionForm(props) {
             </Panel>
 
             <Panel className="details-panel">
-                <form className="add-perfume-form" onSubmit={(e) => handleSubmit(e)}>
+                <form className="add-perfume-form" onSubmit={handleSubmit(handleCompanySubmit)}>
 
-                    <div className="p-inputgroup input-wrapper ">
-                        <span className="p-float-label">
-                            <InputText id="name" value={name} onChange={(e) => setName(e.target.value)} />
-                            <label htmlFor="name">Name</label>
-                        </span>
+                    <NameInput control={control} errors={errors} />
 
+                    <CompanyTypeDropdown control={control} errors={errors} setSelectedCompanyTypeCode={setSelectedCompanyTypeCode} />
+
+                    <WebsiteInput control={control} errors={errors} />
+
+                    <DescriptionEditor control={control} errors={errors} />
+
+                    <ImageCropper curImgFile={curImgFile} setCurImgFile={setCurImgFile} imgFiles={imgFiles} setImgFiles={setImgFiles} emptyMessage={"No company image selected."} />
+
+                    <div className="button-row">
+                        <Button label="Submit" type="submit" className="p-button" />
                     </div>
-
-                    <div className="p-inputgroup input-wrapper">
-                        <span className="p-float-label">
-                            <Dropdown
-                                value={selectedCompanyType}
-                                options={companyTypes}
-                                onChange={onCompanyTypeChange}
-                                optionLabel="companyType"
-                            />
-
-                            <label htmlFor="companyType">Company type</label>
-                        </span>
-                    </div>
-
-                    <div className="p-inputgroup input-wrapper ">
-                        <span className="p-float-label">
-                            <InputText id="website" value={website} onChange={(e) => setWebsite(e.target.value)} />
-                            <label htmlFor="website">Website</label>
-                        </span>
-                    </div>
-
-                    <Editor style={{ height: '320px' }} value={description} onTextChange={(e) => setDescription(e.htmlValue)} placeholder="Type your description here" />
-
-                    <FileUpload mode="advanced"  accept="image/*" maxFileSize={1000000} emptyTemplate={emptyTemplate} ref={fileuploader} cancelOptions={cancelOptions}/>
-
-                    <Button label="Submit" type="submit" value="Submit" className="p-button-outlined" />
 
                 </form>
             </Panel>
         </div>
     );
 }
+
 export default CompanyContributionForm;
