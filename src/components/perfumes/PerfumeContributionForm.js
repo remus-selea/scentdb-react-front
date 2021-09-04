@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from 'primereact/button';
 import { Panel } from 'primereact/panel';
+import { ProgressSpinner } from 'primereact/progressspinner';
+
 import { useForm } from "react-hook-form";
 import { NameInput } from '../contribution/NameInput';
 import { YearInput } from '../contribution/YearInput';
@@ -33,6 +35,7 @@ function PerfumeContributionForm() {
     const [notes, setNotes] = useState([]);
     const [imgFiles, setImgFiles] = useState([]);
     const [curImgFile, setCurImgFile] = useState(null);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -118,7 +121,7 @@ function PerfumeContributionForm() {
             })
 
         }
-        
+
         console.log("request body", body)
         const headers = { "Content-Type": "multipart/form-data" };
 
@@ -126,9 +129,13 @@ function PerfumeContributionForm() {
     }
 
     const savePerfume = async (data, headers) => {
+        setLoading(true);
         const result = await axiosApiCall(SAVE_PERFUME_URL, 'post', null, null, headers, data);
+        setLoading(false);
+
         console.log("the result of the request to save a perfume is:", result)
 
+        // reset form
         setCurImgFile(null);
         setImgFiles([]);
         reset();
@@ -146,6 +153,10 @@ function PerfumeContributionForm() {
 
             <Panel className="details-panel">
                 <form className="add-perfume-form" onSubmit={handleSubmit(handlePerfumeSubmit)}>
+                    {loading && <div className="spinner-overlay">
+                        <ProgressSpinner />
+                    </div>
+                    }
 
                     <NameInput control={control} errors={errors}></NameInput>
 

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { InputText } from 'primereact/inputtext';
 import { Paginator } from 'primereact/paginator';
 import { Dropdown } from 'primereact/dropdown';
+import { ProgressSpinner } from 'primereact/progressspinner';
 import { SEARCH_NOTES_URL } from '../../util/constants';
 import axiosApiCall from '../../util/axiosService'
 import NoteCard from './NoteCard';
@@ -15,6 +16,7 @@ function Notes(props) {
   const [rows, setRows] = useState(9);
   const [page, setPage] = useState(0);
   const [first, setFirst] = useState(0);
+  const [loading, setLoading] = useState(true);
 
   const searchNotes = async () => {
     setPage(0);
@@ -40,7 +42,10 @@ function Notes(props) {
 
 
   const getNotes = async (params) => {
+    setLoading(true);
     const result = await axiosApiCall(SEARCH_NOTES_URL, 'get', null, params);
+    setLoading(false);
+
     // console.log("the result of the notes search request is:", result)
 
     if(result){
@@ -94,6 +99,13 @@ function Notes(props) {
   let emptyResult = (data == null || (data.content < 1 || data === undefined));
 
   const renderResults = () => {
+    if (loading) {
+      return (
+        <div className="spinner-container">
+          <ProgressSpinner />
+        </div>
+      );
+    }
 
     if (emptyResult) {
       return <div><h2>No notes found.</h2></div>

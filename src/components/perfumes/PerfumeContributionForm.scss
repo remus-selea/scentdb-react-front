@@ -53,13 +53,29 @@
         }
     }
 
-    .button-row{
-        display:flex;
+    .button-row {
+        display: flex;
         justify-content: flex-end;
     }
 
-  
-} 
+    .spinner-overlay {
+        background: #ffffff;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        opacity: 0.8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .p-progress-spinner {
+            margin-bottom: 2rem;
+        }
+    }
+}
 
 .multiselect-footer {
     padding: 12px;

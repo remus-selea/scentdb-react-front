@@ -1,22 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import PerfumeCard from './PerfumeCard'
-import Filters from '../filters/Filters'
-import axiosApiCall from '../../util/axiosService'
-import { SEARCH_PERFUMES_URL } from '../../util/constants';
-import { Button } from 'primereact/button';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { Link } from "react-router-dom";
+import { Button } from 'primereact/button';
 import { InputText } from 'primereact/inputtext';
-import { Paginator } from 'primereact/paginator';
-import { Dropdown } from 'primereact/dropdown';
+import { ProgressSpinner } from 'primereact/progressspinner';
+import { useForm } from "react-hook-form"
 
 import { GenderFilterContext } from '../../contexts/GenderFilterContext'
 import { YearFilterContext } from '../../contexts/YearFilterContext'
 import { PerfumeTypeFilterContext } from '../../contexts/PerfumeTypeFilterContext'
 import { BrandFilterContext } from '../../contexts/BrandFilterContext'
+import { SEARCH_PERFUMES_URL } from '../../util/constants';
+import SortDropdown from './SortDropdown';
+import PerfumePaginator from './PerfumePaginator';
+import PerfumeCard from './PerfumeCard'
+import Filters from '../filters/Filters'
+import axiosApiCall from '../../util/axiosService'
+import { Controller } from "react-hook-form";
+
 
 import "./Perfumes.scss"
 
-function Perfumes(props) {
+function Perfumes() {
   const [data, setData] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [first, setFirst] = useState(0);
@@ -27,11 +31,25 @@ function Perfumes(props) {
   const { yearRangeValues } = React.useContext(YearFilterContext)
   const { perfumeTypes } = React.useContext(PerfumeTypeFilterContext)
   const { selectedBrands } = React.useContext(BrandFilterContext)
+  const [selectedSortOrder, setSelectedSortOrder] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  const { handleSubmit, control } = useForm({
+    defaultValues: {
+      search: "",
+    }
+  });
+
+  const onSearchFormSubmit = (submittedData) => {
+    setSearchQuery(submittedData.search);
+  }
 
 
   const fetchPerfumes = async (params) => {
+    setLoading(true);
     const result = await axiosApiCall(SEARCH_PERFUMES_URL, 'get', null, params);
-    // console.log("the result of the call is:", result)
+    setLoading(false);
+    // console.log("the result of the call to fetch perfumes is:", result)
 
     if (result) {
       setData(result.content[0]);
@@ -42,10 +60,12 @@ function Perfumes(props) {
   useEffect(() => {
     const fetchFilteredPerfumes = async () => {
       const params = new URLSearchParams();
+      params.append('q', searchQuery);
 
-      addFilterToParams(params, genders, "gender", "genderFilter");
-      addFilterToParams(params, yearRangeValues, "year", "yearFilter");
-      addFilterToParams(params, perfumeTypes, "perfumeType", "perfumeTypeFilter");
+      addSortOrderUrlParams(selectedSortOrder, params);
+      addFilterToUrlParams(params, genders, "gender", "genderFilter");
+      addFilterToUrlParams(params, yearRangeValues, "year", "yearFilter");
+      addFilterToUrlParams(params, perfumeTypes, "perfumeType", "perfumeTypeFilter");
 
       let selectedBrandIdsArr = []
       if (selectedBrands) {
@@ -54,25 +74,14 @@ function Perfumes(props) {
         });
       }
 
-      addFilterToParams(params, selectedBrandIdsArr, "companyId", "companyFilter");
+      addFilterToUrlParams(params, selectedBrandIdsArr, "companyId", "companyFilter");
 
       await fetchPerfumes(params);
     };
 
     fetchFilteredPerfumes();
-  }, [genders, perfumeTypes, selectedBrands, yearRangeValues]);
+  }, [genders, perfumeTypes, selectedBrands, yearRangeValues, selectedSortOrder, searchQuery]);
 
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const params = new URLSearchParams();
-      params.append('size', rows)
-
-      await fetchPerfumes(params);
-    };
-
-    fetchData();
-  }, [rows]);
 
   const onCustomPageChange = async (event) => {
     setPage(event.page);
@@ -87,60 +96,8 @@ function Perfumes(props) {
     await fetchPerfumes(params);
   }
 
-  const searchPerfumes = async () => {
-    setPage(0);
-
-    const params = new URLSearchParams();
-    params.append('q', searchQuery);
-    params.append('size', rows)
-    params.append('page', page)
-    addFilterToParams(params, genders, "gender", "genderFilter");
-    addFilterToParams(params, yearRangeValues, "year", "yearFilter");
-    addFilterToParams(params, perfumeTypes, "perfumeType", "perfumeTypeFilter");
-
-    await fetchPerfumes(params);
-  }
-
-  const renderResults = () => {
-    if (emptyResult) {
-      return <div><h2>No perfumes found.</h2></div>
-    } else {
-      return data.perfumes.map(perfume =>
-        <PerfumeCard key={perfume.perfumeId} perfume={perfume} />);
-    }
-  }
-
-  const onChangeItemsToDisplay = (options) => {
-    setRows(options.value)
-  }
-
-  const paginatorTemplate = {
-    layout: 'RowsPerPageDropdown FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport', 'RowsPerPageDropdown': (options) => {
-      const dropdownOptions = [
-        { label: 9, value: 9 },
-        { label: 18, value: 18 },
-        { label: 27, value: 27 },
-        { label: 36, value: 36 }
-      ];
-      return (
-        <React.Fragment>
-          <Dropdown value={options.value} options={dropdownOptions} label="items to display" onChange={(event) => onChangeItemsToDisplay(event)} appendTo={document.body} />
-        </React.Fragment>
-      );
-    },
-    'CurrentPageReport': (options) => {
-      return (
-        <span style={{ color: 'var(--text-color)', userSelect: 'none', width: '120px', textAlign: 'center' }}>
-          {options.first} - {options.last} of {options.totalRecords}
-        </span>
-      )
-    }
-  }
-
-  let emptyResult = (data == null || (data.perfumes.length < 1 || data.perfumes === undefined));
-
-
-  function addFilterToParams(params, filterArray, filterName, filterUrlParamName = "filter") {
+  
+  function addFilterToUrlParams(params, filterArray, filterName, filterUrlParamName = "filter") {
     let filter = filterName + ':';
 
     for (const [i, filterValue] of filterArray.entries()) {
@@ -157,55 +114,91 @@ function Perfumes(props) {
     }
   }
 
+  function addSortOrderUrlParams(selectedSortOrder, params) {
+    if (selectedSortOrder != null && selectedSortOrder !== undefined && selectedSortOrder.sortField !== undefined) {
+      params.append("sort", selectedSortOrder.sortField + ',' + selectedSortOrder.direction);
+    }
+  }
+
+  let emptyResult = (data == null || (data.perfumes.length < 1 || data.perfumes === undefined));
+
+  const renderResults = () => {
+    if (loading) {
+      return (
+        <div className="spinner-container">
+          <ProgressSpinner />
+        </div>
+      );
+    }
+
+    if (emptyResult) {
+      return (<div><h2>No perfumes found.</h2></div>);
+    } else {
+      return (
+        <div className="product-grid">
+          {
+            data.perfumes.map(perfume =>
+              <PerfumeCard key={perfume.perfumeId} perfume={perfume} />)
+          }
+        </div>
+      );
+    }
+
+  }
+
   return (
     <main className="container">
-      <div className="user-actions-bar">
-
-        <div className="perfumes-search">
-          <div className="p-inputgroup">
-            <InputText className="p-inputtext-sm" value={searchQuery}
-              onChange={
-                (event) => setSearchQuery(event.target.value)}
-              placeholder="Search" />
-            <Button icon="pi pi-search" className="search-button" onClick={() => searchPerfumes()} />
-          </div>
-
-        </div>
-
-        <Link className="add-perfume-link"
-          to={{
-            pathname: "/perfumes/new"
-          }}
-        >
-          <Button label="Add Perfume" className="p-button-outlined" />
-        </Link>
-
-      </div>
 
       <div className="main">
         <aside className="filters">
-          <Filters />
+
+          <div className="perfumes-search">
+            <form className="add-company-form" onSubmit={handleSubmit(onSearchFormSubmit)}>
+
+              <div className="p-inputgroup">
+                <Controller
+                  name="search"
+                  control={control}
+                  render={({ field }) =>
+                    <InputText id={field.name}{...field} className="p-inputtext-sm" placeholder="Search" />}
+                />
+                <Button icon="pi pi-search" className="search-button" type="submit" />
+              </div>
+            </form>
+
+          </div>
+
+          <div className="filters-container">
+            <Filters />
+          </div>
         </aside>
 
         <div className="products">
-          <div className="product-grid">
-            {renderResults()}
+          <div className="user-actions-bar">
+            <SortDropdown selectedSortOrder={selectedSortOrder} setSelectedSortOrder={setSelectedSortOrder} />
+
+            <Link className="add-perfume-link"
+              to={{
+                pathname: "/perfumes/new"
+              }}
+            >
+              <Button label="Add Perfume" className="p-button-outlined" />
+            </Link>
+
           </div>
+
+          {renderResults()}
 
           <div className="paginator-container">
-            <Paginator template={paginatorTemplate} first={first} rows={rows}
-              totalRecords={totalRecords}
-              onPageChange={(event) => onCustomPageChange(event)}
-            ></Paginator>
+            <PerfumePaginator onCustomPageChange={onCustomPageChange} first={first} rows={rows} setRows={setRows} totalRecords={totalRecords} />
           </div>
-
         </div>
+
       </div>
 
-    </main>
+    </main >
 
   );
-
 
 }
 

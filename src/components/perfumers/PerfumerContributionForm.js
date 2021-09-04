@@ -1,7 +1,9 @@
 import { Button } from 'primereact/button';
 import React, { useState, useEffect } from 'react';
 import { Panel } from 'primereact/panel';
-import { useForm } from "react-hook-form";
+import { useForm } from "react-hook-form"
+import { ProgressSpinner } from 'primereact/progressspinner';
+
 import { SAVE_PERFUMER_URL, GET_ALL_COMPANIES_URL } from '../../util/constants';
 import { DescriptionEditor } from '../contribution/DescriptionEditor';
 import { CompanyDropdown } from '../contribution/CompanyDropdown';
@@ -14,6 +16,7 @@ function PerfumerContributionForm(props) {
     const [companies, setCompanies] = useState([]);
     const [imgFiles, setImgFiles] = useState([]);
     const [curImgFile, setCurImgFile] = useState(null);
+    const [loading, setLoading] = useState(false);
 
     const { formState: { errors }, handleSubmit, control, reset } = useForm({
         defaultValues: {
@@ -30,7 +33,7 @@ function PerfumerContributionForm(props) {
         fetchData();
     }, []);
 
-    
+
     const fetchCompanies = async (params) => {
         const result = await axiosApiCall(GET_ALL_COMPANIES_URL, 'get', null, params);
 
@@ -63,10 +66,13 @@ function PerfumerContributionForm(props) {
     }
 
     const savePerfumer = async (data, headers) => {
+        setLoading(true);
         const result = await axiosApiCall(SAVE_PERFUMER_URL, 'post', null, null, headers, data);
+        setLoading(false);
+
         console.log("the result of the request to save a perfumer is: ", result)
 
-        
+
         setCurImgFile(null);
         setImgFiles([]);
         reset();
@@ -84,6 +90,10 @@ function PerfumerContributionForm(props) {
 
             <Panel className="details-panel">
                 <form className="add-company-form" onSubmit={handleSubmit(handlePerfumerSubmit)}>
+                    {loading && <div className="spinner-overlay">
+                        <ProgressSpinner />
+                    </div>
+                    }
 
                     <NameInput control={control} errors={errors} />
 

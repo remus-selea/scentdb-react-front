@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { SEARCH_PERFUMERS_URL } from '../../util/constants';
-import axiosApiCall from '../../util/axiosService'
 import { Button } from 'primereact/button';
+import { ProgressSpinner } from 'primereact/progressspinner';
 import { Link } from "react-router-dom";
 import { InputText } from 'primereact/inputtext';
 import { Paginator } from 'primereact/paginator';
 import { Dropdown } from 'primereact/dropdown';
+
 import PerfumerCard from './PerfumerCard';
+import { SEARCH_PERFUMERS_URL } from '../../util/constants';
+import axiosApiCall from '../../util/axiosService'
 import './Perfumers.scss'
 
 function Perfumers(props) {
@@ -16,10 +18,14 @@ function Perfumers(props) {
   const [rows, setRows] = useState(9);
   const [page, setPage] = useState(0);
   const [first, setFirst] = useState(0);
+  const [loading, setLoading] = useState(true);
 
 
   const getPerfumers = async (params) => {
+    setLoading(true);
     const result = await axiosApiCall(SEARCH_PERFUMERS_URL, 'get', null, params);
+    setLoading(false);
+
     // console.log("the result of the perfumers search request is: ", result)
 
     if (result) {
@@ -94,7 +100,14 @@ function Perfumers(props) {
   let emptyResult = (data == null || (data.content < 1 || data === undefined));
 
   const renderResults = () => {
-
+    if (loading) {
+      return (
+        <div className="spinner-container">
+          <ProgressSpinner />
+        </div>
+      );
+    }
+    
     if (emptyResult) {
       return <div><h2>No perfumers found.</h2></div>
     } else {

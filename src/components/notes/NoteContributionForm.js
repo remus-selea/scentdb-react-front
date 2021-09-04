@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Panel } from 'primereact/panel';
 import { Button } from 'primereact/button';
 import { useForm } from "react-hook-form";
+import { ProgressSpinner } from 'primereact/progressspinner';
 
 import { DescriptionEditor } from '../contribution/DescriptionEditor';
 import { ImageCropper } from '../contribution/ImageCropper';
@@ -12,6 +13,7 @@ import axiosApiCall from '../../util/axiosService'
 function NoteContributionForm(props) {
     const [imgFiles, setImgFiles] = useState([]);
     const [curImgFile, setCurImgFile] = useState(null);
+    const [loading, setLoading] = useState(false);
 
     const { formState: { errors }, handleSubmit, control, reset } = useForm({
         defaultValues: {
@@ -43,7 +45,9 @@ function NoteContributionForm(props) {
     }
 
     const saveNote = async (data, headers) => {
+        setLoading(true);
         const result = await axiosApiCall(SAVE_NOTE_URL, 'post', null, null, headers, data);
+        setLoading(false);
         console.log("the result of the request to save a note is: ", result)
 
         setCurImgFile(null);
@@ -62,6 +66,10 @@ function NoteContributionForm(props) {
 
             <Panel className="details-panel">
                 <form className="add-perfume-form" onSubmit={handleSubmit(onNoteFormSubmit)}>
+                    {loading && <div className="spinner-overlay">
+                        <ProgressSpinner />
+                    </div>
+                    }
 
                     <NameInput control={control} errors={errors} />
 
