@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 function PerfumeCard(props) {
     const { perfume } = props;
 
-    // console.log("perfume in perfumeCard", perfume);
     return (
-
         <div className="grid-item">
 
             <Link className="thumbnail-link"

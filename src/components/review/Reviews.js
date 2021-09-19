@@ -1,7 +1,7 @@
 import { ProgressBar } from 'primereact/progressbar';
 import React, { useState } from 'react';
 import "./Reviews.scss"
-import RatingComponent from '../RatingComponent'
+import RatingComponent from './RatingComponent'
 import ReviewDialog from './ReviewDialog'
 
 function Reviews(props) {

@@ -1,11 +1,27 @@
 import axios from 'axios';
+import { ACCESS_TOKEN } from './constants';
 
+axios.defaults.xsrfCookieName = "XSRF-TOKEN";
+axios.defaults.xsrfHeaderName = "X-XSRF-TOKEN";
+axios.defaults.withCredentials = true;
 
-const axiosApiCall = async (url, method, payload = null, params = null, headers = null, data = null) => {
+const axiosApiCall = async (url, method, payload = null, params = null, headers = {}, data = null) => {
     try {
-        const response = await axios({
-            method, url, payload, params, headers, data
-        });
+
+        if (localStorage.getItem(ACCESS_TOKEN) && headers != null) {
+            Object.assign(headers, { "Authorization": "Bearer " + localStorage.getItem(ACCESS_TOKEN) });
+        }
+
+        const options = {
+            method: method,
+            url: url,
+            params: params,
+            headers: headers,
+            data: data,
+            payload: payload,
+        };
+
+        const response = await axios(options);
 
         // console.log(response);
 
@@ -24,7 +40,7 @@ const axiosApiCall = async (url, method, payload = null, params = null, headers 
         return response.data;
 
     } catch (e) {
-        console.log(e);
+        console.log("axiosApiCall error", e);
         // return errorHandler(e);
     }
 };

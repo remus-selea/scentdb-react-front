@@ -1,0 +1,87 @@
+.section-title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.login-footer {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.social-login-buttons {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 1rem;
+
+    .p-button {
+        margin-bottom: 0.5rem;
+        padding: 0;
+    }
+    .p-button:not(.p-button-icon-only) {
+        width: 100%;
+    }
+
+    .p-buttonset .p-button {
+        margin-bottom: 0;
+    }
+
+    .p-buttonset .p-button {
+        margin-right: 0;
+    }
+
+    .template {
+        width: 45%;
+
+        .login-link {
+            text-decoration: none;
+        }
+        
+        .p-button {
+            i {
+                line-height: 2.25rem;
+                padding: 0 0.5rem;
+            }
+
+            .btn-label {
+                padding: 0 1rem;
+            }
+
+            &.google {
+                background: linear-gradient(to left, var(--pink-600) 50%, var(--pink-700) 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+                color: #fff;
+                border-color: var(--pink-700);
+            }
+
+            &.google i {
+                background-color: var(--pink-700);
+            }
+
+            &.facebook {
+                background: linear-gradient(to left, var(--indigo-600) 50%, var(--indigo-700) 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+                color: #fff;
+                border-color: var(--indigo-700);
+            }
+
+            &.facebook i {
+                background-color: var(--indigo-700);
+            }
+
+            &.github {
+                background: linear-gradient(to left, var(--bluegray-700) 50%, var(--bluegray-800) 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+                color: #fff;
+                border-color: var(--bluegray-800);
+            }
+
+            &.github i {
+                background-color: var(--bluegray-800);
+            }
+        }
+    }
+}

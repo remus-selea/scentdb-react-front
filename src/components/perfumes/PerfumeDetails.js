@@ -3,8 +3,8 @@ import { useLocation } from "react-router-dom";
 
 import { GET_PERFUME_BY_ID_URL, TOP_NOTES, MIDDLE_NOTES, BASE_NOTES, PERFUME_TYPES } from '../../util/constants';
 import axiosApiCall from '../../util/axiosService'
-import CarouselSlider from '../carousel/CarouselSlider';
-import RatingComponent from '../RatingComponent'
+import CarouselSlider from '../common/carousel/CarouselSlider';
+import RatingComponent from '../review/RatingComponent'
 
 import { ReactComponent as WishIcon } from '../../assets/icons/wish.svg';
 import { ReactComponent as OwnIcon } from '../../assets/icons/own.svg';
@@ -12,13 +12,14 @@ import { ReactComponent as WearIcon } from '../../assets/icons/wear.svg';
 import { Panel } from 'primereact/panel';
 import StoresPanel from './StoresPanel';
 import DOMPurify from "dompurify";
+import Reviews from '../review/Reviews';
+
 import 'quill/dist/quill.core.css';
 import 'quill/dist/quill.bubble.css';
 import 'quill/dist/quill.snow.css';
 
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 import "./PerfumeDetails.scss"
-import Reviews from '../review/Reviews';
 
 function PerfumeDetails(props) {
   const location = useLocation();

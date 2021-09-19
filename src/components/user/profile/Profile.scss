@@ -1,0 +1,29 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .profile-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        margin-top: 2rem;
+
+        .username-text {
+            font-size: 2rem;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            width: 100px;
+            height: auto;
+        }
+    }
+
+    .logout {
+        margin-top: 1rem;
+    }
+}
