@@ -1,58 +1,79 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Panel } from 'primereact/panel';
 import { Button } from 'primereact/button';
 import { useForm } from "react-hook-form";
 import { ProgressSpinner } from 'primereact/progressspinner';
+import { Toast } from 'primereact/toast';
 
 import { DescriptionEditor } from '../contribution/DescriptionEditor';
 import { ImageCropper } from '../contribution/ImageCropper';
 import { NameInput } from '../contribution/NameInput';
 import { SAVE_NOTE_URL } from '../../util/constants';
-import axiosApiCall from '../../util/axiosService'
+import axiosApiCall, { showErrorsInConsole } from '../../util/axiosService'
 
 function NoteContributionForm(props) {
     const [imgFiles, setImgFiles] = useState([]);
     const [curImgFile, setCurImgFile] = useState(null);
     const [loading, setLoading] = useState(false);
+    const toastRef = useRef(null);
 
-    const { formState: { errors }, handleSubmit, control, reset } = useForm({
+    const { formState: { errors }, handleSubmit, control, setError, clearErrors,  reset } = useForm({
         defaultValues: {
             name: "",
         }
     });
 
-    const onNoteFormSubmit = (data) => {
-        console.log(data);
+    const handleNoteFormSubmit = (event) => {
+        event.preventDefault();
+        if (imgFiles.length === 0) {
+            setError("noImagesAdded", {
+                types: {
+                    required: "At least 1 image is required.",
+                }
+            });
 
-        const body = {
-            name: data.name,
-            description: JSON.stringify(data.description?.htmlValue),
+        } else {
+            clearErrors("noImagesAdded");
+
+            handleSubmit((data) => {
+                const body = {
+                    name: data.name,
+                    description: JSON.stringify(data.description?.htmlValue),
+                }
+        
+                let bodyFormData = new FormData();
+                bodyFormData.append("note", JSON.stringify(body));
+        
+                imgFiles.forEach(file => {
+                    bodyFormData.append("image", file);
+                })
+        
+                console.log("note submit request body", body)
+                const headers = { "Content-Type": "multipart/form-data" };
+        
+                saveNote(bodyFormData, headers);
+            })(event)
+
         }
 
-        let bodyFormData = new FormData();
-        bodyFormData.append("note", JSON.stringify(body));
-
-        if (imgFiles.length !== 0) {
-            imgFiles.forEach(file => {
-                bodyFormData.append("image", file);
-            })
-        }
-
-        console.log("request body", body)
-        const headers = { "Content-Type": "multipart/form-data" };
-
-        saveNote(bodyFormData, headers);
     }
 
     const saveNote = async (data, headers) => {
-        setLoading(true);
-        const result = await axiosApiCall(SAVE_NOTE_URL, 'post', null, null, headers, data);
-        setLoading(false);
-        console.log("the result of the request to save a note is: ", result)
+        try {
+            setLoading(true);
+            const result = await axiosApiCall(SAVE_NOTE_URL, 'post', null, null, headers, data);
+            console.log("the result of the request to save a note is: ", result)
 
-        setCurImgFile(null);
-        setImgFiles([]);
-        reset();
+            setCurImgFile(null);
+            setImgFiles([]);
+            reset();
+
+        } catch (error) {
+            showErrorsInConsole(error);
+            toastRef.current.show({ severity: 'error', summary: 'Request failed', detail: 'The request to save the company has failed.', life: 3000 });
+        }
+
+        setLoading(false);
     }
 
     return (
@@ -65,7 +86,7 @@ function NoteContributionForm(props) {
             </Panel>
 
             <Panel className="details-panel">
-                <form className="add-perfume-form" onSubmit={handleSubmit(onNoteFormSubmit)}>
+                <form className="add-perfume-form" onSubmit={handleNoteFormSubmit}>
                     {loading && <div className="spinner-overlay">
                         <ProgressSpinner />
                     </div>
@@ -75,6 +96,10 @@ function NoteContributionForm(props) {
 
                     <DescriptionEditor control={control} errors={errors} />
 
+                    {errors.noImagesAdded && errors.noImagesAdded.types && (
+                        <div className="p-error error-message">{errors.noImagesAdded.types.required}</div>
+                    )}
+
                     <ImageCropper curImgFile={curImgFile} setCurImgFile={setCurImgFile} imgFiles={imgFiles} setImgFiles={setImgFiles} emptyMessage={"No note image selected."} />
 
                     <div className="button-row">
@@ -83,6 +108,9 @@ function NoteContributionForm(props) {
 
                 </form>
             </Panel>
+
+            <Toast ref={toastRef} position="bottom-left" />
+
         </div >
     );
 }
