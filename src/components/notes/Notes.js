@@ -1,62 +1,48 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from 'primereact/button';
 import { Link } from "react-router-dom";
+import { useForm, Controller } from "react-hook-form"
+import { Button } from 'primereact/button';
 import { InputText } from 'primereact/inputtext';
-import { Paginator } from 'primereact/paginator';
-import { Dropdown } from 'primereact/dropdown';
 import { ProgressSpinner } from 'primereact/progressspinner';
-import { SEARCH_NOTES_URL } from '../../util/constants';
-import axiosApiCall from '../../util/axiosService'
+
+import SortDropdown from '../common/SortDropdown';
+import CustomPaginator from '../common/CustomPaginator';
 import NoteCard from './NoteCard';
+import axiosApiCall from '../../util/axiosService'
+import { SEARCH_NOTES_URL } from '../../util/constants';
 
 function Notes(props) {
   const [data, setData] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [totalRecords, setTotalRecords] = useState(0);
   const [rows, setRows] = useState(9);
-  const [page, setPage] = useState(0);
   const [first, setFirst] = useState(0);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const [selectedSortOrder, setSelectedSortOrder] = useState(null);
 
-  const searchNotes = async () => {
-    setPage(0);
+  const { handleSubmit, control } = useForm({
+    defaultValues: {
+      search: "",
+    }
+  });
 
-    const params = new URLSearchParams();
-    params.append('q', searchQuery);
-    params.append('size', rows)
-    params.append('page', page)
-
-    await getNotes(params);  
+  const onSearchFormSubmit = (submittedData) => {
+    setSearchQuery(submittedData.search);
   }
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchOrderedNotes = async () => {
       const params = new URLSearchParams();
-      params.append('size', rows)
+      params.append('q', searchQuery);
+      addSortOrderUrlParams(selectedSortOrder, params);
 
       await getNotes(params);
     };
 
-    fetchData();
-  }, [rows]);
-
-
-  const getNotes = async (params) => {
-    setLoading(true);
-    const result = await axiosApiCall(SEARCH_NOTES_URL, 'get', null, params);
-    setLoading(false);
-
-    // console.log("the result of the notes search request is:", result)
-
-    if(result){
-      setData(result);
-      setTotalRecords(result.totalElements)
-    }
-  }
-
+    fetchOrderedNotes();
+  }, [selectedSortOrder, searchQuery]);
 
   const onCustomPageChange = async (event) => {
-    setPage(event.page);
     setFirst(event.first);
     setRows(event.rows);
 
@@ -68,34 +54,31 @@ function Notes(props) {
     await getNotes(params);
   }
 
-  const onChangeItemsToDisplay = (options) => {
-    setRows(options.value)
-  }
+  const getNotes = async (params) => {
+    setLoading(true);
+    const result = await axiosApiCall(SEARCH_NOTES_URL, 'get', null, params);
+    setLoading(false);
 
-  const paginatorTemplate = {
-    layout: 'RowsPerPageDropdown FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport', 'RowsPerPageDropdown': (options) => {
-      const dropdownOptions = [
-        { label: 9, value: 9 },
-        { label: 18, value: 18 },
-        { label: 27, value: 27 },
-        { label: 36, value: 36 }
-      ];
-      return (
-        <React.Fragment>
-          <Dropdown value={options.value} options={dropdownOptions} label="items to display" onChange={(event) => onChangeItemsToDisplay(event)} appendTo={document.body} />
-        </React.Fragment>
-      );
-    },
-    'CurrentPageReport': (options) => {
-      return (
-        <span style={{ color: 'var(--text-color)', userSelect: 'none', width: '120px', textAlign: 'center' }}>
-          {options.first} - {options.last} of {options.totalRecords}
-        </span>
-      )
+    console.log("the result of the notes search request is:", result)
+
+    if (result) {
+      setData(result);
+      setTotalRecords(result.totalElements)
     }
   }
 
-
+  function addSortOrderUrlParams(selectedSortOrder, params) {
+    if (selectedSortOrder != null && selectedSortOrder !== undefined && selectedSortOrder.sortField !== undefined) {
+      params.append("sort", selectedSortOrder.sortField + ',' + selectedSortOrder.direction);
+    }
+  }
+  
+  const sortOrders = [
+    { name: 'Best Matches', code: 'BEST', sortField: "bestMatch", direction: "desc" },
+    { name: 'Name Asc', code: 'NAME_ASC', sortField: "noteNameKeyword", direction: "asc" },
+    { name: 'Name Desc', code: 'NAME_DESC', sortField: "noteNameKeyword", direction: "desc" },
+  ];
+  
   let emptyResult = (data == null || (data.content < 1 || data === undefined));
 
   const renderResults = () => {
@@ -110,52 +93,59 @@ function Notes(props) {
     if (emptyResult) {
       return <div><h2>No notes found.</h2></div>
     } else {
-      return data.content.map(note =>{
-        return <NoteCard key={note.noteId} note={note} />
-      })
+      return (
+        <div className="product-grid">
+          {
+            data.content.map(note =>
+              <NoteCard key={note.noteId} note={note} />)
+          }
+        </div>
+      );
     }
   }
-  
 
   return (
     <div className="container notes">
-      <div className="user-actions-bar">
-
-      <div>
-          <div className="p-inputgroup">
-            <InputText className="p-inputtext-sm" value={searchQuery}
-              onChange={
-                (e) => setSearchQuery(e.target.value)}
-              placeholder="Search" />
-            <Button icon="pi pi-search" className="search-button" onClick={() => searchNotes()} />
-          </div>
-
-        </div>
-
-        <Link className="add-perfume-link"
-          to={{
-            pathname: "/notes/new"
-          }}
-        >
-          <Button label="Add Notes" className="p-button-outlined" />
-        </Link>
-
-      </div>
-
       <div className="main">
         <aside className="filters">
+
+          <div className="notes-search">
+            <form className="search-note-form" onSubmit={handleSubmit(onSearchFormSubmit)}>
+
+              <div className="p-inputgroup">
+                <Controller
+                  name="search"
+                  control={control}
+                  render={({ field }) =>
+                    <InputText id={field.name}{...field} className="p-inputtext-sm" placeholder="Search" />}
+                />
+                <Button icon="pi pi-search" className="search-button" type="submit" />
+              </div>
+            </form>
+          </div>
+
+          <div className="filters-container">
+          </div>
         </aside>
 
         <div className="products">
-          <div className="product-grid">
-            {renderResults()}
+          <div className="user-actions-bar">
+          <SortDropdown selectedSortOrder={selectedSortOrder} setSelectedSortOrder={setSelectedSortOrder} sortOrders={sortOrders} />
+
+            <Link className="add-perfume-link"
+              to={{
+                pathname: "/notes/new"
+              }}
+            >
+              <Button label="Add Notes" className="p-button-outlined" />
+            </Link>
+
           </div>
 
+          {renderResults()}
+
           <div className="paginator-container">
-            <Paginator template={paginatorTemplate} first={first} rows={rows}
-              totalRecords={totalRecords}
-              onPageChange={(event) => onCustomPageChange(event)}
-            ></Paginator>
+            <CustomPaginator onCustomPageChange={onCustomPageChange} first={first} rows={rows} setRows={setRows} totalRecords={totalRecords} />
           </div>
 
         </div>

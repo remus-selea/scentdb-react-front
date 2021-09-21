@@ -3,7 +3,7 @@ import { Dropdown } from 'primereact/dropdown';
 import { Paginator } from 'primereact/paginator';
 
 
-function PerfumePaginator(props) {
+function CustomPaginator(props) {
     const { first, rows, setRows, totalRecords, onCustomPageChange,  } = props;
 
     const paginatorTemplate = {
@@ -44,4 +44,4 @@ function PerfumePaginator(props) {
 
 }
 
-export default PerfumePaginator;
+export default CustomPaginator;

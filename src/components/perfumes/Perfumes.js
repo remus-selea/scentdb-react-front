@@ -3,19 +3,18 @@ import { Link } from "react-router-dom";
 import { Button } from 'primereact/button';
 import { InputText } from 'primereact/inputtext';
 import { ProgressSpinner } from 'primereact/progressspinner';
-import { useForm } from "react-hook-form"
+import { useForm, Controller } from "react-hook-form"
 
 import { GenderFilterContext } from '../../contexts/GenderFilterContext'
 import { YearFilterContext } from '../../contexts/YearFilterContext'
 import { PerfumeTypeFilterContext } from '../../contexts/PerfumeTypeFilterContext'
 import { BrandFilterContext } from '../../contexts/BrandFilterContext'
 import { SEARCH_PERFUMES_URL } from '../../util/constants';
-import SortDropdown from './SortDropdown';
-import PerfumePaginator from './PerfumePaginator';
+import SortDropdown from '../common/SortDropdown';
+import CustomPaginator from '../common/CustomPaginator';
 import PerfumeCard from './PerfumeCard'
-import Filters from '../filters/Filters'
+import PerfumeFilters from '../filters/PerfumeFilters'
 import axiosApiCall from '../../util/axiosService'
-import { Controller } from "react-hook-form";
 
 
 import "./Perfumes.scss"
@@ -26,7 +25,6 @@ function Perfumes() {
   const [first, setFirst] = useState(0);
   const [rows, setRows] = useState(9);
   const [totalRecords, setTotalRecords] = useState(0);
-  const [page, setPage] = useState(0);
   const { genders } = React.useContext(GenderFilterContext)
   const { yearRangeValues } = React.useContext(YearFilterContext)
   const { perfumeTypes } = React.useContext(PerfumeTypeFilterContext)
@@ -84,7 +82,6 @@ function Perfumes() {
 
 
   const onCustomPageChange = async (event) => {
-    setPage(event.page);
     setFirst(event.first);
     setRows(event.rows);
 
@@ -96,7 +93,7 @@ function Perfumes() {
     await fetchPerfumes(params);
   }
 
-  
+
   function addFilterToUrlParams(params, filterArray, filterName, filterUrlParamName = "filter") {
     let filter = filterName + ':';
 
@@ -119,6 +116,18 @@ function Perfumes() {
       params.append("sort", selectedSortOrder.sortField + ',' + selectedSortOrder.direction);
     }
   }
+
+  const sortOrders = [
+    { name: 'Best Matches', code: 'BEST', sortField: "bestMatch", direction: "desc" },
+    { name: 'Newest', code: 'NEWEST', sortField: "launchYear", direction: "desc", },
+    { name: 'Oldest', code: 'OLDEST', sortField: "launchYear", direction: "asc" },
+    { name: 'Name Asc', code: 'NAME_ASC', sortField: "titleKeyword", direction: "asc" },
+    { name: 'Name Desc', code: 'NAME_DESC', sortField: "titleKeyword", direction: "desc" },
+    { name: 'Most Reviews', code: 'MOST_REV', direction: "asc" },
+    { name: 'Least Reviews', code: 'LEAST_REV', direction: "desc" },
+    { name: 'Most Popular', code: 'MOST_POP', direction: "asc" },
+    { name: 'Least Popular', code: 'LEAST_POP', direction: "desc" },
+  ];
 
   let emptyResult = (data == null || (data.perfumes.length < 1 || data.perfumes === undefined));
 
@@ -165,17 +174,16 @@ function Perfumes() {
                 <Button icon="pi pi-search" className="search-button" type="submit" />
               </div>
             </form>
-
           </div>
 
           <div className="filters-container">
-            <Filters />
+            <PerfumeFilters />
           </div>
         </aside>
 
         <div className="products">
           <div className="user-actions-bar">
-            <SortDropdown selectedSortOrder={selectedSortOrder} setSelectedSortOrder={setSelectedSortOrder} />
+            <SortDropdown selectedSortOrder={selectedSortOrder} setSelectedSortOrder={setSelectedSortOrder} sortOrders={sortOrders} />
 
             <Link className="add-perfume-link"
               to={{
@@ -190,7 +198,7 @@ function Perfumes() {
           {renderResults()}
 
           <div className="paginator-container">
-            <PerfumePaginator onCustomPageChange={onCustomPageChange} first={first} rows={rows} setRows={setRows} totalRecords={totalRecords} />
+            <CustomPaginator onCustomPageChange={onCustomPageChange} first={first} rows={rows} setRows={setRows} totalRecords={totalRecords} />
           </div>
         </div>
 

@@ -10,9 +10,9 @@ import { YearFilterContext } from '../../contexts/YearFilterContext'
 import { PerfumeTypeFilterContext } from '../../contexts/PerfumeTypeFilterContext'
 import { GenderFilterContext } from '../../contexts/GenderFilterContext'
 
-import "./Filters.scss"
+import "./PerfumeFilters.scss"
 
-function Filters(props) {
+function PerfumeFilters(props) {
     const [genderPanelCollapsed, setGenderPanelCollapsed] = useState(false);
     const [brandPanelCollapsed, setBrandPanelCollapsed] = useState(false);
     const [typePanelCollapsed, setTypePanelCollapsed] = useState(false);
@@ -66,4 +66,4 @@ function Filters(props) {
 }
 
 
-export default Filters;
+export default PerfumeFilters;
