@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/scentdb-ui/static/css/main.f0535be5.chunk.css",
+    "main.js": "/scentdb-ui/static/js/main.23afa191.chunk.js",
+    "main.js.map": "/scentdb-ui/static/js/main.23afa191.chunk.js.map",
+    "runtime-main.js": "/scentdb-ui/static/js/runtime-main.57f49cbf.js",
+    "runtime-main.js.map": "/scentdb-ui/static/js/runtime-main.57f49cbf.js.map",
+    "static/css/2.0fe5af1e.chunk.css": "/scentdb-ui/static/css/2.0fe5af1e.chunk.css",
+    "static/js/2.410093be.chunk.js": "/scentdb-ui/static/js/2.410093be.chunk.js",
+    "static/js/2.410093be.chunk.js.map": "/scentdb-ui/static/js/2.410093be.chunk.js.map",
+    "static/js/3.d08fd0c4.chunk.js": "/scentdb-ui/static/js/3.d08fd0c4.chunk.js",
+    "static/js/3.d08fd0c4.chunk.js.map": "/scentdb-ui/static/js/3.d08fd0c4.chunk.js.map",
+    "static/js/4.e5d08133.chunk.js": "/scentdb-ui/static/js/4.e5d08133.chunk.js",
+    "static/js/4.e5d08133.chunk.js.map": "/scentdb-ui/static/js/4.e5d08133.chunk.js.map",
+    "index.html": "/scentdb-ui/index.html",
+    "static/css/2.0fe5af1e.chunk.css.map": "/scentdb-ui/static/css/2.0fe5af1e.chunk.css.map",
+    "static/css/main.f0535be5.chunk.css.map": "/scentdb-ui/static/css/main.f0535be5.chunk.css.map",
+    "static/js/2.410093be.chunk.js.LICENSE.txt": "/scentdb-ui/static/js/2.410093be.chunk.js.LICENSE.txt",
+    "static/js/3.d08fd0c4.chunk.js.LICENSE.txt": "/scentdb-ui/static/js/3.d08fd0c4.chunk.js.LICENSE.txt",
+    "static/media/own.c301e65f.svg": "/scentdb-ui/static/media/own.c301e65f.svg",
+    "static/media/primeicons.css": "/scentdb-ui/static/media/primeicons.e61f3495.woff",
+    "static/media/rakuten.221f43a0.svg": "/scentdb-ui/static/media/rakuten.221f43a0.svg",
+    "static/media/theme.css": "/scentdb-ui/static/media/roboto-v20-latin-ext_latin-regular.ae804dc0.woff",
+    "static/media/star-grey.2132f446.svg": "/scentdb-ui/static/media/star-grey.2132f446.svg",
+    "static/media/star.3126bb9d.svg": "/scentdb-ui/static/media/star.3126bb9d.svg",
+    "static/media/wear.47ae9293.svg": "/scentdb-ui/static/media/wear.47ae9293.svg",
+    "static/media/wish.87cd9272.svg": "/scentdb-ui/static/media/wish.87cd9272.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.57f49cbf.js",
+    "static/css/2.0fe5af1e.chunk.css",
+    "static/js/2.410093be.chunk.js",
+    "static/css/main.f0535be5.chunk.css",
+    "static/js/main.23afa191.chunk.js"
+  ]
+}
