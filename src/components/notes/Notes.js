@@ -56,10 +56,15 @@ function Notes(props) {
 
   const getNotes = async (params) => {
     setLoading(true);
-    const result = await axiosApiCall(SEARCH_NOTES_URL, 'get', null, params);
+    let apiUrl = SEARCH_NOTES_URL;
+    if (process.env.REACT_APP_USE_MOCK_API === 'true') {
+      apiUrl = "/mocks/notes/search-notes.json";
+      console.log("Using mock data")
+    }
+    const result = await axiosApiCall(apiUrl, 'get', null, params);
     setLoading(false);
 
-    console.log("the result of the notes search request is:", result)
+    // console.log("the result of the notes search request is:", result)
 
     if (result) {
       setData(result);
@@ -72,13 +77,13 @@ function Notes(props) {
       params.append("sort", selectedSortOrder.sortField + ',' + selectedSortOrder.direction);
     }
   }
-  
+
   const sortOrders = [
     { name: 'Best Matches', code: 'BEST', sortField: "bestMatch", direction: "desc" },
     { name: 'Name Asc', code: 'NAME_ASC', sortField: "noteNameKeyword", direction: "asc" },
     { name: 'Name Desc', code: 'NAME_DESC', sortField: "noteNameKeyword", direction: "desc" },
   ];
-  
+
   let emptyResult = (data == null || (data.content < 1 || data === undefined));
 
   const renderResults = () => {
@@ -130,7 +135,7 @@ function Notes(props) {
 
         <div className="products">
           <div className="user-actions-bar">
-          <SortDropdown selectedSortOrder={selectedSortOrder} setSelectedSortOrder={setSelectedSortOrder} sortOrders={sortOrders} />
+            <SortDropdown selectedSortOrder={selectedSortOrder} setSelectedSortOrder={setSelectedSortOrder} sortOrders={sortOrders} />
 
             <Link className="add-perfume-link"
               to={{

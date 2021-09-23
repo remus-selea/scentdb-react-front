@@ -58,7 +58,13 @@ function Brands(props) {
 
   const fetchBrands = async (params) => {
     setLoading(true);
-    const result = await axiosApiCall(SEARCH_COMPANIES_URL, 'get', null, params);
+
+    let apiUrl = SEARCH_COMPANIES_URL;
+    if (process.env.REACT_APP_USE_MOCK_API === 'true') {
+      apiUrl = "/mocks/brands/search-brands.json";
+      console.log("Using mock data")
+    }
+    const result = await axiosApiCall(apiUrl, 'get', null, params);
     setLoading(false);
 
     // console.log("the result of the companies search request is: ", result)
@@ -136,7 +142,7 @@ function Brands(props) {
         <div className="products">
           <div className="user-actions-bar">
 
-          <SortDropdown selectedSortOrder={selectedSortOrder} setSelectedSortOrder={setSelectedSortOrder} sortOrders={sortOrders} />
+            <SortDropdown selectedSortOrder={selectedSortOrder} setSelectedSortOrder={setSelectedSortOrder} sortOrders={sortOrders} />
 
             <Link className="add-company-link"
               to={{

@@ -16,7 +16,7 @@ import { PerfumeMiddleNotesMultiselect } from '../contribution/PerfumeMiddleNote
 import { PerfumeBaseNotesMultiselect } from '../contribution/PerfumeBaseNotesMultiselect';
 import { PerfumeBottleSizesMultiselect } from '../contribution/PerfumeBottleSizesMultiselect';
 import { DescriptionEditor } from '../contribution/DescriptionEditor';
-import { ImageCropper } from '../contribution/ImageCropper';
+import { ImageCropper } from '../common/cropper/ImageCropper';
 import { GET_ALL_COMPANIES_URL, GET_ALL_PERFUMERS_URL, GET_ALL_NOTES_URL, SAVE_PERFUME_URL, TOP_NOTES, BASE_NOTES, MIDDLE_NOTES } from '../../util/constants'
 import axiosApiCall, { showErrorsInConsole } from '../../util/axiosService'
 
@@ -51,21 +51,36 @@ function PerfumeContributionForm() {
     }, []);
 
     const fetchCompanies = async (params) => {
-        const result = await axiosApiCall(GET_ALL_COMPANIES_URL, 'get', null, params);
+        let apiUrl = GET_ALL_COMPANIES_URL;
+        if (process.env.REACT_APP_USE_MOCK_API === 'true') {
+          apiUrl = "/mocks/brands/get-all-brands.json";
+          console.log("Using mock data")
+        }
+        const result = await axiosApiCall(apiUrl, 'get', null, params);
         if (result) {
             setCompanies(result);
         }
     }
 
     const fetchPerfumers = async (params) => {
-        const result = await axiosApiCall(GET_ALL_PERFUMERS_URL, 'get', null, params);
+        let apiUrl = GET_ALL_PERFUMERS_URL;
+        if (process.env.REACT_APP_USE_MOCK_API === 'true') {
+          apiUrl = "/mocks/perfumers/get-all-perfumers.json";
+          console.log("Using mock data")
+        }
+        const result = await axiosApiCall(apiUrl, 'get', null, params);
         if (result) {
             setPerfumers(result);
         }
     }
 
     const fetchNotes = async (params) => {
-        const result = await axiosApiCall(GET_ALL_NOTES_URL, 'get', null, params);
+        let apiUrl = GET_ALL_NOTES_URL;
+        if (process.env.REACT_APP_USE_MOCK_API === 'true') {
+          apiUrl = "/mocks/notes/get-all-notes.json";
+          console.log("Using mock data")
+        }
+        const result = await axiosApiCall(apiUrl, 'get', null, params);
         if (result) {
             setNotes(result);
         }
@@ -101,7 +116,7 @@ function PerfumeContributionForm() {
                 const body = {
                     title: data.name,
                     launchYear: data.year,
-                    description: JSON.stringify(data.description?.htmlValue),
+                    description: data.description?.htmlValue,
                     gender: selectedGenderCode,
                     perfumeType: selectedPerfumeTypeCode,
                     bottleSizes: selectedBottleSizesStr,

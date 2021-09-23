@@ -1,0 +1,38 @@
+[
+    {
+      "description": null,
+      "noteId": 87,
+      "name": "Bergamot",
+      "imgPath": "http://localhost:8321/scentdb/v1/images/notes/13-bergamot-teaser.jpg"
+    },
+    {
+      "description": null,
+      "noteId": 88,
+      "name": "Iris",
+      "imgPath": "http://localhost:8321/scentdb/v1/images/notes/Iris_sanguinea_09501.jpg"
+    },
+    {
+      "description": null,
+      "noteId": 89,
+      "name": "Jasmine",
+      "imgPath": "http://localhost:8321/scentdb/v1/images/notes/jasmine-plants.jpg"
+    },
+    {
+      "description": null,
+      "noteId": 90,
+      "name": "Rose",
+      "imgPath": "http://localhost:8321/scentdb/v1/images/notes/photo-1496857239036-1fb137683000.jpg"
+    },
+    {
+      "description": null,
+      "noteId": 91,
+      "name": "Vanilla",
+      "imgPath": "http://localhost:8321/scentdb/v1/images/notes/Friedas_Vanilla_Bean.jpg"
+    },
+    {
+      "description": null,
+      "noteId": 92,
+      "name": "Tonka Bean",
+      "imgPath": "http://localhost:8321/scentdb/v1/images/notes/tonka-beans__63151_1024x1024.jpg"
+    }
+  ]

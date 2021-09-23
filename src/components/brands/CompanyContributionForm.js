@@ -9,7 +9,7 @@ import { NameInput } from '../contribution/NameInput';
 import { CompanyTypeDropdown } from '../contribution/CompanyTypeDropdown';
 import { WebsiteInput } from '../contribution/WebsiteInput';
 import { DescriptionEditor } from '../contribution/DescriptionEditor';
-import { ImageCropper } from '../contribution/ImageCropper';
+import { ImageCropper } from '../common/cropper/ImageCropper';
 import { SAVE_COMPANY_URL } from '../../util/constants';
 import axiosApiCall, { showErrorsInConsole } from '../../util/axiosService'
 

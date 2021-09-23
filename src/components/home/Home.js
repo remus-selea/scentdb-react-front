@@ -1,7 +1,7 @@
 function Home(props) {
   return (
     <div className="container home">
-      Home
+        <h1>Welcome to ScentDB.</h1>
     </div>
   );
 }

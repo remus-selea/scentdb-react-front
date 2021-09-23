@@ -58,10 +58,15 @@ function Perfumers(props) {
 
   const getPerfumers = async (params) => {
     setLoading(true);
-    const result = await axiosApiCall(SEARCH_PERFUMERS_URL, 'get', null, params);
+    let apiUrl = SEARCH_PERFUMERS_URL;
+    if (process.env.REACT_APP_USE_MOCK_API === 'true') {
+      apiUrl = "/mocks/perfumers/search-perfumers.json";
+      console.log("Using mock data")
+    }
+    const result = await axiosApiCall(apiUrl, 'get', null, params);
     setLoading(false);
 
-    console.log("the result of the perfumers search request is: ", result)
+    // console.log("the result of the perfumers search request is: ", result)
 
     if (result) {
       setData(result);

@@ -31,7 +31,12 @@ function PerfumeDetails(props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axiosApiCall(GET_PERFUME_BY_ID_URL + perfumeId, 'get',);
+      let apiUrl = GET_PERFUME_BY_ID_URL;
+      if (process.env.REACT_APP_USE_MOCK_API === 'true') {
+        apiUrl = "/mocks/perfumes/get-perfume-by-id.json";
+        console.log("Using mock data")
+      }
+      const result = await axiosApiCall(apiUrl + perfumeId, 'get',);
       setData(result);
 
       result.perfumes[0].perfumeNotes.forEach(perfumeNote => {
@@ -189,7 +194,9 @@ function PerfumeDetails(props) {
 
         {!emptyResult &&
           <Panel header="Description">
-            <div className="ql-editor" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(data.perfumes[0].description) }} />
+            <div className="p-editor-content ql-container ql-bubble quill-view">
+              <div className="ql-editor" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(data.perfumes[0].description) }} />
+            </div>
           </Panel>
         }
 

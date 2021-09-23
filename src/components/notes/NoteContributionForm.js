@@ -6,7 +6,7 @@ import { ProgressSpinner } from 'primereact/progressspinner';
 import { Toast } from 'primereact/toast';
 
 import { DescriptionEditor } from '../contribution/DescriptionEditor';
-import { ImageCropper } from '../contribution/ImageCropper';
+import { ImageCropper } from '../common/cropper/ImageCropper';
 import { NameInput } from '../contribution/NameInput';
 import { SAVE_NOTE_URL } from '../../util/constants';
 import axiosApiCall, { showErrorsInConsole } from '../../util/axiosService'

@@ -4,10 +4,12 @@ import { CroppedImagesList } from './CroppedImagesList';
 import { ImageCropperChooser } from './ImageCropperChooser';
 import { ImageCropperActionButtons } from './ImageCropperActionButtons';
 import { ImageCropperControls } from './ImageCropperControls';
+
 import './ImageCropper.scss'
 
 const minZoom = 0.8
 const maxZoom = 3;
+const aspect = 1; // or 3/4
 
 export function ImageCropper(props) {
     const { curImgFile, setCurImgFile, imgFiles, setImgFiles, emptyMessage } = props
@@ -47,7 +49,7 @@ export function ImageCropper(props) {
                             crop={crop}
                             zoom={zoom}
                             maxZoom={maxZoom}
-                            aspect={3 / 4}
+                            aspect={aspect}
                             onCropChange={setCrop}
                             onCropComplete={onCropComplete}
                             onZoomChange={setZoom}

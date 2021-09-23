@@ -10,7 +10,7 @@ import { DescriptionEditor } from '../contribution/DescriptionEditor';
 import { CompanyDropdown } from '../contribution/CompanyDropdown';
 import axiosApiCall, {showErrorsInConsole} from '../../util/axiosService'
 import { NameInput } from '../contribution/NameInput';
-import { ImageCropper } from '../contribution/ImageCropper';
+import { ImageCropper } from '../common/cropper/ImageCropper';
 
 function PerfumerContributionForm(props) {
     const [selectedCompanyId, setSelectedCompanyId] = useState(null);
@@ -37,7 +37,12 @@ function PerfumerContributionForm(props) {
 
 
     const fetchCompanies = async (params) => {
-        const result = await axiosApiCall(GET_ALL_COMPANIES_URL, 'get', null, params);
+        let apiUrl = GET_ALL_COMPANIES_URL;
+        if (process.env.REACT_APP_USE_MOCK_API === 'true') {
+          apiUrl = "/mocks/brands/get-all-brands.json";
+          console.log("Using mock data")
+        }
+        const result = await axiosApiCall(apiUrl, 'get', null, params);
 
         setCompanies(result);
     }

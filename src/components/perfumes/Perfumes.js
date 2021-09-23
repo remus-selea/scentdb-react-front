@@ -16,7 +16,6 @@ import PerfumeCard from './PerfumeCard'
 import PerfumeFilters from '../filters/PerfumeFilters'
 import axiosApiCall from '../../util/axiosService'
 
-
 import "./Perfumes.scss"
 
 function Perfumes() {
@@ -45,7 +44,12 @@ function Perfumes() {
 
   const fetchPerfumes = async (params) => {
     setLoading(true);
-    const result = await axiosApiCall(SEARCH_PERFUMES_URL, 'get', null, params);
+    let apiUrl = SEARCH_PERFUMES_URL;
+    if (process.env.REACT_APP_USE_MOCK_API === 'true') {
+      apiUrl = "/mocks/perfumes/search-perfumes.json";
+      console.log("Using mock data")
+    }
+    const result = await axiosApiCall(apiUrl, 'get', null, params);
     setLoading(false);
     // console.log("the result of the call to fetch perfumes is:", result)
 

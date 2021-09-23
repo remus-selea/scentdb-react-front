@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { ProgressBar } from 'primereact/progressbar';
 import { classNames } from 'primereact/utils';
-import { formatBytes } from '../../util/imageCropUtils'
+import {formatBytes} from '../../../util/imageCropUtils'
 
 export function ImageCropperChooser(props) {
     const { setCurImgFile, totalSize } = props

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'primereact/button';
 import { MdCropFree } from "react-icons/md";
-import getCroppedImg from '../../util/imageCropUtils'
+import getCroppedImg from '../../../util/imageCropUtils'
 
 export function ImageCropperActionButtons(props) {
     const { curImgFile, setCurImgFile, totalSize, setTotalSize, imgFiles, setImgFiles, croppedAreaPixels } = props;
