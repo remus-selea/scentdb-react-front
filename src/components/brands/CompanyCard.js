@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "./CompanyCard.scss"
 
 function CompanyCard(props) {
     const { company } = props;

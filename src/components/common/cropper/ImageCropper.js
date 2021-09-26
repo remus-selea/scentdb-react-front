@@ -27,7 +27,7 @@ export function ImageCropper(props) {
     const emptyTemplate = () => {
         return (
             <div className="upload-empty-template">
-                <i className="pi pi-image p-mt-3 p-p-5" style={{ 'fontSize': '5em', borderRadius: '50%', backgroundColor: 'var(--surface-b)', color: 'var(--surface-d)' }}></i>
+                <i className="pi pi-image" style={{ 'fontSize': '5em', borderRadius: '50%', backgroundColor: 'var(--surface-b)', color: 'var(--surface-d)' }}></i>
                 <span style={{ 'fontSize': '1.2em', color: 'var(--text-color-secondary)' }} className="mt-5">{emptyMessage}</span>
             </div>
         )

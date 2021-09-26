@@ -1,5 +1,5 @@
-import "./Perfume.scss"
 import { Link } from "react-router-dom";
+import "./GridCard.scss"
 
 function PerfumeCard(props) {
     const { perfume } = props;
@@ -13,18 +13,18 @@ function PerfumeCard(props) {
                     state: { perfumeId: perfume.perfumeId }
                 }}
             >
-                <img className="product-image" src={perfume.images[0]?.imagePath} alt="perfume" />
+                <img className="card-image" src={perfume.images[0]?.imagePath} alt="perfume" />
             </Link>
 
-            <div className="product-info">
-                <Link className="product-link"
+            <div className="card-info">
+                <Link className="card-link"
                     to={{
                         pathname: "/perfumes/" + perfume.perfumeId,
                         state: { perfumeId: perfume.perfumeId }
                     }}
                 >
-                    <div className="product-name">{perfume.title}</div>
-                    <div className="product-brand">{perfume.brand}</div>
+                    <div className="card-name">{perfume.title}</div>
+                    <div className="card-brand">{perfume.brand}</div>
 
                 </Link>
             </div>

@@ -42,7 +42,7 @@ function YearFilter(props) {
 
                     <div className="year-row">
                         <label htmlFor="endYear">End Year</label>
-                        <InputNumber inputId="endYear" showButtons inputClassName="year-filter-input" value={new Date().getFullYear()} onValueChange={(e) => handleEndYearChange(e)} mode="decimal" useGrouping={false} min={minYear} max={maxYear} />
+                        <InputNumber inputId="endYear" showButtons inputClassName="year-filter-input" value={yearRangeValues[1]} onValueChange={(e) => handleEndYearChange(e)} mode="decimal" useGrouping={false} min={minYear} max={maxYear} />
                     </div>
                 </div>
             </div>

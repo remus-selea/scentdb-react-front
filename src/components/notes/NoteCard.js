@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
-import './NoteCard.scss'
 
 function NoteCard(props) {
     const { note } = props;
 
-    // console.log("Note in NoteCard", note);
     return (
 
         <div className="grid-item">

@@ -11,26 +11,29 @@ function Header(props) {
   const isAuthenticated = isUserAuthenticated();
 
   return (
-    <div>
-      <header className="header container mx-auto">
+    <div className="container">
+      <header className="header ">
+
         <nav className="nav-menu">
-          <ul className="nav-item-list">
-            <li className="nav-item logo">
+
+          <div className="nav-item-list">
+            <div className="nav-item logo">
               <Link className="nav-link" to="/">ScentDB</Link>
-            </li>
-            <li className="nav-item">
+            </div>
+            <div className="nav-item">
               <Link className="nav-link" to="/perfumes">PERFUMES</Link>
-            </li>
-            <li className="nav-item">
+            </div>
+            <div className="nav-item">
               <Link className="nav-link" to="/notes">NOTES</Link>
-            </li>
-            <li className="nav-item">
+            </div>
+            <div className="nav-item">
               <Link className="nav-link" to="/perfumers">PERFUMERS</Link>
-            </li>
-            <li className="nav-item">
+            </div>
+            <div className="nav-item">
               <Link className="nav-link" to="/brands">BRANDS</Link>
-            </li>
-          </ul>
+            </div>
+          </div>
+          
         </nav>
 
         <nav className="nav-user-actions">

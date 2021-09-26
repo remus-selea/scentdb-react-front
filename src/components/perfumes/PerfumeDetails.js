@@ -92,8 +92,8 @@ function PerfumeDetails(props) {
  });
 
   return (
-    <div className="container mt-7">
-      <div className="perfume-side-content">
+    <div className="container">
+      <div className="perfume-side-content margin-top--lg">
         {!emptyResult &&
           <CarouselSlider perfume={data.perfumes[0]} />
         }

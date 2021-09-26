@@ -1,16 +1,11 @@
 .grid-item {
-    width: 315px;
-
     .thumbnail-link {
         margin-bottom: 1rem;
         display: block;
 
-        width: 100%;
-        height: 300px;
-
         .card-image {
             height: 100%;
-            width: 100%;
+            width: 300px;
             object-fit: contain;
         }
     }

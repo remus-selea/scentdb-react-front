@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "./PerfumerCard.scss"
 
 function PerfumerCard(props) {
     const { perfumer } = props;

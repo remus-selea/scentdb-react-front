@@ -1,48 +1,44 @@
 .header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 576px) {
+        justify-content: space-between;
+        flex-direction: row;
+    }
 
     .nav-item-list {
-        margin: 0;
-        padding: 0;
-
-        list-style: none;
-
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        flex-direction: column;
 
-        &-actions {
-            flex-wrap: nowrap;
+        @media (min-width: 576px) {
+            flex-direction: row;
         }
+
     }
 
     .nav-link {
         display: flex;
-        justify-content: center;
-        align-items: center;
 
-        height: 56px;
         font-size: 20px;
+        padding: var(--space-xxs);
 
         color: black;
         text-decoration: none;
         font-family: "Elsie", cursive;
     }
 
-    .nav-item {
-        margin: 0 1rem 0 1rem;
-    }
-
     .nav-user-actions {
         display: flex;
         align-items: stretch;
-        .nav-item-user-action {
-            margin: 0 1rem 0 1rem;
 
+        .nav-item-user-action {
             display: flex;
             align-items: center;
 
+            margin: 0 1rem 0 1rem;
 
             .custom-user-btn {
                 padding: 0;
@@ -51,64 +47,6 @@
                     height: 1.5rem;
                 }
             }
-
-            .search-button {
-                background-color: white;
-                border: 1px solid black;
-                border-top-right-radius: 4px;
-                border-bottom-right-radius: 4px;
-                border-color: rgba(0, 0, 0, 0.38);
-                border-left: none;
-
-                color: black;
-            }
         }
     }
 }
-
-
-
-// /* input toggle */
-// /* search bar container */
-// .search-container {
-//     display: flex;
-//     position: relative;
-//     width: 30px;
-//   }
-
-//   /* search icon button */
-//   .search-icon-btn {
-//     background-color: grey;
-//     object-fit: contain;
-//     background-size: cover;
-//     position: relative;
-//     width: 30px;
-//     height: 30px;
-//     z-index: 2; }
-
-//   /* search bar input container */
-//   .search-input {
-//     position: absolute;
-//     right: 0;
-//     z-index: 1;
-//   }
-
-//   /* search bar input */
-//   .search-input input.search-bar {
-//     height: 30px;
-//     padding: 0px;
-//     width: 100px;
-//   }
-
-//   /* transition effect */
-//   .search-input input.search-bar,
-//   .search-icon-btn {
-//     transition: all 1s;
-//   }
-
-//   .open-search.search-input input.search-bar  {
-//     padding-left: 10px;
-//     padding-right: 40px;
-//     width: 400px;
-//       transition: all 1s;
-//   }

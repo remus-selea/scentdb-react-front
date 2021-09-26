@@ -1,6 +1,8 @@
 .section-title {
     font-size: 3rem;
     text-align: center;
+
+    margin-top: var(--space-xs);
 }
 
 .login-footer {
@@ -31,12 +33,14 @@
     }
 
     .template {
-        width: 45%;
+        @media (min-width: 576px) {
+            width: 45%;
+        }
 
         .login-link {
             text-decoration: none;
         }
-        
+
         .p-button {
             i {
                 line-height: 2.25rem;
