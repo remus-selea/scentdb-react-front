@@ -18,22 +18,23 @@ function Header(props) {
 
           <div className="nav-item-list">
             <div className="nav-item logo">
-              <Link className="nav-link" to="/">ScentDB</Link>
+              <Link className="nav-link" to="/">
+                <div className="nav-item-text">ScentDB</div></Link>
             </div>
             <div className="nav-item">
-              <Link className="nav-link" to="/perfumes">PERFUMES</Link>
+              <Link className="nav-link" to="/perfumes"> <div className="nav-item-text">PERFUMES</div></Link>
             </div>
             <div className="nav-item">
-              <Link className="nav-link" to="/notes">NOTES</Link>
+              <Link className="nav-link" to="/notes"><div className="nav-item-text">NOTES</div> </Link>
             </div>
             <div className="nav-item">
-              <Link className="nav-link" to="/perfumers">PERFUMERS</Link>
+              <Link className="nav-link" to="/perfumers"> <div className="nav-item-text">PERFUMERS</div>  </Link>
             </div>
             <div className="nav-item">
-              <Link className="nav-link" to="/brands">BRANDS</Link>
+              <Link className="nav-link" to="/brands"> <div className="nav-item-text">BRANDS</div> </Link>
             </div>
           </div>
-          
+
         </nav>
 
         <nav className="nav-user-actions">

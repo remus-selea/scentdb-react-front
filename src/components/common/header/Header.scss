@@ -1,7 +1,6 @@
 .header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     @media (min-width: 576px) {
@@ -16,14 +15,24 @@
         @media (min-width: 576px) {
             flex-direction: row;
         }
-
     }
 
     .nav-link {
-        display: flex;
+        font-size: var(--text-xxl);
 
-        font-size: 20px;
-        padding: var(--space-xxs);
+        @media (min-width: 576px) {
+            font-size: var(--text-lg);
+        }
+
+        .nav-item-text {
+            padding: 3px var(--space-xxs);
+
+            @media (min-width: 576px) {
+                padding:  var(--space-xs) var(--space-xxs);
+            }
+
+            text-align: center;
+        }
 
         color: black;
         text-decoration: none;

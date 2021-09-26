@@ -40,6 +40,9 @@
   --color-error: #f5414f;
   --color-warning: #ffd137;
 
+  /* body */
+  --color-body: var(--white);
+
   /* spacing values */
   --space-unit: 1em;
   --space-xxxs: calc(0.25 * var(--space-unit));
@@ -58,6 +61,7 @@
 
 body {
   font-family: var(--font-primary);
+  background-color: var(--color-body);
 }
 
 p {

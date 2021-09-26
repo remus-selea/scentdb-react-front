@@ -1,4 +1,6 @@
 import { Divider } from 'primereact/divider';
+import {BASE_NAME} from '../../util/constants'
+
 import './Home.scss'
 
 function Home(props) {
@@ -25,7 +27,7 @@ function Home(props) {
     <div className="container">
 
       <div className="home-container">
-        <h1 className="heading">Welcome to ScentDB!</h1>
+        <h1 className="heading margin-top--sm">Welcome to ScentDB!</h1>
 
         {renderNotice()}
         <Divider />
@@ -34,9 +36,9 @@ function Home(props) {
           <div className="panel">
             <h3 className="panel-title">An encyclopedia of perfumes</h3>
             <p className="panel-description"> The application was built with the goal of serving as a perfume encyclopedia, complete with notes, perfumers, and brands. </p>
-            <img className="panel-image margin-top" alt="row of perfumes" src="/mocks/images/other/perfumes.jpg" />
-            <img className="panel-image margin-top" alt="row of notes" src="/mocks/images/other/notes.jpg" />
-            <img className="panel-image margin-top" alt="row of brands" src="/mocks/images/other/brands.jpg" />
+            <img className="panel-image margin-top" alt="row of perfumes" src={BASE_NAME + "/mocks/images/other/perfumes.jpg"} />
+            <img className="panel-image margin-top" alt="row of notes" src={BASE_NAME + "/mocks/images/other/notes.jpg"} />
+            <img className="panel-image margin-top" alt="row of brands" src={BASE_NAME + "/mocks/images/other/brands.jpg"} />
           </div>
         </div>
 
@@ -44,7 +46,7 @@ function Home(props) {
           <div className="panel">
             <h3 className="panel-title">Fast and powerful fuzzy search</h3>
             <p className="panel-description"> Fuzzy search helps find relevant results even if the search terms are misspelled. The search is fast and scalable due to the usage of elasticsearch, a popular open source search engine. </p>
-            <img className="panel-image margin-top" alt="fuzzy search explained" src="/mocks/images/other/fuzzy-search.jpg" />
+            <img className="panel-image margin-top" alt="fuzzy search explained" src={BASE_NAME +"/mocks/images/other/fuzzy-search.jpg"} />
           </div>
         </div>
 
@@ -52,7 +54,7 @@ function Home(props) {
           <div className="panel">
             <h3 className="panel-title">Faceted search and sorting</h3>
             <p className="panel-description"> Use the filters and the sort order dropdown to narrow down your search results and find the scent you're looking for. </p>
-            <img className="margin-top" alt="filters and sorting" src="/mocks/images/other/filter-and-sort.jpg" />
+            <img className="margin-top" alt="filters and sorting" src={BASE_NAME +"/mocks/images/other/filter-and-sort.jpg"} />
           </div>
         </div>
 
