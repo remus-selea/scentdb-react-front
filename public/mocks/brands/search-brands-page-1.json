@@ -1,0 +1,552 @@
+{
+  "content": [
+    {
+      "companyId": 185,
+      "name": "Giorgio Armani",
+      "website": "",
+      "description": null,
+      "companyType": "DESIGNER",
+      "imagePath": "/scentdb-ui/mocks/images/companies/1-giorgio-armani-logo-edit-voros.jpg",
+      "perfumers": [
+        {
+          "perfumerId": 214,
+          "name": "Alberto Morillas",
+          "details": null,
+          "imagePath": "/scentdb-ui/mocks/images/perfumers/alberto_0.jpg"
+        }
+      ],
+      "perfumes": [
+        {
+          "perfumeId": 186,
+          "title": "Armani Privé - Cuir Majesté",
+          "launchYear": "2016",
+          "gender": "UNISEX",
+          "perfumeType": "EAU_DE_COLOGNE",
+          "bottleSizes": "50ml",
+          "description": null,
+          "perfumer": {
+            "perfumerId": 173,
+            "name": "Sophie Labbé",
+            "details": null,
+            "imagePath": "/scentdb-ui/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
+          },
+          "perfumeNotes": [
+            {
+              "notes": [
+                180,
+                91
+              ],
+              "type": "base notes"
+            },
+            {
+              "notes": [
+                183,
+                142
+              ],
+              "type": "top notes"
+            },
+            {
+              "notes": [
+                171,
+                184
+              ],
+              "type": "middle notes"
+            }
+          ],
+          "images": [
+            {
+              "perfumeImageId": 187,
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/77511_ktg5kd_armani_prive__cuir_majeste_720.jpg"
+            },
+            {
+              "perfumeImageId": 188,
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/15787271_28719793_2048.jpg"
+            }
+          ]
+        },
+        {
+          "perfumeId": 216,
+          "title": "Acqua di Giò Profumo",
+          "launchYear": "2015",
+          "gender": "MALE",
+          "perfumeType": "EAU_DE_PARFUM",
+          "bottleSizes": "75ml,125ml",
+          "description": null,
+          "perfumer": {
+            "perfumerId": 214,
+            "name": "Alberto Morillas",
+            "details": null,
+            "imagePath": "/scentdb-ui/mocks/images/perfumers/alberto_0.jpg"
+          },
+          "perfumeNotes": [
+            {
+              "notes": [
+                109,
+                142
+              ],
+              "type": "base notes"
+            },
+            {
+              "notes": [
+                215,
+                87,
+                132
+              ],
+              "type": "top notes"
+            },
+            {
+              "notes": [
+                107,
+                153
+              ],
+              "type": "middle notes"
+            }
+          ],
+          "images": [
+            {
+              "perfumeImageId": 217,
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/56294_p5vysd_acqua_di_gio_profumo_720.jpg"
+            },
+            {
+              "perfumeImageId": 218,
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/56294_05e8341af01520f77b58b5c2ca9c7b5f_acqua_di_gio_profumo.jpg"
+            },
+            {
+              "perfumeImageId": 219,
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/56294_923b57e613e6f0acbf779d3d3d2bf6ba_acqua_di_gio_profumo.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": 113,
+      "name": "Parfums de Marly",
+      "website": "",
+      "description": null,
+      "companyType": "NICHE",
+      "imagePath": "/scentdb-ui/mocks/images/companies/PARFUM%20DE%20MARLY-Logo-01.jpg",
+      "perfumers": [],
+      "perfumes": [
+        {
+          "perfumeId": 116,
+          "title": "Parfums de Marly",
+          "launchYear": "2016",
+          "gender": "MALE",
+          "perfumeType": "EAU_DE_PARFUM",
+          "bottleSizes": "75ml,125ml",
+          "description": "<p><strong style=\"background-color: rgb(239, 242, 246); color: rgb(34, 34, 34);\">Layton</strong><span style=\"background-color: rgb(239, 242, 246); color: rgb(34, 34, 34);\">&nbsp;is a popular perfume by&nbsp;</span><a href=\"https://www.parfumo.net/Perfumes/Parfums_de_Marly\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: rgb(239, 242, 246); color: rgb(34, 34, 34);\"><strong>Parfums de Marly</strong></a><span style=\"background-color: rgb(239, 242, 246); color: rgb(34, 34, 34);\">&nbsp;for men and was released in&nbsp;</span><a href=\"https://www.parfumo.net/Release_Years/2016\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: rgb(239, 242, 246); color: rgb(34, 34, 34);\"><strong>2016</strong></a><span style=\"background-color: rgb(239, 242, 246); color: rgb(34, 34, 34);\">. The scent is sweet-spicy. Projection and longevity are above-average. It is still available to purchase.</span></p>",
+          "perfumer": {
+            "perfumerId": 115,
+            "name": "Hamid Merati-Kashani",
+            "details": null,
+            "imagePath": "/scentdb-ui/mocks/images/perfumers/Firmenich_AG_HAMID_MERATI_COULEUR25538.jpg"
+          },
+          "perfumeNotes": [
+            {
+              "notes": [
+                91,
+                110,
+                112,
+                108,
+                111,
+                109
+              ],
+              "type": "base notes"
+            },
+            {
+              "notes": [
+                104,
+                105,
+                103,
+                87
+              ],
+              "type": "top notes"
+            },
+            {
+              "notes": [
+                106,
+                107,
+                89
+              ],
+              "type": "middle notes"
+            }
+          ],
+          "images": [
+            {
+              "perfumeImageId": 117,
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/71892_img-5479-parfums_de_marly-layton_720.jpg"
+            },
+            {
+              "perfumeImageId": 118,
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/293829.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": 177,
+      "name": "Tom Ford",
+      "website": "",
+      "description": null,
+      "companyType": "DESIGNER",
+      "imagePath": "/scentdb-ui/mocks/images/companies/26163.jpg",
+      "perfumers": [
+        {
+          "perfumerId": 178,
+          "name": "Richard Herpin",
+          "details": null,
+          "imagePath": "/scentdb-ui/mocks/images/perfumers/86678ad11433ea382642391440381553.jpg"
+        }
+      ],
+      "perfumes": [
+        {
+          "perfumeId": 181,
+          "title": "Oud Wood",
+          "launchYear": "2007",
+          "gender": "UNISEX",
+          "perfumeType": "EAU_DE_PARFUM",
+          "bottleSizes": "50ml,200ml",
+          "description": "<p><span style=\"background-color: rgb(254, 254, 254); color: rgb(10, 10, 10);\">Private Blend is first and exclusive collection by Tom Ford, which includes twelve eau de parfums, each of them can be used solely or in combination with other fragrances from the collection.</span></p>",
+          "perfumer": {
+            "perfumerId": 178,
+            "name": "Richard Herpin",
+            "details": null,
+            "imagePath": "/scentdb-ui/mocks/images/perfumers/86678ad11433ea382642391440381553.jpg"
+          },
+          "perfumeNotes": [
+            {
+              "notes": [
+                110,
+                179,
+                92,
+                180,
+                111
+              ],
+              "type": "base notes"
+            },
+            {
+              "notes": [
+                148
+              ],
+              "type": "top notes"
+            },
+            {
+              "notes": [
+                133
+              ],
+              "type": "middle notes"
+            }
+          ],
+          "images": [
+            {
+              "perfumeImageId": 182,
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/3840_img-6645-tom_ford-oud_wood_eau_de_parfum_720.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": 191,
+      "name": "Xerjoff",
+      "website": "",
+      "description": null,
+      "companyType": "NICHE",
+      "imagePath": "/scentdb-ui/mocks/images/companies/xerjoff-logo-300x300.jpg",
+      "perfumers": [],
+      "perfumes": [
+        {
+          "perfumeId": 194,
+          "title": "Shooting Stars - Amber Star",
+          "launchYear": "2013",
+          "gender": "UNISEX",
+          "perfumeType": "EAU_DE_COLOGNE",
+          "bottleSizes": "50ml",
+          "description": null,
+          "perfumer": {
+            "perfumerId": 173,
+            "name": "Sophie Labbé",
+            "details": null,
+            "imagePath": "/scentdb-ui/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
+          },
+          "perfumeNotes": [
+            {
+              "notes": [
+                143,
+                190,
+                91,
+                110
+              ],
+              "type": "base notes"
+            },
+            {
+              "notes": [
+                129,
+                192,
+                130
+              ],
+              "type": "top notes"
+            },
+            {
+              "notes": [
+                189,
+                193,
+                108
+              ],
+              "type": "middle notes"
+            }
+          ],
+          "images": [
+            {
+              "perfumeImageId": 195,
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/33185_img-5376-xerjoff-shooting_stars__amber_star_720.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": 196,
+      "name": "Lancôme",
+      "website": "",
+      "description": null,
+      "companyType": "NICHE",
+      "imagePath": "/scentdb-ui/mocks/images/companies/lancome-3-logo-png-transparent.jpg",
+      "perfumers": [
+        {
+          "perfumerId": 200,
+          "name": "Olivier Polge",
+          "details": null,
+          "imagePath": "/scentdb-ui/mocks/images/perfumers/Olivier-Polge-3.jpg"
+        }
+      ],
+      "perfumes": [
+        {
+          "perfumeId": 201,
+          "title": "La Vie est Belle L'Eau de Parfum",
+          "launchYear": "2012",
+          "gender": "FEMALE",
+          "perfumeType": "EAU_DE_PARFUM",
+          "bottleSizes": "100ml,75ml,50ml,30ml",
+          "description": null,
+          "perfumer": {
+            "perfumerId": 200,
+            "name": "Olivier Polge",
+            "details": null,
+            "imagePath": "/scentdb-ui/mocks/images/perfumers/Olivier-Polge-3.jpg"
+          },
+          "perfumeNotes": [
+            {
+              "notes": [
+                109,
+                92,
+                91,
+                199
+              ],
+              "type": "base notes"
+            },
+            {
+              "notes": [
+                161,
+                198
+              ],
+              "type": "top notes"
+            },
+            {
+              "notes": [
+                88,
+                140,
+                89
+              ],
+              "type": "middle notes"
+            }
+          ],
+          "images": [
+            {
+              "perfumeImageId": 202,
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/18914_t4ou5s_la_vie_est_belle_720.jpg"
+            },
+            {
+              "perfumeImageId": 203,
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/18914_a1f4d62b950d491f10ddef247201f246_la_vie_est_belle.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": 242,
+      "name": "Chloé",
+      "website": "",
+      "description": null,
+      "companyType": "DESIGNER",
+      "imagePath": "/scentdb-ui/mocks/images/companies/1b444e01f0ea48cd6bcf10b9324ddff3.jpg",
+      "perfumers": [
+        {
+          "perfumerId": 243,
+          "name": "Michel Almairac",
+          "details": null,
+          "imagePath": "/scentdb-ui/mocks/images/perfumers/michel-almairac.jpg"
+        }
+      ],
+      "perfumes": [
+        {
+          "perfumeId": 244,
+          "title": "Chloé",
+          "launchYear": "2007",
+          "gender": "FEMALE",
+          "perfumeType": "EAU_DE_PARFUM",
+          "bottleSizes": "20ml,30ml,50ml,75ml",
+          "description": null,
+          "perfumer": {
+            "perfumerId": 243,
+            "name": "Michel Almairac",
+            "details": null,
+            "imagePath": "/scentdb-ui/mocks/images/perfumers/michel-almairac.jpg"
+          },
+          "perfumeNotes": [
+            {
+              "notes": [
+                192,
+                148
+              ],
+              "type": "base notes"
+            },
+            {
+              "notes": [
+                139
+              ],
+              "type": "top notes"
+            },
+            {
+              "notes": [
+                90
+              ],
+              "type": "middle notes"
+            }
+          ],
+          "images": [
+            {
+              "perfumeImageId": 245,
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/P56648_principal.jpg"
+            },
+            {
+              "perfumeImageId": 246,
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/res_aa0e0c710f01dc743ed2aebd4ab61dfe.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": 114,
+      "name": "Firmenich",
+      "website": "",
+      "description": null,
+      "companyType": "NICHE",
+      "imagePath": "/scentdb-ui/mocks/images/companies/Firmenich.jpg",
+      "perfumers": [
+        {
+          "perfumerId": 115,
+          "name": "Hamid Merati-Kashani",
+          "details": null,
+          "imagePath": "/scentdb-ui/mocks/images/perfumers/Firmenich_AG_HAMID_MERATI_COULEUR25538.jpg"
+        }
+      ],
+      "perfumes": []
+    },
+    {
+      "companyId": 172,
+      "name": "Valentino",
+      "website": "",
+      "description": null,
+      "companyType": "DESIGNER",
+      "imagePath": "/scentdb-ui/mocks/images/companies/1024px-Valentino_logo.svg.jpg",
+      "perfumers": [
+        {
+          "perfumerId": 173,
+          "name": "Sophie Labbé",
+          "details": null,
+          "imagePath": "/scentdb-ui/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
+        }
+      ],
+      "perfumes": [
+        {
+          "perfumeId": 174,
+          "title": "Valentino Uomo Intense",
+          "launchYear": "2016",
+          "gender": "MALE",
+          "perfumeType": "EAU_DE_PARFUM",
+          "bottleSizes": "100ml",
+          "description": null,
+          "perfumer": {
+            "perfumerId": 173,
+            "name": "Sophie Labbé",
+            "details": null,
+            "imagePath": "/scentdb-ui/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
+          },
+          "perfumeNotes": [
+            {
+              "notes": [
+                91,
+                171
+              ],
+              "type": "base notes"
+            },
+            {
+              "notes": [
+                104,
+                170
+              ],
+              "type": "top notes"
+            },
+            {
+              "notes": [
+                88,
+                92
+              ],
+              "type": "middle notes"
+            }
+          ],
+          "images": [
+            {
+              "perfumeImageId": 175,
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/73759_img-4379-valentino-valentino_uomo_intense_720.jpg"
+            },
+            {
+              "perfumeImageId": 176,
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/73759_3cb9cff940e7a342bed5525d0e5e2d5b_valentino_uomo_intense.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "unsorted": true,
+      "empty": true
+    },
+    "offset": 9,
+    "pageNumber": 1,
+    "pageSize": 9,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalPages": 2,
+  "totalElements": 17,
+  "last": true,
+  "first": false,
+  "size": 9,
+  "number": 1,
+  "sort": {
+    "sorted": false,
+    "unsorted": true,
+    "empty": true
+  },
+  "numberOfElements": 8,
+  "empty": false
+}

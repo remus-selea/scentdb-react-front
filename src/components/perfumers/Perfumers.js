@@ -9,7 +9,7 @@ import SortDropdown from '../common/SortDropdown';
 import CustomPaginator from '../common/CustomPaginator';
 import PerfumerCard from './PerfumerCard';
 import axiosApiCall from '../../util/axiosService'
-import { SEARCH_PERFUMERS_URL } from '../../util/constants';
+import { getSearchPerfumersUrl } from '../../util/constants';
 
 import './Perfumers.scss'
 
@@ -58,12 +58,7 @@ function Perfumers(props) {
 
   const getPerfumers = async (params) => {
     setLoading(true);
-    let apiUrl = SEARCH_PERFUMERS_URL;
-    if (process.env.REACT_APP_USE_MOCK_API === 'true') {
-      apiUrl = "/mocks/perfumers/search-perfumers.json";
-      console.log("Using mock data")
-    }
-    const result = await axiosApiCall(apiUrl, 'get', null, params);
+    const result = await axiosApiCall(getSearchPerfumersUrl(params), 'get', null, params);
     setLoading(false);
 
     // console.log("the result of the perfumers search request is: ", result)

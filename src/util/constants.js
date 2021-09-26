@@ -1,21 +1,126 @@
-export const BASE_URL = "http://localhost:8321/scentdb/v1/"
+export const BASE_NAME = process.env.NODE_ENV === 'production' ? process.env.REACT_APP_PROD_BASE_NAME : process.env.REACT_APP_DEV_BASE_NAME;
+export const BASE_URL = (process.env.NODE_ENV === 'production' ? process.env.REACT_APP_PROD_BASE_URL : process.env.REACT_APP_DEV_BASE_URL) + BASE_NAME;
+export const API_BASE_URL = process.env.NODE_ENV === 'production' ? process.env.REACT_APP_PROD_API_BASE_URL : process.env.REACT_APP_DEV_API_BASE_URL;
+export const SCENTDB_URL = API_BASE_URL + "/scentdb/v1"
 
-export const GET_ALL_PERFUMES_URL = "http://localhost:8321/scentdb/v1/perfumes";
-export const GET_PERFUME_BY_ID_URL = "http://localhost:8321/scentdb/v1/perfumes/";
-export const SEARCH_PERFUMES_URL = "http://localhost:8321/scentdb/v1/perfumes/search";
-export const SAVE_PERFUME_URL = "http://localhost:8321/scentdb/v1/perfumes";
+// OAUTH2
 
-export const SEARCH_COMPANIES_URL = "http://localhost:8321/scentdb/v1/companies/search";
-export const SAVE_COMPANY_URL = "http://localhost:8321/scentdb/v1/companies";
-export const GET_ALL_COMPANIES_URL = "http://localhost:8321/scentdb/v1/companies";
+export const OAUTH2_REDIRECT_URL = BASE_URL + "/oauth2/redirect";
+export const GOOGLE_AUTH_URL = API_BASE_URL + "/oauth2/authorize/google?redirect_uri=" + OAUTH2_REDIRECT_URL;
+export const GITHUB_AUTH_URL = API_BASE_URL + "/oauth2/authorize/github?redirect_uri=" + OAUTH2_REDIRECT_URL;
+export const FACEBOOK_AUTH_URL = API_BASE_URL + "/oauth2/authorize/facebook?redirect_uri=" + OAUTH2_REDIRECT_URL;
+export const ACCESS_TOKEN = "accessToken";
+export const USER = "user";
 
-export const SAVE_NOTE_URL = "http://localhost:8321/scentdb/v1/notes";
-export const SEARCH_NOTES_URL = "http://localhost:8321/scentdb/v1/notes/search";
-export const GET_ALL_NOTES_URL = "http://localhost:8321/scentdb/v1/notes";
+// PERFUMES
 
-export const SEARCH_PERFUMERS_URL = "http://localhost:8321/scentdb/v1/perfumers/search";
-export const SAVE_PERFUMER_URL = "http://localhost:8321/scentdb/v1/perfumers";
-export const GET_ALL_PERFUMERS_URL = "http://localhost:8321/scentdb/v1/perfumers";
+export const SAVE_PERFUME_URL = SCENTDB_URL + "/perfumes";
+export const GET_ALL_PERFUMES_URL = SCENTDB_URL + "/perfumes";
+export let SEARCH_PERFUMES_URL = SCENTDB_URL + "/perfumes/search";
+export const getSearchPerfumesUrl = (params) => {
+    if (process.env.REACT_APP_USE_MOCK_API === 'true') {
+
+        if (params.has('page')) {
+            let page = params.get('page')
+            SEARCH_PERFUMES_URL = BASE_NAME + `/mocks/perfumes/search-perfumes-page-${page}.json`;
+        } else{
+            SEARCH_PERFUMES_URL = BASE_NAME + "/mocks/perfumes/search-perfumes-page-0.json";
+        }
+
+        console.log("Using mock SEARCH_PERFUMES_URL")
+    } 
+
+    return SEARCH_PERFUMES_URL;
+}
+
+export let getPerfumeByIdURL = (perfumeId) => SCENTDB_URL + `/perfumes/${perfumeId}`;
+if (process.env.REACT_APP_USE_MOCK_API === 'true') {
+    getPerfumeByIdURL = (perfumeId) =>  BASE_NAME + `/mocks/perfumes/get-perfume-by-id-${perfumeId}.json`;
+    console.log("Using mock getPerfumeByIdURL")
+}
+
+// BRANDS
+
+export const SAVE_COMPANY_URL = SCENTDB_URL + "/companies";
+export let SEARCH_COMPANIES_URL = SCENTDB_URL + "/companies/search";
+
+export const getSearchBrandsUrl = (params) => {
+    if (process.env.REACT_APP_USE_MOCK_API === 'true') {
+
+        if (params.has('page')) {
+            let page = params.get('page')
+            SEARCH_COMPANIES_URL = BASE_NAME + `/mocks/brands/search-brands-page-${page}.json`;
+        } else{
+            SEARCH_COMPANIES_URL = BASE_NAME + "/mocks/brands/search-brands-page-0.json";
+        }
+
+        console.log("Using mock SEARCH_COMPANIES_URL")
+    } 
+
+    return SEARCH_COMPANIES_URL;
+}
+
+export let GET_ALL_COMPANIES_URL = SCENTDB_URL + "/companies";
+if (process.env.REACT_APP_USE_MOCK_API === 'true') {
+    GET_ALL_COMPANIES_URL = BASE_NAME + "/mocks/brands/get-all-brands.json";
+    console.log("Using mock GET_ALL_COMPANIES_URL")
+}
+
+// PERFUMERS
+
+export const SAVE_PERFUMER_URL = SCENTDB_URL + "/perfumers";
+
+export let SEARCH_PERFUMERS_URL = SCENTDB_URL + "/perfumers/search";
+export const getSearchPerfumersUrl = (params) => {
+    if (process.env.REACT_APP_USE_MOCK_API === 'true') {
+
+        if (params.has('page')) {
+            let page = params.get('page')
+            SEARCH_PERFUMERS_URL = BASE_NAME + `/mocks/perfumers/search-perfumers-page-${page}.json`;
+
+        } else{
+            SEARCH_PERFUMERS_URL = BASE_NAME + "/mocks/perfumers/search-perfumers-page-0.json";
+        }
+
+        console.log("Using mock SEARCH_PERFUMERS_URL")
+    } 
+
+    return SEARCH_PERFUMERS_URL;
+}
+
+export let GET_ALL_PERFUMERS_URL = SCENTDB_URL + "/perfumers";
+if (process.env.REACT_APP_USE_MOCK_API === 'true') {
+    GET_ALL_PERFUMERS_URL = BASE_NAME + "/mocks/perfumers/get-all-perfumers.json";
+    console.log("Using mock GET_ALL_PERFUMERS_URL")
+}
+
+// NOTES
+
+export const SAVE_NOTE_URL = SCENTDB_URL + "/notes";
+export let SEARCH_NOTES_URL = SCENTDB_URL + "/notes/search";
+export const getSearchNotesUrl = (params) => {
+    if (process.env.REACT_APP_USE_MOCK_API === 'true') {
+
+        if (params.has('page')) {
+            let page = params.get('page')
+            SEARCH_NOTES_URL = BASE_NAME + `/mocks/notes/search-notes-page-${page}.json`;
+        } else{
+            SEARCH_NOTES_URL = BASE_NAME + "/mocks/notes/search-notes-page-0.json";
+        }
+
+        console.log("Using mock SEARCH_NOTES_URL")
+    } 
+
+    return SEARCH_NOTES_URL;
+}
+
+
+export let GET_ALL_NOTES_URL = SCENTDB_URL + "/notes";
+if (process.env.REACT_APP_USE_MOCK_API === 'true') {
+    GET_ALL_NOTES_URL = BASE_NAME + "/mocks/notes/get-all-notes.json";
+    console.log("Using mock GET_ALL_NOTES_URL")
+}
+
 
 export const TOP_NOTES = "top notes";
 export const BASE_NOTES = "base notes";
@@ -77,17 +182,7 @@ export const middleNotesMultiselectEmptyMessage = "No middle notes found";
 export const topNotesMultiselectEmptyMessage = "No top notes found";
 export const baseNotesMultiselectEmptyMessage = "No base notes found";
 export const bottleSizesMultiselectEmptyMessage = "No bottle sizes found";
-export const filterPlaceholder= "Type to filter results";
+export const filterPlaceholder = "Type to filter results";
 
 export const minYear = 1900;
 export const maxYear = new Date().getFullYear() + 10;
-
-
-export const OAUTH2_REDIRECT_URI = "http://localhost:3000/oauth2/redirect";
-export const API_BASE_URL = "http://localhost:8321";
-export const ACCESS_TOKEN = "accessToken";
-export const USER = "user";
-
-export const GOOGLE_AUTH_URL = API_BASE_URL + "/oauth2/authorize/google?redirect_uri=" + OAUTH2_REDIRECT_URI;
-export const GITHUB_AUTH_URL = API_BASE_URL + "/oauth2/authorize/github?redirect_uri=" + OAUTH2_REDIRECT_URI;
-export const FACEBOOK_AUTH_URL = API_BASE_URL + "/oauth2/authorize/facebook?redirect_uri=" + OAUTH2_REDIRECT_URI;

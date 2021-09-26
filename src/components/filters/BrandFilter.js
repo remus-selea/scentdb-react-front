@@ -25,12 +25,7 @@ function BrandFilter(props) {
     }, []);
 
     const fetchCompanies = async (params) => {
-        let apiUrl = GET_ALL_COMPANIES_URL;
-        if (process.env.REACT_APP_USE_MOCK_API === 'true') {
-          apiUrl = "/mocks/brands/get-all-brands.json";
-          console.log("Using mock data")
-        }
-        const result = await axiosApiCall(apiUrl, 'get', null, params);
+        const result = await axiosApiCall(GET_ALL_COMPANIES_URL, 'get', null, params);
         // console.log("the result of the call to get all companies is:", result)
 
         setBrands(result);

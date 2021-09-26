@@ -70,7 +70,7 @@ function NoteContributionForm(props) {
 
         } catch (error) {
             showErrorsInConsole(error);
-            toastRef.current.show({ severity: 'error', summary: 'Request failed', detail: 'The request to save the company has failed.', life: 3000 });
+            toastRef.current.show({ severity: 'error', summary: 'Request failed', detail: 'The request to save the note has failed.', life: 3000 });
         }
 
         setLoading(false);

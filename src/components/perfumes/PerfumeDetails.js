@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from "react-router-dom";
 
-import { GET_PERFUME_BY_ID_URL, TOP_NOTES, MIDDLE_NOTES, BASE_NOTES, PERFUME_TYPES } from '../../util/constants';
+import { getPerfumeByIdURL, TOP_NOTES, MIDDLE_NOTES, BASE_NOTES, PERFUME_TYPES } from '../../util/constants';
 import axiosApiCall from '../../util/axiosService'
 import CarouselSlider from '../common/carousel/CarouselSlider';
 import RatingComponent from '../review/RatingComponent'
@@ -31,12 +31,8 @@ function PerfumeDetails(props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      let apiUrl = GET_PERFUME_BY_ID_URL;
-      if (process.env.REACT_APP_USE_MOCK_API === 'true') {
-        apiUrl = "/mocks/perfumes/get-perfume-by-id.json";
-        console.log("Using mock data")
-      }
-      const result = await axiosApiCall(apiUrl + perfumeId, 'get',);
+      let apiUrl = getPerfumeByIdURL(perfumeId);
+      const result = await axiosApiCall(apiUrl, 'get',);
       setData(result);
 
       result.perfumes[0].perfumeNotes.forEach(perfumeNote => {
@@ -85,6 +81,15 @@ function PerfumeDetails(props) {
   let hasBaseNotes = (baseNotes != null);
   let hasMiddleNotes = (middleNotes != null);
   let hasTopNotes = (topNotes != null);
+
+  DOMPurify.addHook("uponSanitizeElement", (node, data) => {
+    if (data.tagName === "iframe") {
+       const src = node.getAttribute("src") || "";
+       if (!src.startsWith("https://www.youtube.com/embed/")) {
+          return node.parentNode.removeChild(node);
+       }
+    }
+ });
 
   return (
     <div className="container mt-7">
@@ -195,7 +200,14 @@ function PerfumeDetails(props) {
         {!emptyResult &&
           <Panel header="Description">
             <div className="p-editor-content ql-container ql-bubble quill-view">
-              <div className="ql-editor" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(data.perfumes[0].description) }} />
+              <div className="ql-editor" dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize(data.perfumes[0].description,
+                  {
+                    ADD_TAGS: ["iframe"],
+                    ADD_ATTR: ["allow", "allowfullscreen", "frameborder", "scrolling"], 
+                  }
+                )
+              }} />
             </div>
           </Panel>
         }

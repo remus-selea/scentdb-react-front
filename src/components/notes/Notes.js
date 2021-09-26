@@ -9,7 +9,7 @@ import SortDropdown from '../common/SortDropdown';
 import CustomPaginator from '../common/CustomPaginator';
 import NoteCard from './NoteCard';
 import axiosApiCall from '../../util/axiosService'
-import { SEARCH_NOTES_URL } from '../../util/constants';
+import { getSearchNotesUrl } from '../../util/constants';
 
 function Notes(props) {
   const [data, setData] = useState(null);
@@ -56,14 +56,8 @@ function Notes(props) {
 
   const getNotes = async (params) => {
     setLoading(true);
-    let apiUrl = SEARCH_NOTES_URL;
-    if (process.env.REACT_APP_USE_MOCK_API === 'true') {
-      apiUrl = "/mocks/notes/search-notes.json";
-      console.log("Using mock data")
-    }
-    const result = await axiosApiCall(apiUrl, 'get', null, params);
+    const result = await axiosApiCall(getSearchNotesUrl(params), 'get', null, params);
     setLoading(false);
-
     // console.log("the result of the notes search request is:", result)
 
     if (result) {

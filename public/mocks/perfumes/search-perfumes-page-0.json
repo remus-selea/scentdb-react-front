@@ -1,0 +1,553 @@
+{
+  "content": [
+    {
+      "perfumeId": 100,
+      "title": "Shalimar",
+      "launchYear": "1986",
+      "gender": "FEMALE",
+      "perfumeType": "EAU_DE_PARFUM",
+      "bottleSizes": "50ml,30ml",
+      "description": "<p><strong>Shalimar (Eau de Parfum)</strong>&nbsp;is a popular perfume by&nbsp;<strong>Guerlain&nbsp;</strong>for women and was released in&nbsp;<strong>1986</strong>. The scent is oriental-spicy. Projection and longevity are above-average. It is being marketed by LVMH.</p>",
+      "perfumer": {
+        "perfumerId": 86,
+        "name": "Jacques Guerlain",
+        "details": "\"<p>Jacques Edouard Guerlain was a French perfumer, the third and most famous of the Guerlain family. One of the most prolific and influential perfumers of the 20th century, over eighty of Guerlain's perfumes remain known, though certain estimates suggest he composed some four hundred.</p>\"",
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/jacques-guerlain.jpg"
+      },
+      "company": {
+        "companyId": 85,
+        "name": "Guerlain",
+        "website": "https://www.guerlain.com/",
+        "description": "\"<p>Guerlain is one of the oldest and largest among international producers of high-quality beauty products.</p>\"",
+        "companyType": "NICHE",
+        "imagePath": "/scentdb-ui/mocks/images/companies/guerlain-logo-png-Transparent-Images.jpg"
+      },
+      "perfumeNotes": [
+        {
+          "notes": [
+            92,
+            91
+          ],
+          "type": "base notes"
+        },
+        {
+          "notes": [
+            87
+          ],
+          "type": "top notes"
+        },
+        {
+          "notes": [
+            88,
+            90,
+            89
+          ],
+          "type": "middle notes"
+        }
+      ],
+      "images": [
+        {
+          "perfumeImageId": 102,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/guerlain-shalimar-eau-de-parfum-pentru-femei___12.jpg"
+        },
+        {
+          "perfumeImageId": 101,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/guerlain-shalimar-eau-de-parfum-pentru-femei___12%20(1).jpg"
+        }
+      ]
+    },
+    {
+      "perfumeId": 216,
+      "title": "Acqua di Giò Profumo",
+      "launchYear": "2015",
+      "gender": "MALE",
+      "perfumeType": "EAU_DE_PARFUM",
+      "bottleSizes": "75ml,125ml",
+      "description": null,
+      "perfumer": {
+        "perfumerId": 214,
+        "name": "Alberto Morillas",
+        "details": null,
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/alberto_0.jpg"
+      },
+      "company": {
+        "companyId": 185,
+        "name": "Giorgio Armani",
+        "website": "",
+        "description": null,
+        "companyType": "DESIGNER",
+        "imagePath": "/scentdb-ui/mocks/images/companies/1-giorgio-armani-logo-edit-voros.jpg"
+      },
+      "perfumeNotes": [
+        {
+          "notes": [
+            109,
+            142
+          ],
+          "type": "base notes"
+        },
+        {
+          "notes": [
+            215,
+            87,
+            132
+          ],
+          "type": "top notes"
+        },
+        {
+          "notes": [
+            107,
+            153
+          ],
+          "type": "middle notes"
+        }
+      ],
+      "images": [
+        {
+          "perfumeImageId": 219,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/56294_923b57e613e6f0acbf779d3d3d2bf6ba_acqua_di_gio_profumo.jpg"
+        },
+        {
+          "perfumeImageId": 217,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/56294_p5vysd_acqua_di_gio_profumo_720.jpg"
+        },
+        {
+          "perfumeImageId": 218,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/56294_05e8341af01520f77b58b5c2ca9c7b5f_acqua_di_gio_profumo.jpg"
+        }
+      ]
+    },
+    {
+      "perfumeId": 174,
+      "title": "Valentino Uomo Intense",
+      "launchYear": "2016",
+      "gender": "MALE",
+      "perfumeType": "EAU_DE_PARFUM",
+      "bottleSizes": "100ml",
+      "description": null,
+      "perfumer": {
+        "perfumerId": 173,
+        "name": "Sophie Labbé",
+        "details": null,
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
+      },
+      "company": {
+        "companyId": 172,
+        "name": "Valentino",
+        "website": "",
+        "description": null,
+        "companyType": "DESIGNER",
+        "imagePath": "/scentdb-ui/mocks/images/companies/1024px-Valentino_logo.svg.jpg"
+      },
+      "perfumeNotes": [
+        {
+          "notes": [
+            91,
+            171
+          ],
+          "type": "base notes"
+        },
+        {
+          "notes": [
+            104,
+            170
+          ],
+          "type": "top notes"
+        },
+        {
+          "notes": [
+            88,
+            92
+          ],
+          "type": "middle notes"
+        }
+      ],
+      "images": [
+        {
+          "perfumeImageId": 175,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/73759_img-4379-valentino-valentino_uomo_intense_720.jpg"
+        },
+        {
+          "perfumeImageId": 176,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/73759_3cb9cff940e7a342bed5525d0e5e2d5b_valentino_uomo_intense.jpg"
+        }
+      ]
+    },
+    {
+      "perfumeId": 186,
+      "title": "Armani Privé - Cuir Majesté",
+      "launchYear": "2016",
+      "gender": "UNISEX",
+      "perfumeType": "EAU_DE_COLOGNE",
+      "bottleSizes": "50ml",
+      "description": null,
+      "perfumer": {
+        "perfumerId": 173,
+        "name": "Sophie Labbé",
+        "details": null,
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
+      },
+      "company": {
+        "companyId": 185,
+        "name": "Giorgio Armani",
+        "website": "",
+        "description": null,
+        "companyType": "DESIGNER",
+        "imagePath": "/scentdb-ui/mocks/images/companies/1-giorgio-armani-logo-edit-voros.jpg"
+      },
+      "perfumeNotes": [
+        {
+          "notes": [
+            180,
+            91
+          ],
+          "type": "base notes"
+        },
+        {
+          "notes": [
+            183,
+            142
+          ],
+          "type": "top notes"
+        },
+        {
+          "notes": [
+            171,
+            184
+          ],
+          "type": "middle notes"
+        }
+      ],
+      "images": [
+        {
+          "perfumeImageId": 188,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/15787271_28719793_2048.jpg"
+        },
+        {
+          "perfumeImageId": 187,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/77511_ktg5kd_armani_prive__cuir_majeste_720.jpg"
+        }
+      ]
+    },
+    {
+      "perfumeId": 234,
+      "title": "Elysium",
+      "launchYear": "2017",
+      "gender": "MALE",
+      "perfumeType": "EAU_DE_COLOGNE",
+      "bottleSizes": "100ml",
+      "description": null,
+      "perfumer": {
+        "perfumerId": 233,
+        "name": "Roja Dove",
+        "details": null,
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/ROJA-MOSCOW_Edited.jpg"
+      },
+      "company": {
+        "companyId": 232,
+        "name": "Roja Parfums",
+        "website": "",
+        "description": null,
+        "companyType": "NICHE",
+        "imagePath": "/scentdb-ui/mocks/images/companies/Roja-logo.jpg"
+      },
+      "perfumeNotes": [
+        {
+          "notes": [
+            192,
+            143,
+            91,
+            163,
+            156,
+            112,
+            151,
+            144,
+            133,
+            171,
+            130
+          ],
+          "type": "base notes"
+        },
+        {
+          "notes": [
+            105,
+            87
+          ],
+          "type": "top notes"
+        },
+        {
+          "notes": [
+            103,
+            184,
+            161,
+            89
+          ],
+          "type": "middle notes"
+        }
+      ],
+      "images": [
+        {
+          "perfumeImageId": 236,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/92779_img-8091-roja_parfums-elysium_pour_homme_parfum_cologne_720.jpg"
+        },
+        {
+          "perfumeImageId": 235,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/92779_33496f08edfec3d35bcdbf2a5623f701_elysium_pour_homme_parfum_cologne.jpg"
+        }
+      ]
+    },
+    {
+      "perfumeId": 149,
+      "title": "Coco",
+      "launchYear": "1984",
+      "gender": "FEMALE",
+      "perfumeType": "EXTRAIT_DE_PARFUM",
+      "bottleSizes": "15ml",
+      "description": "<h1>Description</h1><p>COCO expresses the intensity of Gabrielle Chanel's personality, her love of all things baroque. The quintessence of this oriental fragrance with floral and spicy notes, the Parfum is housed in an iconic bottle hand-sealed with a baudruche film.</p><p><br></p><h1>Composition</h1><p>A baroque score written with oriental, floral and spicy notes.</p><p>The fragrance opens with a citrus note of Sicilian Mandarin, and reveals a voluptuous heart of Jasmine and May Rose Absolutes. A luxuriant harmony with an enveloping trail tinged with Indonesian Patchouli, Tonka note and Benzoin.</p>",
+      "perfumer": {
+        "perfumerId": 147,
+        "name": "Jacques Polge",
+        "details": null,
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/101850336_2342590866046808_3044476289185480704_n.jpg"
+      },
+      "company": {
+        "companyId": 146,
+        "name": "Chanel",
+        "website": "",
+        "description": null,
+        "companyType": "DESIGNER",
+        "imagePath": "/scentdb-ui/mocks/images/companies/chanel.jpg"
+      },
+      "perfumeNotes": [
+        {
+          "notes": [
+            144,
+            148,
+            145,
+            143,
+            109,
+            92,
+            142
+          ],
+          "type": "base notes"
+        },
+        {
+          "notes": [
+            104,
+            139,
+            138,
+            137
+          ],
+          "type": "top notes"
+        },
+        {
+          "notes": [
+            89,
+            134,
+            141,
+            129,
+            90,
+            140,
+            88
+          ],
+          "type": "middle notes"
+        }
+      ],
+      "images": [
+        {
+          "perfumeImageId": 150,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/coco-parfum-0-5fl-oz--packshot-default-113032-8824202526750.jpg"
+        }
+      ]
+    },
+    {
+      "perfumeId": 158,
+      "title": "Miss Dior",
+      "launchYear": "1947",
+      "gender": "FEMALE",
+      "perfumeType": "EAU_DE_TOILETTE",
+      "bottleSizes": "100ml",
+      "description": null,
+      "perfumer": {
+        "perfumerId": 157,
+        "name": "Edmond Roudnitska",
+        "details": null,
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/olivier-maure.jpg"
+      },
+      "company": {
+        "companyId": 121,
+        "name": "Dior",
+        "website": "",
+        "description": null,
+        "companyType": "DESIGNER",
+        "imagePath": "/scentdb-ui/mocks/images/companies/ac452a99938c35aa0519d215b13ab9ee.jpg"
+      },
+      "perfumeNotes": [
+        {
+          "notes": [
+            131,
+            109,
+            110,
+            156
+          ],
+          "type": "base notes"
+        },
+        {
+          "notes": [
+            153,
+            152,
+            87,
+            151
+          ],
+          "type": "top notes"
+        },
+        {
+          "notes": [
+            89,
+            90,
+            140,
+            154,
+            155
+          ],
+          "type": "middle notes"
+        }
+      ],
+      "images": [
+        {
+          "perfumeImageId": 159,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/miss-dior-originale.jpg"
+        }
+      ]
+    },
+    {
+      "perfumeId": 181,
+      "title": "Oud Wood",
+      "launchYear": "2007",
+      "gender": "UNISEX",
+      "perfumeType": "EAU_DE_PARFUM",
+      "bottleSizes": "50ml,200ml",
+      "description": "<p><span style=\"background-color: rgb(254, 254, 254); color: rgb(10, 10, 10);\">Private Blend is first and exclusive collection by Tom Ford, which includes twelve eau de parfums, each of them can be used solely or in combination with other fragrances from the collection.</span></p>",
+      "perfumer": {
+        "perfumerId": 178,
+        "name": "Richard Herpin",
+        "details": null,
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/86678ad11433ea382642391440381553.jpg"
+      },
+      "company": {
+        "companyId": 177,
+        "name": "Tom Ford",
+        "website": "",
+        "description": null,
+        "companyType": "DESIGNER",
+        "imagePath": "/scentdb-ui/mocks/images/companies/26163.jpg"
+      },
+      "perfumeNotes": [
+        {
+          "notes": [
+            110,
+            179,
+            92,
+            180,
+            111
+          ],
+          "type": "base notes"
+        },
+        {
+          "notes": [
+            148
+          ],
+          "type": "top notes"
+        },
+        {
+          "notes": [
+            133
+          ],
+          "type": "middle notes"
+        }
+      ],
+      "images": [
+        {
+          "perfumeImageId": 182,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/3840_img-6645-tom_ford-oud_wood_eau_de_parfum_720.jpg"
+        }
+      ]
+    },
+    {
+      "perfumeId": 248,
+      "title": "Hypnotic Poison",
+      "launchYear": "1998",
+      "gender": "FEMALE",
+      "perfumeType": "EAU_DE_TOILETTE",
+      "bottleSizes": "30ml,50ml,100ml",
+      "description": null,
+      "perfumer": {
+        "perfumerId": 247,
+        "name": "Annick Menardo",
+        "details": null,
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/annick-menardo-full.jpg"
+      },
+      "company": {
+        "companyId": 121,
+        "name": "Dior",
+        "website": "",
+        "description": null,
+        "companyType": "DESIGNER",
+        "imagePath": "/scentdb-ui/mocks/images/companies/ac452a99938c35aa0519d215b13ab9ee.jpg"
+      },
+      "perfumeNotes": [
+        {
+          "notes": [
+            91,
+            110
+          ],
+          "type": "base notes"
+        },
+        {
+          "notes": [
+            137
+          ],
+          "type": "top notes"
+        },
+        {
+          "notes": [
+            90,
+            179,
+            89
+          ],
+          "type": "middle notes"
+        }
+      ],
+      "images": [
+        {
+          "perfumeImageId": 249,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/675_img-6131-dior-hypnotic_poison_eau_de_toilette_720.jpg"
+        }
+      ]
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "unsorted": true,
+      "empty": true
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 9,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalPages": 3,
+  "totalElements": 21,
+  "last": false,
+  "first": true,
+  "size": 9,
+  "number": 0,
+  "sort": {
+    "sorted": false,
+    "unsorted": true,
+    "empty": true
+  },
+  "numberOfElements": 9,
+  "empty": false
+}

@@ -1,0 +1,83 @@
+{
+  "content": [
+    {
+      "description": null,
+      "noteId": 209,
+      "name": "Black Pepper",
+      "imgPath": "/scentdb-ui/mocks/images/notes/pepper.jpg"
+    },
+    {
+      "description": null,
+      "noteId": 141,
+      "name": "Angelica",
+      "imgPath": "/scentdb-ui/mocks/images/notes/angelica.jpg"
+    },
+    {
+      "description": null,
+      "noteId": 222,
+      "name": "Clove",
+      "imgPath": "/scentdb-ui/mocks/images/notes/cloves.jpg"
+    },
+    {
+      "description": null,
+      "noteId": 103,
+      "name": "Apple",
+      "imgPath": "/scentdb-ui/mocks/images/notes/photo-1606757389723-23c4bf501fba.jpg"
+    },
+    {
+      "description": null,
+      "noteId": 110,
+      "name": "Sandalwood",
+      "imgPath": "/scentdb-ui/mocks/images/notes/sandalwood.jpg"
+    },
+    {
+      "description": null,
+      "noteId": 228,
+      "name": "Rosemary",
+      "imgPath": "/scentdb-ui/mocks/images/notes/photo-1603129624917-3c579e864025.jpg"
+    },
+    {
+      "description": null,
+      "noteId": 92,
+      "name": "Tonka Bean",
+      "imgPath": "/scentdb-ui/mocks/images/notes/tonka-beans__63151_1024x1024.jpg"
+    },
+    {
+      "description": null,
+      "noteId": 148,
+      "name": "Amber",
+      "imgPath": "/scentdb-ui/mocks/images/notes/amber.jpg"
+    },
+    {
+      "description": null,
+      "noteId": 144,
+      "name": "Musk",
+      "imgPath": "/scentdb-ui/mocks/images/notes/2345772502_c1bf3d4016_c.jpg"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "unsorted": true,
+      "empty": true
+    },
+    "offset": 54,
+    "pageNumber": 6,
+    "pageSize": 9,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalPages": 8,
+  "totalElements": 65,
+  "last": false,
+  "first": false,
+  "size": 9,
+  "number": 6,
+  "sort": {
+    "sorted": false,
+    "unsorted": true,
+    "empty": true
+  },
+  "numberOfElements": 9,
+  "empty": false
+}

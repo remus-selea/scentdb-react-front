@@ -9,7 +9,7 @@ import SortDropdown from '../common/SortDropdown';
 import CustomPaginator from '../common/CustomPaginator';
 import CompanyCard from './CompanyCard'
 import axiosApiCall from '../../util/axiosService'
-import { SEARCH_COMPANIES_URL } from '../../util/constants';
+import { getSearchBrandsUrl } from '../../util/constants';
 
 import "./Brands.scss"
 
@@ -58,13 +58,7 @@ function Brands(props) {
 
   const fetchBrands = async (params) => {
     setLoading(true);
-
-    let apiUrl = SEARCH_COMPANIES_URL;
-    if (process.env.REACT_APP_USE_MOCK_API === 'true') {
-      apiUrl = "/mocks/brands/search-brands.json";
-      console.log("Using mock data")
-    }
-    const result = await axiosApiCall(apiUrl, 'get', null, params);
+    const result = await axiosApiCall(getSearchBrandsUrl(params), 'get', null, params);
     setLoading(false);
 
     // console.log("the result of the companies search request is: ", result)

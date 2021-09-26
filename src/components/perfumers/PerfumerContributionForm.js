@@ -37,12 +37,7 @@ function PerfumerContributionForm(props) {
 
 
     const fetchCompanies = async (params) => {
-        let apiUrl = GET_ALL_COMPANIES_URL;
-        if (process.env.REACT_APP_USE_MOCK_API === 'true') {
-          apiUrl = "/mocks/brands/get-all-brands.json";
-          console.log("Using mock data")
-        }
-        const result = await axiosApiCall(apiUrl, 'get', null, params);
+        const result = await axiosApiCall(GET_ALL_COMPANIES_URL, 'get', null, params);
 
         setCompanies(result);
     }
@@ -97,7 +92,7 @@ function PerfumerContributionForm(props) {
             reset();
         } catch (error) {
             showErrorsInConsole(error)
-            toastRef.current.show({ severity: 'error', summary: 'Request failed', detail: 'The request to save the company has failed.', life: 3000 });
+            toastRef.current.show({ severity: 'error', summary: 'Request failed', detail: 'The request to save the perfumer has failed.', life: 3000 });
         }
 
         setLoading(false);

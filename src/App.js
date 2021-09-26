@@ -23,6 +23,7 @@ import YearFilterProvider from './contexts/YearFilterContext';
 import PerfumeTypeFilterProvider from './contexts/PerfumeTypeFilterContext';
 import BrandFilterProvider from './contexts/BrandFilterContext';
 import AuthVerify from './components/common/AuthVerify';
+import { BASE_NAME } from "./util/constants";
 
 import 'primereact/resources/primereact.min.css'
 import 'primereact/resources/themes/mdc-light-deeppurple/theme.css'
@@ -31,10 +32,9 @@ import './App.scss';
 
 
 function App() {
-
   return (
     <AuthProvider>
-      <Router>
+      <Router basename={BASE_NAME}>
         <div className="App">
           <Header />
           <AuthVerify />

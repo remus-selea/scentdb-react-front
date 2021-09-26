@@ -1,0 +1,207 @@
+{
+  "content": [
+    {
+      "perfumeId": 244,
+      "title": "Chloé",
+      "launchYear": "2007",
+      "gender": "FEMALE",
+      "perfumeType": "EAU_DE_PARFUM",
+      "bottleSizes": "20ml,30ml,50ml,75ml",
+      "description": null,
+      "perfumer": {
+        "perfumerId": 243,
+        "name": "Michel Almairac",
+        "details": null,
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/michel-almairac.jpg"
+      },
+      "company": {
+        "companyId": 242,
+        "name": "Chloé",
+        "website": "",
+        "description": null,
+        "companyType": "DESIGNER",
+        "imagePath": "/scentdb-ui/mocks/images/companies/1b444e01f0ea48cd6bcf10b9324ddff3.jpg"
+      },
+      "perfumeNotes": [
+        {
+          "notes": [
+            192,
+            148
+          ],
+          "type": "base notes"
+        },
+        {
+          "notes": [
+            139
+          ],
+          "type": "top notes"
+        },
+        {
+          "notes": [
+            90
+          ],
+          "type": "middle notes"
+        }
+      ],
+      "images": [
+        {
+          "perfumeImageId": 245,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/P56648_principal.jpg"
+        },
+        {
+          "perfumeImageId": 246,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/res_aa0e0c710f01dc743ed2aebd4ab61dfe.jpg"
+        }
+      ]
+    },
+    {
+      "perfumeId": 166,
+      "title": "Aventus",
+      "launchYear": "2010",
+      "gender": "MALE",
+      "perfumeType": "EAU_DE_PARFUM",
+      "bottleSizes": "50ml,100ml",
+      "description": "<p>Aventus&nbsp;is an Eau de Parfum launched by Paris-based perfume house&nbsp;Creed. The fragrance was released in September 2010, as part of the celebrations for Creed's 250th Anniversary.</p>",
+      "perfumer": {
+        "perfumerId": 165,
+        "name": "Olivier Creed",
+        "details": null,
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/o.164.jpg"
+      },
+      "company": {
+        "companyId": 164,
+        "name": "Creed",
+        "website": "",
+        "description": null,
+        "companyType": "NICHE",
+        "imagePath": "/scentdb-ui/mocks/images/companies/creed_silver_mountain_water_edp_perfume_for_men_120ml_1_1200x1200.jpg"
+      },
+      "perfumeNotes": [
+        {
+          "notes": [
+            144,
+            130,
+            131,
+            91
+          ],
+          "type": "base notes"
+        },
+        {
+          "notes": [
+            103,
+            161,
+            87,
+            160
+          ],
+          "type": "top notes"
+        },
+        {
+          "notes": [
+            162,
+            163,
+            109,
+            89
+          ],
+          "type": "middle notes"
+        }
+      ],
+      "images": [
+        {
+          "perfumeImageId": 169,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/9438_e3b0786cdb9e3bd42c201f83b425ecf4.jpg"
+        },
+        {
+          "perfumeImageId": 168,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/9438_img-3926-creed-aventus_eau_de_parfum_720.jpg"
+        },
+        {
+          "perfumeImageId": 167,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/nm_2220365_100000_c.jpg"
+        }
+      ]
+    },
+    {
+      "perfumeId": 238,
+      "title": "Florabotanica",
+      "launchYear": "2012",
+      "gender": "FEMALE",
+      "perfumeType": "EAU_FRAICHE",
+      "bottleSizes": "30ml,50ml,100ml",
+      "description": null,
+      "perfumer": {
+        "perfumerId": 200,
+        "name": "Olivier Polge",
+        "details": null,
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/Olivier-Polge-3.jpg"
+      },
+      "company": {
+        "companyId": 237,
+        "name": "Balenciaga",
+        "website": "",
+        "description": null,
+        "companyType": "DESIGNER",
+        "imagePath": "/scentdb-ui/mocks/images/companies/51861665_1310462502438355_4913243715286233204_n.jpg"
+      },
+      "perfumeNotes": [
+        {
+          "notes": [
+            133
+          ],
+          "type": "base notes"
+        },
+        {
+          "notes": [
+            148
+          ],
+          "type": "top notes"
+        },
+        {
+          "notes": [
+            90,
+            154
+          ],
+          "type": "middle notes"
+        }
+      ],
+      "images": [
+        {
+          "perfumeImageId": 241,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/19424_11bf70aa745552cfd09d746ded877a42_florabotanica.jpg"
+        },
+        {
+          "perfumeImageId": 239,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/19424_ecc32fece728516add7be1970f142827_florabotanica.jpg"
+        },
+        {
+          "perfumeImageId": 240,
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/19424_acsbdy_florabotanica_720.jpg"
+        }
+      ]
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "unsorted": true,
+      "empty": true
+    },
+    "offset": 18,
+    "pageNumber": 2,
+    "pageSize": 9,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalPages": 3,
+  "totalElements": 21,
+  "last": true,
+  "first": false,
+  "size": 9,
+  "number": 2,
+  "sort": {
+    "sorted": false,
+    "unsorted": true,
+    "empty": true
+  },
+  "numberOfElements": 3,
+  "empty": false
+}

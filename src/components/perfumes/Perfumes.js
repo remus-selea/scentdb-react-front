@@ -9,7 +9,7 @@ import { GenderFilterContext } from '../../contexts/GenderFilterContext'
 import { YearFilterContext } from '../../contexts/YearFilterContext'
 import { PerfumeTypeFilterContext } from '../../contexts/PerfumeTypeFilterContext'
 import { BrandFilterContext } from '../../contexts/BrandFilterContext'
-import { SEARCH_PERFUMES_URL } from '../../util/constants';
+import { getSearchPerfumesUrl } from '../../util/constants';
 import SortDropdown from '../common/SortDropdown';
 import CustomPaginator from '../common/CustomPaginator';
 import PerfumeCard from './PerfumeCard'
@@ -44,17 +44,12 @@ function Perfumes() {
 
   const fetchPerfumes = async (params) => {
     setLoading(true);
-    let apiUrl = SEARCH_PERFUMES_URL;
-    if (process.env.REACT_APP_USE_MOCK_API === 'true') {
-      apiUrl = "/mocks/perfumes/search-perfumes.json";
-      console.log("Using mock data")
-    }
-    const result = await axiosApiCall(apiUrl, 'get', null, params);
+    const result = await axiosApiCall(getSearchPerfumesUrl(params), 'get', null, params);
     setLoading(false);
     // console.log("the result of the call to fetch perfumes is:", result)
 
     if (result) {
-      setData(result.content[0]);
+      setData(result);
       setTotalRecords(result.totalElements)
     }
   }
@@ -90,6 +85,8 @@ function Perfumes() {
     setRows(event.rows);
 
     const params = new URLSearchParams();
+    addFilterToUrlParams(params, yearRangeValues, "year", "yearFilter");
+
     params.append('q', searchQuery);
     params.append('page', event.page)
     params.append('size', event.rows)
@@ -133,7 +130,7 @@ function Perfumes() {
     { name: 'Least Popular', code: 'LEAST_POP', direction: "desc" },
   ];
 
-  let emptyResult = (data == null || (data.perfumes.length < 1 || data.perfumes === undefined));
+  let emptyResult = (data == null || (data.content < 1 || data === undefined));
 
   const renderResults = () => {
     if (loading) {
@@ -150,7 +147,7 @@ function Perfumes() {
       return (
         <div className="product-grid">
           {
-            data.perfumes.map(perfume =>
+            data.content.map(perfume =>
               <PerfumeCard key={perfume.perfumeId} perfume={perfume} />)
           }
         </div>

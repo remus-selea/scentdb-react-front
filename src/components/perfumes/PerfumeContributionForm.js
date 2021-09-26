@@ -51,36 +51,21 @@ function PerfumeContributionForm() {
     }, []);
 
     const fetchCompanies = async (params) => {
-        let apiUrl = GET_ALL_COMPANIES_URL;
-        if (process.env.REACT_APP_USE_MOCK_API === 'true') {
-          apiUrl = "/mocks/brands/get-all-brands.json";
-          console.log("Using mock data")
-        }
-        const result = await axiosApiCall(apiUrl, 'get', null, params);
+        const result = await axiosApiCall(GET_ALL_COMPANIES_URL, 'get', null, params);
         if (result) {
             setCompanies(result);
         }
     }
 
     const fetchPerfumers = async (params) => {
-        let apiUrl = GET_ALL_PERFUMERS_URL;
-        if (process.env.REACT_APP_USE_MOCK_API === 'true') {
-          apiUrl = "/mocks/perfumers/get-all-perfumers.json";
-          console.log("Using mock data")
-        }
-        const result = await axiosApiCall(apiUrl, 'get', null, params);
+        const result = await axiosApiCall(GET_ALL_PERFUMERS_URL, 'get', null, params);
         if (result) {
             setPerfumers(result);
         }
     }
 
     const fetchNotes = async (params) => {
-        let apiUrl = GET_ALL_NOTES_URL;
-        if (process.env.REACT_APP_USE_MOCK_API === 'true') {
-          apiUrl = "/mocks/notes/get-all-notes.json";
-          console.log("Using mock data")
-        }
-        const result = await axiosApiCall(apiUrl, 'get', null, params);
+        const result = await axiosApiCall(GET_ALL_NOTES_URL, 'get', null, params);
         if (result) {
             setNotes(result);
         }
@@ -171,7 +156,7 @@ function PerfumeContributionForm() {
 
         } catch (error) {
             showErrorsInConsole(error);
-            toastRef.current.show({ severity: 'error', summary: 'Request failed', detail: 'The request to save the company has failed.', life: 3000 });
+            toastRef.current.show({ severity: 'error', summary: 'Request failed', detail: 'The request to save the perfume has failed.', life: 3000 });
         }
 
         setLoading(false);
