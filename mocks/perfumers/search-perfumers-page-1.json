@@ -4,14 +4,14 @@
       "perfumerId": 233,
       "name": "Roja Dove",
       "details": null,
-      "imagePath": "/mocks/images/perfumers/ROJA-MOSCOW_Edited.jpg",
+      "imagePath": "/scentdb-ui/mocks/images/perfumers/ROJA-MOSCOW_Edited.jpg",
       "company": {
         "companyId": 232,
         "name": "Roja Parfums",
         "website": "",
         "description": null,
         "companyType": "NICHE",
-        "imagePath": "/mocks/images/companies/Roja-logo.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/Roja-logo.jpg"
       },
       "perfumes": [
         {
@@ -59,11 +59,11 @@
           "images": [
             {
               "perfumeImageId": 235,
-              "imagePath": "/mocks/images/perfumes/92779_33496f08edfec3d35bcdbf2a5623f701_elysium_pour_homme_parfum_cologne.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/92779_33496f08edfec3d35bcdbf2a5623f701_elysium_pour_homme_parfum_cologne.jpg"
             },
             {
               "perfumeImageId": 236,
-              "imagePath": "/mocks/images/perfumes/92779_img-8091-roja_parfums-elysium_pour_homme_parfum_cologne_720.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/92779_img-8091-roja_parfums-elysium_pour_homme_parfum_cologne_720.jpg"
             }
           ]
         }
@@ -73,14 +73,14 @@
       "perfumerId": 247,
       "name": "Annick Menardo",
       "details": null,
-      "imagePath": "/mocks/images/perfumers/annick-menardo-full.jpg",
+      "imagePath": "/scentdb-ui/mocks/images/perfumers/annick-menardo-full.jpg",
       "company": {
         "companyId": 121,
         "name": "Dior",
         "website": "",
         "description": null,
         "companyType": "DESIGNER",
-        "imagePath": "/mocks/images/companies/ac452a99938c35aa0519d215b13ab9ee.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/ac452a99938c35aa0519d215b13ab9ee.jpg"
       },
       "perfumes": [
         {
@@ -117,7 +117,7 @@
           "images": [
             {
               "perfumeImageId": 249,
-              "imagePath": "/mocks/images/perfumes/675_img-6131-dior-hypnotic_poison_eau_de_toilette_720.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/675_img-6131-dior-hypnotic_poison_eau_de_toilette_720.jpg"
             }
           ]
         }
@@ -127,14 +127,14 @@
       "perfumerId": 223,
       "name": "Dominique Ropion",
       "details": null,
-      "imagePath": "/mocks/images/perfumers/dominique-ropion-square-1.jpg",
+      "imagePath": "/scentdb-ui/mocks/images/perfumers/dominique-ropion-square-1.jpg",
       "company": {
         "companyId": 220,
         "name": "Editions de Parfums Frédéric Malle",
         "website": "",
         "description": null,
         "companyType": "NICHE",
-        "imagePath": "/mocks/images/companies/frederic-malle-1.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/frederic-malle-1.jpg"
       },
       "perfumes": [
         {
@@ -176,7 +176,7 @@
           "images": [
             {
               "perfumeImageId": 225,
-              "imagePath": "/mocks/images/perfumes/10407_img-9893-editions_de_parfums_frederic_malle-portrait_of_a_lady_720.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/10407_img-9893-editions_de_parfums_frederic_malle-portrait_of_a_lady_720.jpg"
             }
           ]
         }
@@ -186,14 +186,14 @@
       "perfumerId": 205,
       "name": "Nathalie Lorson",
       "details": null,
-      "imagePath": "/mocks/images/perfumers/Firmenich_AG_NATHALIE_LORSON_COULEUR23370_credit_Alexandre_Guirkinger.jpg",
+      "imagePath": "/scentdb-ui/mocks/images/perfumers/Firmenich_AG_NATHALIE_LORSON_COULEUR23370_credit_Alexandre_Guirkinger.jpg",
       "company": {
         "companyId": 197,
         "name": "Yves Saint Laurent",
         "website": "",
         "description": null,
         "companyType": "DESIGNER",
-        "imagePath": "/mocks/images/companies/Yves_Saint_Laurent_logo_and_symbol.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/Yves_Saint_Laurent_logo_and_symbol.jpg"
       },
       "perfumes": [
         {
@@ -231,11 +231,11 @@
           "images": [
             {
               "perfumeImageId": 207,
-              "imagePath": "/mocks/images/perfumes/45685_img-8962-yves_saint_laurent-black_opium_eau_de_parfum_720.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/45685_img-8962-yves_saint_laurent-black_opium_eau_de_parfum_720.jpg"
             },
             {
               "perfumeImageId": 208,
-              "imagePath": "/mocks/images/perfumes/45685_bdb3d32b6e42456b8b8b750bc69646d2_black_opium.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/45685_bdb3d32b6e42456b8b8b750bc69646d2_black_opium.jpg"
             }
           ]
         }
@@ -245,14 +245,14 @@
       "perfumerId": 115,
       "name": "Hamid Merati-Kashani",
       "details": null,
-      "imagePath": "/mocks/images/perfumers/Firmenich_AG_HAMID_MERATI_COULEUR25538.jpg",
+      "imagePath": "/scentdb-ui/mocks/images/perfumers/Firmenich_AG_HAMID_MERATI_COULEUR25538.jpg",
       "company": {
         "companyId": 114,
         "name": "Firmenich",
         "website": "",
         "description": null,
         "companyType": "NICHE",
-        "imagePath": "/mocks/images/companies/Firmenich.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/Firmenich.jpg"
       },
       "perfumes": [
         {
@@ -296,11 +296,11 @@
           "images": [
             {
               "perfumeImageId": 118,
-              "imagePath": "/mocks/images/perfumes/293829.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/293829.jpg"
             },
             {
               "perfumeImageId": 117,
-              "imagePath": "/mocks/images/perfumes/71892_img-5479-parfums_de_marly-layton_720.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/71892_img-5479-parfums_de_marly-layton_720.jpg"
             }
           ]
         }
@@ -310,14 +310,14 @@
       "perfumerId": 243,
       "name": "Michel Almairac",
       "details": null,
-      "imagePath": "/mocks/images/perfumers/michel-almairac.jpg",
+      "imagePath": "/scentdb-ui/mocks/images/perfumers/michel-almairac.jpg",
       "company": {
         "companyId": 242,
         "name": "Chloé",
         "website": "",
         "description": null,
         "companyType": "DESIGNER",
-        "imagePath": "/mocks/images/companies/1b444e01f0ea48cd6bcf10b9324ddff3.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/1b444e01f0ea48cd6bcf10b9324ddff3.jpg"
       },
       "perfumes": [
         {
@@ -352,11 +352,11 @@
           "images": [
             {
               "perfumeImageId": 245,
-              "imagePath": "/mocks/images/perfumes/P56648_principal.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/P56648_principal.jpg"
             },
             {
               "perfumeImageId": 246,
-              "imagePath": "/mocks/images/perfumes/res_aa0e0c710f01dc743ed2aebd4ab61dfe.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/res_aa0e0c710f01dc743ed2aebd4ab61dfe.jpg"
             }
           ]
         }
@@ -366,14 +366,14 @@
       "perfumerId": 165,
       "name": "Olivier Creed",
       "details": null,
-      "imagePath": "/mocks/images/perfumers/o.164.jpg",
+      "imagePath": "/scentdb-ui/mocks/images/perfumers/o.164.jpg",
       "company": {
         "companyId": 164,
         "name": "Creed",
         "website": "",
         "description": null,
         "companyType": "NICHE",
-        "imagePath": "/mocks/images/companies/creed_silver_mountain_water_edp_perfume_for_men_120ml_1_1200x1200.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/creed_silver_mountain_water_edp_perfume_for_men_120ml_1_1200x1200.jpg"
       },
       "perfumes": [
         {
@@ -416,15 +416,15 @@
           "images": [
             {
               "perfumeImageId": 167,
-              "imagePath": "/mocks/images/perfumes/nm_2220365_100000_c.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/nm_2220365_100000_c.jpg"
             },
             {
               "perfumeImageId": 169,
-              "imagePath": "/mocks/images/perfumes/9438_e3b0786cdb9e3bd42c201f83b425ecf4.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/9438_e3b0786cdb9e3bd42c201f83b425ecf4.jpg"
             },
             {
               "perfumeImageId": 168,
-              "imagePath": "/mocks/images/perfumes/9438_img-3926-creed-aventus_eau_de_parfum_720.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/9438_img-3926-creed-aventus_eau_de_parfum_720.jpg"
             }
           ]
         }
@@ -434,14 +434,14 @@
       "perfumerId": 200,
       "name": "Olivier Polge",
       "details": null,
-      "imagePath": "/mocks/images/perfumers/Olivier-Polge-3.jpg",
+      "imagePath": "/scentdb-ui/mocks/images/perfumers/Olivier-Polge-3.jpg",
       "company": {
         "companyId": 196,
         "name": "Lancôme",
         "website": "",
         "description": null,
         "companyType": "NICHE",
-        "imagePath": "/mocks/images/companies/lancome-3-logo-png-transparent.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/lancome-3-logo-png-transparent.jpg"
       },
       "perfumes": [
         {
@@ -481,11 +481,11 @@
           "images": [
             {
               "perfumeImageId": 202,
-              "imagePath": "/mocks/images/perfumes/18914_t4ou5s_la_vie_est_belle_720.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/18914_t4ou5s_la_vie_est_belle_720.jpg"
             },
             {
               "perfumeImageId": 203,
-              "imagePath": "/mocks/images/perfumes/18914_a1f4d62b950d491f10ddef247201f246_la_vie_est_belle.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/18914_a1f4d62b950d491f10ddef247201f246_la_vie_est_belle.jpg"
             }
           ]
         },
@@ -521,15 +521,15 @@
           "images": [
             {
               "perfumeImageId": 240,
-              "imagePath": "/mocks/images/perfumes/19424_acsbdy_florabotanica_720.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/19424_acsbdy_florabotanica_720.jpg"
             },
             {
               "perfumeImageId": 241,
-              "imagePath": "/mocks/images/perfumes/19424_11bf70aa745552cfd09d746ded877a42_florabotanica.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/19424_11bf70aa745552cfd09d746ded877a42_florabotanica.jpg"
             },
             {
               "perfumeImageId": 239,
-              "imagePath": "/mocks/images/perfumes/19424_ecc32fece728516add7be1970f142827_florabotanica.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/19424_ecc32fece728516add7be1970f142827_florabotanica.jpg"
             }
           ]
         }

@@ -4,55 +4,55 @@
       "description": null,
       "noteId": 139,
       "name": "Frangipani",
-      "imgPath": "/mocks/images/notes/photo-1579977338243-d5017ac698e6.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/photo-1579977338243-d5017ac698e6.jpg"
     },
     {
       "description": null,
       "noteId": 184,
       "name": "May Rose",
-      "imgPath": "/mocks/images/notes/Rose%20de%20Mai%20Absolue.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/Rose%20de%20Mai%20Absolue.jpg"
     },
     {
       "description": null,
       "noteId": 189,
       "name": "Myrrh",
-      "imgPath": "/mocks/images/notes/myrrh-gum.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/myrrh-gum.jpg"
     },
     {
       "description": null,
       "noteId": 198,
       "name": "Pear",
-      "imgPath": "/mocks/images/notes/photo-1607863156356-241cfc99670b.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/photo-1607863156356-241cfc99670b.jpg"
     },
     {
       "description": null,
       "noteId": 161,
       "name": "Blackcurrant",
-      "imgPath": "/mocks/images/notes/70.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/70.jpg"
     },
     {
       "description": null,
       "noteId": 170,
       "name": "Clary Sage",
-      "imgPath": "/mocks/images/notes/OClarySageOil2_400x400_crop_center@2x.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/OClarySageOil2_400x400_crop_center@2x.jpg"
     },
     {
       "description": null,
       "noteId": 130,
       "name": "Ambergris",
-      "imgPath": "/mocks/images/notes/Whale-vomit.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/Whale-vomit.jpg"
     },
     {
       "description": null,
       "noteId": 179,
       "name": "Brazilian rosewood",
-      "imgPath": "/mocks/images/notes/newly-felled-rosewood-tree.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/newly-felled-rosewood-tree.jpg"
     },
     {
       "description": null,
       "noteId": 106,
       "name": "Viola",
-      "imgPath": "/mocks/images/notes/f37b527895509749de3374f4b8e84521.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/f37b527895509749de3374f4b8e84521.jpg"
     }
   ],
   "pageable": {

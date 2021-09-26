@@ -4,55 +4,55 @@
       "description": null,
       "noteId": 129,
       "name": "Ylang-ylang",
-      "imgPath": "/mocks/images/notes/ylang-ylang-tree.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/ylang-ylang-tree.jpg"
     },
     {
       "description": null,
       "noteId": 138,
       "name": "Coriander",
-      "imgPath": "/mocks/images/notes/coriander.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/coriander.jpg"
     },
     {
       "description": null,
       "noteId": 160,
       "name": "Pineapple",
-      "imgPath": "/mocks/images/notes/photo-1490885578174-acda8905c2c6.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/photo-1490885578174-acda8905c2c6.jpg"
     },
     {
       "description": null,
       "noteId": 87,
       "name": "Bergamot",
-      "imgPath": "/mocks/images/notes/13-bergamot-teaser.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/13-bergamot-teaser.jpg"
     },
     {
       "description": null,
       "noteId": 133,
       "name": "Vetiver",
-      "imgPath": "/mocks/images/notes/vetiveria-essential-oil-550x550.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/vetiveria-essential-oil-550x550.jpg"
     },
     {
       "description": null,
       "noteId": 183,
       "name": "Osmanthus",
-      "imgPath": "/mocks/images/notes/shutterstock_1204675573Optimized.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/shutterstock_1204675573Optimized.jpg"
     },
     {
       "description": null,
       "noteId": 192,
       "name": "Cedarwood",
-      "imgPath": "/mocks/images/notes/Virginia+Cedarwood.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/Virginia+Cedarwood.jpg"
     },
     {
       "description": null,
       "noteId": 154,
       "name": "Carnation",
-      "imgPath": "/mocks/images/notes/Dianthus-5.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/Dianthus-5.jpg"
     },
     {
       "description": null,
       "noteId": 88,
       "name": "Iris",
-      "imgPath": "/mocks/images/notes/Iris_sanguinea_09501.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/Iris_sanguinea_09501.jpg"
     }
   ],
   "pageable": {

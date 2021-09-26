@@ -6,13 +6,13 @@
       "website": "",
       "description": null,
       "companyType": "DESIGNER",
-      "imagePath": "/mocks/images/companies/1-giorgio-armani-logo-edit-voros.jpg",
+      "imagePath": "/scentdb-ui/mocks/images/companies/1-giorgio-armani-logo-edit-voros.jpg",
       "perfumers": [
         {
           "perfumerId": 214,
           "name": "Alberto Morillas",
           "details": null,
-          "imagePath": "/mocks/images/perfumers/alberto_0.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumers/alberto_0.jpg"
         }
       ],
       "perfumes": [
@@ -28,7 +28,7 @@
             "perfumerId": 173,
             "name": "Sophie Labbé",
             "details": null,
-            "imagePath": "/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
           },
           "perfumeNotes": [
             {
@@ -56,11 +56,11 @@
           "images": [
             {
               "perfumeImageId": 187,
-              "imagePath": "/mocks/images/perfumes/77511_ktg5kd_armani_prive__cuir_majeste_720.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/77511_ktg5kd_armani_prive__cuir_majeste_720.jpg"
             },
             {
               "perfumeImageId": 188,
-              "imagePath": "/mocks/images/perfumes/15787271_28719793_2048.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/15787271_28719793_2048.jpg"
             }
           ]
         },
@@ -76,7 +76,7 @@
             "perfumerId": 214,
             "name": "Alberto Morillas",
             "details": null,
-            "imagePath": "/mocks/images/perfumers/alberto_0.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumers/alberto_0.jpg"
           },
           "perfumeNotes": [
             {
@@ -105,15 +105,15 @@
           "images": [
             {
               "perfumeImageId": 217,
-              "imagePath": "/mocks/images/perfumes/56294_p5vysd_acqua_di_gio_profumo_720.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/56294_p5vysd_acqua_di_gio_profumo_720.jpg"
             },
             {
               "perfumeImageId": 218,
-              "imagePath": "/mocks/images/perfumes/56294_05e8341af01520f77b58b5c2ca9c7b5f_acqua_di_gio_profumo.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/56294_05e8341af01520f77b58b5c2ca9c7b5f_acqua_di_gio_profumo.jpg"
             },
             {
               "perfumeImageId": 219,
-              "imagePath": "/mocks/images/perfumes/56294_923b57e613e6f0acbf779d3d3d2bf6ba_acqua_di_gio_profumo.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/56294_923b57e613e6f0acbf779d3d3d2bf6ba_acqua_di_gio_profumo.jpg"
             }
           ]
         }
@@ -125,7 +125,7 @@
       "website": "",
       "description": null,
       "companyType": "NICHE",
-      "imagePath": "/mocks/images/companies/PARFUM%20DE%20MARLY-Logo-01.jpg",
+      "imagePath": "/scentdb-ui/mocks/images/companies/PARFUM%20DE%20MARLY-Logo-01.jpg",
       "perfumers": [],
       "perfumes": [
         {
@@ -140,7 +140,7 @@
             "perfumerId": 115,
             "name": "Hamid Merati-Kashani",
             "details": null,
-            "imagePath": "/mocks/images/perfumers/Firmenich_AG_HAMID_MERATI_COULEUR25538.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumers/Firmenich_AG_HAMID_MERATI_COULEUR25538.jpg"
           },
           "perfumeNotes": [
             {
@@ -175,11 +175,11 @@
           "images": [
             {
               "perfumeImageId": 117,
-              "imagePath": "/mocks/images/perfumes/71892_img-5479-parfums_de_marly-layton_720.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/71892_img-5479-parfums_de_marly-layton_720.jpg"
             },
             {
               "perfumeImageId": 118,
-              "imagePath": "/mocks/images/perfumes/293829.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/293829.jpg"
             }
           ]
         }
@@ -191,13 +191,13 @@
       "website": "",
       "description": null,
       "companyType": "DESIGNER",
-      "imagePath": "/mocks/images/companies/26163.jpg",
+      "imagePath": "/scentdb-ui/mocks/images/companies/26163.jpg",
       "perfumers": [
         {
           "perfumerId": 178,
           "name": "Richard Herpin",
           "details": null,
-          "imagePath": "/mocks/images/perfumers/86678ad11433ea382642391440381553.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumers/86678ad11433ea382642391440381553.jpg"
         }
       ],
       "perfumes": [
@@ -213,7 +213,7 @@
             "perfumerId": 178,
             "name": "Richard Herpin",
             "details": null,
-            "imagePath": "/mocks/images/perfumers/86678ad11433ea382642391440381553.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumers/86678ad11433ea382642391440381553.jpg"
           },
           "perfumeNotes": [
             {
@@ -242,7 +242,7 @@
           "images": [
             {
               "perfumeImageId": 182,
-              "imagePath": "/mocks/images/perfumes/3840_img-6645-tom_ford-oud_wood_eau_de_parfum_720.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/3840_img-6645-tom_ford-oud_wood_eau_de_parfum_720.jpg"
             }
           ]
         }
@@ -254,7 +254,7 @@
       "website": "",
       "description": null,
       "companyType": "NICHE",
-      "imagePath": "/mocks/images/companies/xerjoff-logo-300x300.jpg",
+      "imagePath": "/scentdb-ui/mocks/images/companies/xerjoff-logo-300x300.jpg",
       "perfumers": [],
       "perfumes": [
         {
@@ -269,7 +269,7 @@
             "perfumerId": 173,
             "name": "Sophie Labbé",
             "details": null,
-            "imagePath": "/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
           },
           "perfumeNotes": [
             {
@@ -301,7 +301,7 @@
           "images": [
             {
               "perfumeImageId": 195,
-              "imagePath": "/mocks/images/perfumes/33185_img-5376-xerjoff-shooting_stars__amber_star_720.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/33185_img-5376-xerjoff-shooting_stars__amber_star_720.jpg"
             }
           ]
         }
@@ -313,13 +313,13 @@
       "website": "",
       "description": null,
       "companyType": "NICHE",
-      "imagePath": "/mocks/images/companies/lancome-3-logo-png-transparent.jpg",
+      "imagePath": "/scentdb-ui/mocks/images/companies/lancome-3-logo-png-transparent.jpg",
       "perfumers": [
         {
           "perfumerId": 200,
           "name": "Olivier Polge",
           "details": null,
-          "imagePath": "/mocks/images/perfumers/Olivier-Polge-3.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumers/Olivier-Polge-3.jpg"
         }
       ],
       "perfumes": [
@@ -335,7 +335,7 @@
             "perfumerId": 200,
             "name": "Olivier Polge",
             "details": null,
-            "imagePath": "/mocks/images/perfumers/Olivier-Polge-3.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumers/Olivier-Polge-3.jpg"
           },
           "perfumeNotes": [
             {
@@ -366,11 +366,11 @@
           "images": [
             {
               "perfumeImageId": 202,
-              "imagePath": "/mocks/images/perfumes/18914_t4ou5s_la_vie_est_belle_720.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/18914_t4ou5s_la_vie_est_belle_720.jpg"
             },
             {
               "perfumeImageId": 203,
-              "imagePath": "/mocks/images/perfumes/18914_a1f4d62b950d491f10ddef247201f246_la_vie_est_belle.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/18914_a1f4d62b950d491f10ddef247201f246_la_vie_est_belle.jpg"
             }
           ]
         }
@@ -382,13 +382,13 @@
       "website": "",
       "description": null,
       "companyType": "DESIGNER",
-      "imagePath": "/mocks/images/companies/1b444e01f0ea48cd6bcf10b9324ddff3.jpg",
+      "imagePath": "/scentdb-ui/mocks/images/companies/1b444e01f0ea48cd6bcf10b9324ddff3.jpg",
       "perfumers": [
         {
           "perfumerId": 243,
           "name": "Michel Almairac",
           "details": null,
-          "imagePath": "/mocks/images/perfumers/michel-almairac.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumers/michel-almairac.jpg"
         }
       ],
       "perfumes": [
@@ -404,7 +404,7 @@
             "perfumerId": 243,
             "name": "Michel Almairac",
             "details": null,
-            "imagePath": "/mocks/images/perfumers/michel-almairac.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumers/michel-almairac.jpg"
           },
           "perfumeNotes": [
             {
@@ -430,11 +430,11 @@
           "images": [
             {
               "perfumeImageId": 245,
-              "imagePath": "/mocks/images/perfumes/P56648_principal.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/P56648_principal.jpg"
             },
             {
               "perfumeImageId": 246,
-              "imagePath": "/mocks/images/perfumes/res_aa0e0c710f01dc743ed2aebd4ab61dfe.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/res_aa0e0c710f01dc743ed2aebd4ab61dfe.jpg"
             }
           ]
         }
@@ -446,13 +446,13 @@
       "website": "",
       "description": null,
       "companyType": "NICHE",
-      "imagePath": "/mocks/images/companies/Firmenich.jpg",
+      "imagePath": "/scentdb-ui/mocks/images/companies/Firmenich.jpg",
       "perfumers": [
         {
           "perfumerId": 115,
           "name": "Hamid Merati-Kashani",
           "details": null,
-          "imagePath": "/mocks/images/perfumers/Firmenich_AG_HAMID_MERATI_COULEUR25538.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumers/Firmenich_AG_HAMID_MERATI_COULEUR25538.jpg"
         }
       ],
       "perfumes": []
@@ -463,13 +463,13 @@
       "website": "",
       "description": null,
       "companyType": "DESIGNER",
-      "imagePath": "/mocks/images/companies/1024px-Valentino_logo.svg.jpg",
+      "imagePath": "/scentdb-ui/mocks/images/companies/1024px-Valentino_logo.svg.jpg",
       "perfumers": [
         {
           "perfumerId": 173,
           "name": "Sophie Labbé",
           "details": null,
-          "imagePath": "/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
         }
       ],
       "perfumes": [
@@ -485,7 +485,7 @@
             "perfumerId": 173,
             "name": "Sophie Labbé",
             "details": null,
-            "imagePath": "/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
           },
           "perfumeNotes": [
             {
@@ -513,11 +513,11 @@
           "images": [
             {
               "perfumeImageId": 175,
-              "imagePath": "/mocks/images/perfumes/73759_img-4379-valentino-valentino_uomo_intense_720.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/73759_img-4379-valentino-valentino_uomo_intense_720.jpg"
             },
             {
               "perfumeImageId": 176,
-              "imagePath": "/mocks/images/perfumes/73759_3cb9cff940e7a342bed5525d0e5e2d5b_valentino_uomo_intense.jpg"
+              "imagePath": "/scentdb-ui/mocks/images/perfumes/73759_3cb9cff940e7a342bed5525d0e5e2d5b_valentino_uomo_intense.jpg"
             }
           ]
         }

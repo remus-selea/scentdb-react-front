@@ -4,55 +4,55 @@
       "description": null,
       "noteId": 204,
       "name": "Coffee",
-      "imgPath": "/mocks/images/notes/photo-1540965555-ef9a836372ed.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/photo-1540965555-ef9a836372ed.jpg"
     },
     {
       "description": null,
       "noteId": 131,
       "name": "Oakmoss",
-      "imgPath": "/mocks/images/notes/Oakmoss.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/Oakmoss.jpg"
     },
     {
       "description": null,
       "noteId": 190,
       "name": "Opoponax",
-      "imgPath": "/mocks/images/notes/opoponax.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/opoponax.jpg"
     },
     {
       "description": null,
       "noteId": 89,
       "name": "Jasmine",
-      "imgPath": "/mocks/images/notes/jasmine-plants.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/jasmine-plants.jpg"
     },
     {
       "description": null,
       "noteId": 163,
       "name": "Juniper Berry",
-      "imgPath": "/mocks/images/notes/Juniper-Berry.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/Juniper-Berry.jpg"
     },
     {
       "description": null,
       "noteId": 180,
       "name": "Agarwood",
-      "imgPath": "/mocks/images/notes/agarwood.jpeg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/agarwood.jpeg"
     },
     {
       "description": null,
       "noteId": 199,
       "name": "Praliné",
-      "imgPath": "/mocks/images/notes/photo-1579440676594-3fef6d6ef538.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/photo-1579440676594-3fef6d6ef538.jpg"
     },
     {
       "description": null,
       "noteId": 162,
       "name": "Birch",
-      "imgPath": "/mocks/images/notes/photo-1507614498949-edbabc86a14f.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/photo-1507614498949-edbabc86a14f.jpg"
     },
     {
       "description": null,
       "noteId": 171,
       "name": "Leather",
-      "imgPath": "/mocks/images/notes/leather.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/leather.jpg"
     }
   ],
   "pageable": {

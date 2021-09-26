@@ -3,14 +3,14 @@
     "perfumerId": 86,
     "name": "Jacques Guerlain",
     "details": "\"<p>Jacques Edouard Guerlain was a French perfumer, the third and most famous of the Guerlain family. One of the most prolific and influential perfumers of the 20th century, over eighty of Guerlain's perfumes remain known, though certain estimates suggest he composed some four hundred.</p>\"",
-    "imagePath": "/mocks/images/perfumers/jacques-guerlain.jpg",
+    "imagePath": "/scentdb-ui/mocks/images/perfumers/jacques-guerlain.jpg",
     "company": {
       "companyId": 85,
       "name": "Guerlain",
       "website": "https://www.guerlain.com/",
       "description": "\"<p>Guerlain is one of the oldest and largest among international producers of high-quality beauty products.</p>\"",
       "companyType": "NICHE",
-      "imagePath": "/mocks/images/companies/guerlain-logo-png-Transparent-Images.png"
+      "imagePath": "/scentdb-ui/mocks/images/companies/guerlain-logo-png-Transparent-Images.png"
     },
     "perfumes": [
       {
@@ -47,11 +47,11 @@
         "images": [
           {
             "perfumeImageId": 101,
-            "imagePath": "/mocks/images/perfumes/guerlain-shalimar-eau-de-parfum-pentru-femei___12%20(1).jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/guerlain-shalimar-eau-de-parfum-pentru-femei___12%20(1).jpg"
           },
           {
             "perfumeImageId": 102,
-            "imagePath": "/mocks/images/perfumes/guerlain-shalimar-eau-de-parfum-pentru-femei___12.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/guerlain-shalimar-eau-de-parfum-pentru-femei___12.jpg"
           }
         ]
       },
@@ -95,7 +95,7 @@
         "images": [
           {
             "perfumeImageId": 136,
-            "imagePath": "/mocks/images/perfumes/50ml-199lei_edttt.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/50ml-199lei_edttt.jpg"
           }
         ]
       }
@@ -105,14 +105,14 @@
     "perfumerId": 115,
     "name": "Hamid Merati-Kashani",
     "details": null,
-    "imagePath": "/mocks/images/perfumers/Firmenich_AG_HAMID_MERATI_COULEUR25538.jpg",
+    "imagePath": "/scentdb-ui/mocks/images/perfumers/Firmenich_AG_HAMID_MERATI_COULEUR25538.jpg",
     "company": {
       "companyId": 114,
       "name": "Firmenich",
       "website": "",
       "description": null,
       "companyType": "NICHE",
-      "imagePath": "/mocks/images/companies/Firmenich.jpg"
+      "imagePath": "/scentdb-ui/mocks/images/companies/Firmenich.jpg"
     },
     "perfumes": [
       {
@@ -156,11 +156,11 @@
         "images": [
           {
             "perfumeImageId": 118,
-            "imagePath": "/mocks/images/perfumes/293829.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/293829.jpg"
           },
           {
             "perfumeImageId": 117,
-            "imagePath": "/mocks/images/perfumes/71892_img-5479-parfums_de_marly-layton_720.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/71892_img-5479-parfums_de_marly-layton_720.jpg"
           }
         ]
       }
@@ -170,14 +170,14 @@
     "perfumerId": 122,
     "name": "François Demachy",
     "details": null,
-    "imagePath": "/mocks/images/perfumers/06Y0184_HR.jpg",
+    "imagePath": "/scentdb-ui/mocks/images/perfumers/06Y0184_HR.jpg",
     "company": {
       "companyId": 121,
       "name": "Dior",
       "website": "",
       "description": null,
       "companyType": "DESIGNER",
-      "imagePath": "/mocks/images/companies/ac452a99938c35aa0519d215b13ab9ee.png"
+      "imagePath": "/scentdb-ui/mocks/images/companies/ac452a99938c35aa0519d215b13ab9ee.png"
     },
     "perfumes": [
       {
@@ -211,11 +211,11 @@
         "images": [
           {
             "perfumeImageId": 125,
-            "imagePath": "/mocks/images/perfumes/13889_img-2650-dior-christian-dior-dior-homme-intense-2011_720.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/13889_img-2650-dior-christian-dior-dior-homme-intense-2011_720.jpg"
           },
           {
             "perfumeImageId": 124,
-            "imagePath": "/mocks/images/perfumes/dior-homme-intense-edp-150ml_big.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/dior-homme-intense-edp-150ml_big.jpg"
           }
         ]
       }
@@ -225,14 +225,14 @@
     "perfumerId": 147,
     "name": "Jacques Polge",
     "details": null,
-    "imagePath": "/mocks/images/perfumers/101850336_2342590866046808_3044476289185480704_n.jpg",
+    "imagePath": "/scentdb-ui/mocks/images/perfumers/101850336_2342590866046808_3044476289185480704_n.jpg",
     "company": {
       "companyId": 146,
       "name": "Chanel",
       "website": "",
       "description": null,
       "companyType": "DESIGNER",
-      "imagePath": "/mocks/images/companies/_1513770089_693_chanel1_3f16706be8a9-desktop.jpg"
+      "imagePath": "/scentdb-ui/mocks/images/companies/_1513770089_693_chanel1_3f16706be8a9-desktop.jpg"
     },
     "perfumes": [
       {
@@ -281,7 +281,7 @@
         "images": [
           {
             "perfumeImageId": 150,
-            "imagePath": "/mocks/images/perfumes/coco-parfum-0-5fl-oz--packshot-default-113032-8824202526750.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/coco-parfum-0-5fl-oz--packshot-default-113032-8824202526750.jpg"
           }
         ]
       }
@@ -291,14 +291,14 @@
     "perfumerId": 157,
     "name": "Edmond Roudnitska",
     "details": null,
-    "imagePath": "/mocks/images/perfumers/olivier-maure.jpg",
+    "imagePath": "/scentdb-ui/mocks/images/perfumers/olivier-maure.jpg",
     "company": {
       "companyId": 121,
       "name": "Dior",
       "website": "",
       "description": null,
       "companyType": "DESIGNER",
-      "imagePath": "/mocks/images/companies/ac452a99938c35aa0519d215b13ab9ee.png"
+      "imagePath": "/scentdb-ui/mocks/images/companies/ac452a99938c35aa0519d215b13ab9ee.png"
     },
     "perfumes": [
       {
@@ -342,7 +342,7 @@
         "images": [
           {
             "perfumeImageId": 159,
-            "imagePath": "/mocks/images/perfumes/miss-dior-originale.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/miss-dior-originale.jpg"
           }
         ]
       }
@@ -352,14 +352,14 @@
     "perfumerId": 165,
     "name": "Olivier Creed",
     "details": null,
-    "imagePath": "/mocks/images/perfumers/o.164.jpg",
+    "imagePath": "/scentdb-ui/mocks/images/perfumers/o.164.jpg",
     "company": {
       "companyId": 164,
       "name": "Creed",
       "website": "",
       "description": null,
       "companyType": "NICHE",
-      "imagePath": "/mocks/images/companies/creed_silver_mountain_water_edp_perfume_for_men_120ml_1_1200x1200.jpg"
+      "imagePath": "/scentdb-ui/mocks/images/companies/creed_silver_mountain_water_edp_perfume_for_men_120ml_1_1200x1200.jpg"
     },
     "perfumes": [
       {
@@ -402,15 +402,15 @@
         "images": [
           {
             "perfumeImageId": 168,
-            "imagePath": "/mocks/images/perfumes/9438_img-3926-creed-aventus_eau_de_parfum_720.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/9438_img-3926-creed-aventus_eau_de_parfum_720.jpg"
           },
           {
             "perfumeImageId": 167,
-            "imagePath": "/mocks/images/perfumes/nm_2220365_100000_c.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/nm_2220365_100000_c.jpg"
           },
           {
             "perfumeImageId": 169,
-            "imagePath": "/mocks/images/perfumes/9438_e3b0786cdb9e3bd42c201f83b425ecf4.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/9438_e3b0786cdb9e3bd42c201f83b425ecf4.jpg"
           }
         ]
       }
@@ -420,14 +420,14 @@
     "perfumerId": 173,
     "name": "Sophie Labbé",
     "details": null,
-    "imagePath": "/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg",
+    "imagePath": "/scentdb-ui/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg",
     "company": {
       "companyId": 172,
       "name": "Valentino",
       "website": "",
       "description": null,
       "companyType": "DESIGNER",
-      "imagePath": "/mocks/images/companies/1024px-Valentino_logo.svg.png"
+      "imagePath": "/scentdb-ui/mocks/images/companies/1024px-Valentino_logo.svg.png"
     },
     "perfumes": [
       {
@@ -464,11 +464,11 @@
         "images": [
           {
             "perfumeImageId": 187,
-            "imagePath": "/mocks/images/perfumes/77511_ktg5kd_armani_prive__cuir_majeste_720.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/77511_ktg5kd_armani_prive__cuir_majeste_720.jpg"
           },
           {
             "perfumeImageId": 188,
-            "imagePath": "/mocks/images/perfumes/15787271_28719793_2048.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/15787271_28719793_2048.jpg"
           }
         ]
       },
@@ -510,7 +510,7 @@
         "images": [
           {
             "perfumeImageId": 195,
-            "imagePath": "/mocks/images/perfumes/33185_img-5376-xerjoff-shooting_stars__amber_star_720.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/33185_img-5376-xerjoff-shooting_stars__amber_star_720.jpg"
           }
         ]
       },
@@ -548,11 +548,11 @@
         "images": [
           {
             "perfumeImageId": 176,
-            "imagePath": "/mocks/images/perfumes/73759_3cb9cff940e7a342bed5525d0e5e2d5b_valentino_uomo_intense.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/73759_3cb9cff940e7a342bed5525d0e5e2d5b_valentino_uomo_intense.jpg"
           },
           {
             "perfumeImageId": 175,
-            "imagePath": "/mocks/images/perfumes/73759_img-4379-valentino-valentino_uomo_intense_720.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/73759_img-4379-valentino-valentino_uomo_intense_720.jpg"
           }
         ]
       }
@@ -562,14 +562,14 @@
     "perfumerId": 178,
     "name": "Richard Herpin",
     "details": null,
-    "imagePath": "/mocks/images/perfumers/86678ad11433ea382642391440381553.jpg",
+    "imagePath": "/scentdb-ui/mocks/images/perfumers/86678ad11433ea382642391440381553.jpg",
     "company": {
       "companyId": 177,
       "name": "Tom Ford",
       "website": "",
       "description": null,
       "companyType": "DESIGNER",
-      "imagePath": "/mocks/images/companies/26163.png"
+      "imagePath": "/scentdb-ui/mocks/images/companies/26163.png"
     },
     "perfumes": [
       {
@@ -607,7 +607,7 @@
         "images": [
           {
             "perfumeImageId": 182,
-            "imagePath": "/mocks/images/perfumes/3840_img-6645-tom_ford-oud_wood_eau_de_parfum_720.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/3840_img-6645-tom_ford-oud_wood_eau_de_parfum_720.jpg"
           }
         ]
       }
@@ -617,14 +617,14 @@
     "perfumerId": 200,
     "name": "Olivier Polge",
     "details": null,
-    "imagePath": "/mocks/images/perfumers/Olivier-Polge-3.png",
+    "imagePath": "/scentdb-ui/mocks/images/perfumers/Olivier-Polge-3.png",
     "company": {
       "companyId": 196,
       "name": "Lancôme",
       "website": "",
       "description": null,
       "companyType": "NICHE",
-      "imagePath": "/mocks/images/companies/lancome-3-logo-png-transparent.png"
+      "imagePath": "/scentdb-ui/mocks/images/companies/lancome-3-logo-png-transparent.png"
     },
     "perfumes": [
       {
@@ -664,11 +664,11 @@
         "images": [
           {
             "perfumeImageId": 203,
-            "imagePath": "/mocks/images/perfumes/18914_a1f4d62b950d491f10ddef247201f246_la_vie_est_belle.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/18914_a1f4d62b950d491f10ddef247201f246_la_vie_est_belle.jpg"
           },
           {
             "perfumeImageId": 202,
-            "imagePath": "/mocks/images/perfumes/18914_t4ou5s_la_vie_est_belle_720.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/18914_t4ou5s_la_vie_est_belle_720.jpg"
           }
         ]
       },
@@ -704,15 +704,15 @@
         "images": [
           {
             "perfumeImageId": 239,
-            "imagePath": "/mocks/images/perfumes/19424_ecc32fece728516add7be1970f142827_florabotanica.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/19424_ecc32fece728516add7be1970f142827_florabotanica.jpg"
           },
           {
             "perfumeImageId": 240,
-            "imagePath": "/mocks/images/perfumes/19424_acsbdy_florabotanica_720.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/19424_acsbdy_florabotanica_720.jpg"
           },
           {
             "perfumeImageId": 241,
-            "imagePath": "/mocks/images/perfumes/19424_11bf70aa745552cfd09d746ded877a42_florabotanica.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/19424_11bf70aa745552cfd09d746ded877a42_florabotanica.jpg"
           }
         ]
       }
@@ -722,14 +722,14 @@
     "perfumerId": 205,
     "name": "Nathalie Lorson",
     "details": null,
-    "imagePath": "/mocks/images/perfumers/Firmenich_AG_NATHALIE_LORSON_COULEUR23370_credit_Alexandre_Guirkinger.jpg",
+    "imagePath": "/scentdb-ui/mocks/images/perfumers/Firmenich_AG_NATHALIE_LORSON_COULEUR23370_credit_Alexandre_Guirkinger.jpg",
     "company": {
       "companyId": 197,
       "name": "Yves Saint Laurent",
       "website": "",
       "description": null,
       "companyType": "DESIGNER",
-      "imagePath": "/mocks/images/companies/Yves_Saint_Laurent_logo_and_symbol.png"
+      "imagePath": "/scentdb-ui/mocks/images/companies/Yves_Saint_Laurent_logo_and_symbol.png"
     },
     "perfumes": [
       {
@@ -767,11 +767,11 @@
         "images": [
           {
             "perfumeImageId": 207,
-            "imagePath": "/mocks/images/perfumes/45685_img-8962-yves_saint_laurent-black_opium_eau_de_parfum_720.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/45685_img-8962-yves_saint_laurent-black_opium_eau_de_parfum_720.jpg"
           },
           {
             "perfumeImageId": 208,
-            "imagePath": "/mocks/images/perfumes/45685_bdb3d32b6e42456b8b8b750bc69646d2_black_opium.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/45685_bdb3d32b6e42456b8b8b750bc69646d2_black_opium.jpg"
           }
         ]
       }
@@ -781,14 +781,14 @@
     "perfumerId": 210,
     "name": "Anne Flipo",
     "details": null,
-    "imagePath": "/mocks/images/perfumers/Anne-Flipo-Portrait-1.jpg",
+    "imagePath": "/scentdb-ui/mocks/images/perfumers/Anne-Flipo-Portrait-1.jpg",
     "company": {
       "companyId": 197,
       "name": "Yves Saint Laurent",
       "website": "",
       "description": null,
       "companyType": "DESIGNER",
-      "imagePath": "/mocks/images/companies/Yves_Saint_Laurent_logo_and_symbol.png"
+      "imagePath": "/scentdb-ui/mocks/images/companies/Yves_Saint_Laurent_logo_and_symbol.png"
     },
     "perfumes": [
       {
@@ -826,11 +826,11 @@
         "images": [
           {
             "perfumeImageId": 213,
-            "imagePath": "/mocks/images/perfumes/61r32iYtNkL._SL1500_.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/61r32iYtNkL._SL1500_.jpg"
           },
           {
             "perfumeImageId": 212,
-            "imagePath": "/mocks/images/perfumes/1844_img-6527-yves_saint_laurent-la_nuit_de_l_homme_eau_de_toilette_720.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/1844_img-6527-yves_saint_laurent-la_nuit_de_l_homme_eau_de_toilette_720.jpg"
           }
         ]
       }
@@ -840,14 +840,14 @@
     "perfumerId": 214,
     "name": "Alberto Morillas",
     "details": null,
-    "imagePath": "/mocks/images/perfumers/alberto_0.jpg",
+    "imagePath": "/scentdb-ui/mocks/images/perfumers/alberto_0.jpg",
     "company": {
       "companyId": 185,
       "name": "Giorgio Armani",
       "website": "",
       "description": null,
       "companyType": "DESIGNER",
-      "imagePath": "/mocks/images/companies/1-giorgio-armani-logo-edit-voros.jpg"
+      "imagePath": "/scentdb-ui/mocks/images/companies/1-giorgio-armani-logo-edit-voros.jpg"
     },
     "perfumes": [
       {
@@ -885,15 +885,15 @@
         "images": [
           {
             "perfumeImageId": 217,
-            "imagePath": "/mocks/images/perfumes/56294_p5vysd_acqua_di_gio_profumo_720.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/56294_p5vysd_acqua_di_gio_profumo_720.jpg"
           },
           {
             "perfumeImageId": 219,
-            "imagePath": "/mocks/images/perfumes/56294_923b57e613e6f0acbf779d3d3d2bf6ba_acqua_di_gio_profumo.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/56294_923b57e613e6f0acbf779d3d3d2bf6ba_acqua_di_gio_profumo.jpg"
           },
           {
             "perfumeImageId": 218,
-            "imagePath": "/mocks/images/perfumes/56294_05e8341af01520f77b58b5c2ca9c7b5f_acqua_di_gio_profumo.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/56294_05e8341af01520f77b58b5c2ca9c7b5f_acqua_di_gio_profumo.jpg"
           }
         ]
       }
@@ -903,14 +903,14 @@
     "perfumerId": 223,
     "name": "Dominique Ropion",
     "details": null,
-    "imagePath": "/mocks/images/perfumers/dominique-ropion-square-1.jpg",
+    "imagePath": "/scentdb-ui/mocks/images/perfumers/dominique-ropion-square-1.jpg",
     "company": {
       "companyId": 220,
       "name": "Editions de Parfums Frédéric Malle",
       "website": "",
       "description": null,
       "companyType": "NICHE",
-      "imagePath": "/mocks/images/companies/frederic-malle-1.png"
+      "imagePath": "/scentdb-ui/mocks/images/companies/frederic-malle-1.png"
     },
     "perfumes": [
       {
@@ -952,7 +952,7 @@
         "images": [
           {
             "perfumeImageId": 225,
-            "imagePath": "/mocks/images/perfumes/10407_img-9893-editions_de_parfums_frederic_malle-portrait_of_a_lady_720.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/10407_img-9893-editions_de_parfums_frederic_malle-portrait_of_a_lady_720.jpg"
           }
         ]
       }
@@ -962,14 +962,14 @@
     "perfumerId": 227,
     "name": "Lucas Sieuzac",
     "details": null,
-    "imagePath": "/mocks/images/perfumers/post-7.jpg",
+    "imagePath": "/scentdb-ui/mocks/images/perfumers/post-7.jpg",
     "company": {
       "companyId": 226,
       "name": "Amouage",
       "website": "",
       "description": null,
       "companyType": "NICHE",
-      "imagePath": "/mocks/images/companies/6429f3bdb07d4e6594d6c1cab67eb9a8.png"
+      "imagePath": "/scentdb-ui/mocks/images/companies/6429f3bdb07d4e6594d6c1cab67eb9a8.png"
     },
     "perfumes": [
       {
@@ -1010,11 +1010,11 @@
         "images": [
           {
             "perfumeImageId": 230,
-            "imagePath": "/mocks/images/perfumes/2057_img-4648-amouage-reflection_man_720.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/2057_img-4648-amouage-reflection_man_720.jpg"
           },
           {
             "perfumeImageId": 231,
-            "imagePath": "/mocks/images/perfumes/2057_fdae1df6be376f36390fc9015ac8c9fc_reflection_man.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/2057_fdae1df6be376f36390fc9015ac8c9fc_reflection_man.jpg"
           }
         ]
       }
@@ -1024,14 +1024,14 @@
     "perfumerId": 233,
     "name": "Roja Dove",
     "details": null,
-    "imagePath": "/mocks/images/perfumers/ROJA-MOSCOW_Edited.jpg",
+    "imagePath": "/scentdb-ui/mocks/images/perfumers/ROJA-MOSCOW_Edited.jpg",
     "company": {
       "companyId": 232,
       "name": "Roja Parfums",
       "website": "",
       "description": null,
       "companyType": "NICHE",
-      "imagePath": "/mocks/images/companies/Roja-logo.jpg"
+      "imagePath": "/scentdb-ui/mocks/images/companies/Roja-logo.jpg"
     },
     "perfumes": [
       {
@@ -1079,11 +1079,11 @@
         "images": [
           {
             "perfumeImageId": 235,
-            "imagePath": "/mocks/images/perfumes/92779_33496f08edfec3d35bcdbf2a5623f701_elysium_pour_homme_parfum_cologne.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/92779_33496f08edfec3d35bcdbf2a5623f701_elysium_pour_homme_parfum_cologne.jpg"
           },
           {
             "perfumeImageId": 236,
-            "imagePath": "/mocks/images/perfumes/92779_img-8091-roja_parfums-elysium_pour_homme_parfum_cologne_720.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/92779_img-8091-roja_parfums-elysium_pour_homme_parfum_cologne_720.jpg"
           }
         ]
       }
@@ -1093,14 +1093,14 @@
     "perfumerId": 243,
     "name": "Michel Almairac",
     "details": null,
-    "imagePath": "/mocks/images/perfumers/michel-almairac.jpg",
+    "imagePath": "/scentdb-ui/mocks/images/perfumers/michel-almairac.jpg",
     "company": {
       "companyId": 242,
       "name": "Chloé",
       "website": "",
       "description": null,
       "companyType": "DESIGNER",
-      "imagePath": "/mocks/images/companies/1b444e01f0ea48cd6bcf10b9324ddff3.jpg"
+      "imagePath": "/scentdb-ui/mocks/images/companies/1b444e01f0ea48cd6bcf10b9324ddff3.jpg"
     },
     "perfumes": [
       {
@@ -1135,11 +1135,11 @@
         "images": [
           {
             "perfumeImageId": 246,
-            "imagePath": "/mocks/images/perfumes/res_aa0e0c710f01dc743ed2aebd4ab61dfe.webp"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/res_aa0e0c710f01dc743ed2aebd4ab61dfe.webp"
           },
           {
             "perfumeImageId": 245,
-            "imagePath": "/mocks/images/perfumes/P56648_principal.webp"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/P56648_principal.webp"
           }
         ]
       }
@@ -1149,14 +1149,14 @@
     "perfumerId": 247,
     "name": "Annick Menardo",
     "details": null,
-    "imagePath": "/mocks/images/perfumers/annick-menardo-full.jpg",
+    "imagePath": "/scentdb-ui/mocks/images/perfumers/annick-menardo-full.jpg",
     "company": {
       "companyId": 121,
       "name": "Dior",
       "website": "",
       "description": null,
       "companyType": "DESIGNER",
-      "imagePath": "/mocks/images/companies/ac452a99938c35aa0519d215b13ab9ee.png"
+      "imagePath": "/scentdb-ui/mocks/images/companies/ac452a99938c35aa0519d215b13ab9ee.png"
     },
     "perfumes": [
       {
@@ -1193,7 +1193,7 @@
         "images": [
           {
             "perfumeImageId": 249,
-            "imagePath": "/mocks/images/perfumes/675_img-6131-dior-hypnotic_poison_eau_de_toilette_720.jpg"
+            "imagePath": "/scentdb-ui/mocks/images/perfumes/675_img-6131-dior-hypnotic_poison_eau_de_toilette_720.jpg"
           }
         ]
       }

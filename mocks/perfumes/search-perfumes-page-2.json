@@ -12,7 +12,7 @@
         "perfumerId": 243,
         "name": "Michel Almairac",
         "details": null,
-        "imagePath": "/mocks/images/perfumers/michel-almairac.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/michel-almairac.jpg"
       },
       "company": {
         "companyId": 242,
@@ -20,7 +20,7 @@
         "website": "",
         "description": null,
         "companyType": "DESIGNER",
-        "imagePath": "/mocks/images/companies/1b444e01f0ea48cd6bcf10b9324ddff3.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/1b444e01f0ea48cd6bcf10b9324ddff3.jpg"
       },
       "perfumeNotes": [
         {
@@ -46,11 +46,11 @@
       "images": [
         {
           "perfumeImageId": 245,
-          "imagePath": "/mocks/images/perfumes/P56648_principal.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/P56648_principal.jpg"
         },
         {
           "perfumeImageId": 246,
-          "imagePath": "/mocks/images/perfumes/res_aa0e0c710f01dc743ed2aebd4ab61dfe.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/res_aa0e0c710f01dc743ed2aebd4ab61dfe.jpg"
         }
       ]
     },
@@ -66,7 +66,7 @@
         "perfumerId": 165,
         "name": "Olivier Creed",
         "details": null,
-        "imagePath": "/mocks/images/perfumers/o.164.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/o.164.jpg"
       },
       "company": {
         "companyId": 164,
@@ -74,7 +74,7 @@
         "website": "",
         "description": null,
         "companyType": "NICHE",
-        "imagePath": "/mocks/images/companies/creed_silver_mountain_water_edp_perfume_for_men_120ml_1_1200x1200.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/creed_silver_mountain_water_edp_perfume_for_men_120ml_1_1200x1200.jpg"
       },
       "perfumeNotes": [
         {
@@ -108,15 +108,15 @@
       "images": [
         {
           "perfumeImageId": 169,
-          "imagePath": "/mocks/images/perfumes/9438_e3b0786cdb9e3bd42c201f83b425ecf4.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/9438_e3b0786cdb9e3bd42c201f83b425ecf4.jpg"
         },
         {
           "perfumeImageId": 168,
-          "imagePath": "/mocks/images/perfumes/9438_img-3926-creed-aventus_eau_de_parfum_720.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/9438_img-3926-creed-aventus_eau_de_parfum_720.jpg"
         },
         {
           "perfumeImageId": 167,
-          "imagePath": "/mocks/images/perfumes/nm_2220365_100000_c.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/nm_2220365_100000_c.jpg"
         }
       ]
     },
@@ -132,7 +132,7 @@
         "perfumerId": 200,
         "name": "Olivier Polge",
         "details": null,
-        "imagePath": "/mocks/images/perfumers/Olivier-Polge-3.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/Olivier-Polge-3.jpg"
       },
       "company": {
         "companyId": 237,
@@ -140,7 +140,7 @@
         "website": "",
         "description": null,
         "companyType": "DESIGNER",
-        "imagePath": "/mocks/images/companies/51861665_1310462502438355_4913243715286233204_n.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/51861665_1310462502438355_4913243715286233204_n.jpg"
       },
       "perfumeNotes": [
         {
@@ -166,15 +166,15 @@
       "images": [
         {
           "perfumeImageId": 241,
-          "imagePath": "/mocks/images/perfumes/19424_11bf70aa745552cfd09d746ded877a42_florabotanica.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/19424_11bf70aa745552cfd09d746ded877a42_florabotanica.jpg"
         },
         {
           "perfumeImageId": 239,
-          "imagePath": "/mocks/images/perfumes/19424_ecc32fece728516add7be1970f142827_florabotanica.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/19424_ecc32fece728516add7be1970f142827_florabotanica.jpg"
         },
         {
           "perfumeImageId": 240,
-          "imagePath": "/mocks/images/perfumes/19424_acsbdy_florabotanica_720.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/19424_acsbdy_florabotanica_720.jpg"
         }
       ]
     }

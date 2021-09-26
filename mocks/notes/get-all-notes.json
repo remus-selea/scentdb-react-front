@@ -3,390 +3,390 @@
     "description": null,
     "noteId": 87,
     "name": "Bergamot",
-    "imgPath": "/mocks/images/notes/13-bergamot-teaser.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/13-bergamot-teaser.jpg"
   },
   {
     "description": null,
     "noteId": 88,
     "name": "Iris",
-    "imgPath": "/mocks/images/notes/Iris_sanguinea_09501.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/Iris_sanguinea_09501.jpg"
   },
   {
     "description": null,
     "noteId": 89,
     "name": "Jasmine",
-    "imgPath": "/mocks/images/notes/jasmine-plants.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/jasmine-plants.jpg"
   },
   {
     "description": null,
     "noteId": 90,
     "name": "Rose",
-    "imgPath": "/mocks/images/notes/photo-1496857239036-1fb137683000.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/photo-1496857239036-1fb137683000.jpg"
   },
   {
     "description": null,
     "noteId": 91,
     "name": "Vanilla",
-    "imgPath": "/mocks/images/notes/Friedas_Vanilla_Bean.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/Friedas_Vanilla_Bean.jpg"
   },
   {
     "description": null,
     "noteId": 92,
     "name": "Tonka Bean",
-    "imgPath": "/mocks/images/notes/tonka-beans__63151_1024x1024.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/tonka-beans__63151_1024x1024.jpg"
   },
   {
     "description": null,
     "noteId": 103,
     "name": "Apple",
-    "imgPath": "/mocks/images/notes/photo-1606757389723-23c4bf501fba.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/photo-1606757389723-23c4bf501fba.jpg"
   },
   {
     "description": null,
     "noteId": 104,
     "name": "Mandarin Orange",
-    "imgPath": "/mocks/images/notes/mandarin-orange.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/mandarin-orange.jpg"
   },
   {
     "description": null,
     "noteId": 105,
     "name": "Lavender",
-    "imgPath": "/mocks/images/notes/photo-1625363402870-2611719e301a.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/photo-1625363402870-2611719e301a.jpg"
   },
   {
     "description": null,
     "noteId": 106,
     "name": "Viola",
-    "imgPath": "/mocks/images/notes/f37b527895509749de3374f4b8e84521.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/f37b527895509749de3374f4b8e84521.jpg"
   },
   {
     "description": null,
     "noteId": 107,
     "name": "Geranium",
-    "imgPath": "/mocks/images/notes/Geranium_February_2008-1.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/Geranium_February_2008-1.jpg"
   },
   {
     "description": null,
     "noteId": 108,
     "name": "Bulnesia sarmientoi",
-    "imgPath": "/mocks/images/notes/Bois-de-gaiac-1-1-560x560.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/Bois-de-gaiac-1-1-560x560.jpg"
   },
   {
     "description": null,
     "noteId": 109,
     "name": "Patchouli",
-    "imgPath": "/mocks/images/notes/ulei-esen-ial-pur-paciuli-patchouli-pogostemon-cablin-15ml-25-1404.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/ulei-esen-ial-pur-paciuli-patchouli-pogostemon-cablin-15ml-25-1404.jpg"
   },
   {
     "description": null,
     "noteId": 110,
     "name": "Sandalwood",
-    "imgPath": "/mocks/images/notes/sandalwood.png"
+    "imgPath": "/scentdb-ui/mocks/images/notes/sandalwood.png"
   },
   {
     "description": null,
     "noteId": 111,
     "name": "Cardamom",
-    "imgPath": "/mocks/images/notes/Cardamon-seminte.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/Cardamon-seminte.jpg"
   },
   {
     "description": null,
     "noteId": 112,
     "name": "Pink Pepper",
-    "imgPath": "/mocks/images/notes/ispice_foods_spices_pink_pepper_BG.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/ispice_foods_spices_pink_pepper_BG.jpg"
   },
   {
     "description": null,
     "noteId": 119,
     "name": "Ambrette Seed",
-    "imgPath": "/mocks/images/notes/s225463559265996286_p7_i1_w736.jpeg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/s225463559265996286_p7_i1_w736.jpeg"
   },
   {
     "description": null,
     "noteId": 120,
     "name": "Virginia Cedar",
-    "imgPath": "/mocks/images/notes/Virginia+Cedarwood.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/Virginia+Cedarwood.jpg"
   },
   {
     "description": null,
     "noteId": 126,
     "name": "Citrus fruits",
-    "imgPath": "/mocks/images/notes/Flavors-and-colors-what-s-trending-now-and-what-s-next-for-dairy_wrbm_large.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/Flavors-and-colors-what-s-trending-now-and-what-s-next-for-dairy_wrbm_large.jpg"
   },
   {
     "description": null,
     "noteId": 127,
     "name": "Lilac",
-    "imgPath": "/mocks/images/notes/Lilacs-sucker-feature.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/Lilacs-sucker-feature.jpg"
   },
   {
     "description": null,
     "noteId": 128,
     "name": "Peach",
-    "imgPath": "/mocks/images/notes/peach.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/peach.jpg"
   },
   {
     "description": null,
     "noteId": 129,
     "name": "Ylang-ylang",
-    "imgPath": "/mocks/images/notes/ylang-ylang-tree.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/ylang-ylang-tree.jpg"
   },
   {
     "description": null,
     "noteId": 130,
     "name": "Ambergris",
-    "imgPath": "/mocks/images/notes/Whale-vomit.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/Whale-vomit.jpg"
   },
   {
     "description": null,
     "noteId": 131,
     "name": "Oakmoss",
-    "imgPath": "/mocks/images/notes/Oakmoss.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/Oakmoss.jpg"
   },
   {
     "description": null,
     "noteId": 132,
     "name": "Spices",
-    "imgPath": "/mocks/images/notes/photo-1581600140682-d4e68c8cde32.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/photo-1581600140682-d4e68c8cde32.jpg"
   },
   {
     "description": null,
     "noteId": 133,
     "name": "Vetiver",
-    "imgPath": "/mocks/images/notes/vetiveria-essential-oil-550x550.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/vetiveria-essential-oil-550x550.jpg"
   },
   {
     "description": null,
     "noteId": 134,
     "name": "Cinnamon",
-    "imgPath": "/mocks/images/notes/photo-1601379760561-dabddc5ff4cd.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/photo-1601379760561-dabddc5ff4cd.jpg"
   },
   {
     "description": null,
     "noteId": 137,
     "name": "Pimento",
-    "imgPath": "/mocks/images/notes/Pepper_Sweet_Pimento.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/Pepper_Sweet_Pimento.jpg"
   },
   {
     "description": null,
     "noteId": 138,
     "name": "Coriander",
-    "imgPath": "/mocks/images/notes/coriander.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/coriander.jpg"
   },
   {
     "description": null,
     "noteId": 139,
     "name": "Frangipani",
-    "imgPath": "/mocks/images/notes/photo-1579977338243-d5017ac698e6.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/photo-1579977338243-d5017ac698e6.jpg"
   },
   {
     "description": null,
     "noteId": 140,
     "name": "Orange Blossom",
-    "imgPath": "/mocks/images/notes/Orange-Blossom-Fragrance-Oil.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/Orange-Blossom-Fragrance-Oil.jpg"
   },
   {
     "description": null,
     "noteId": 141,
     "name": "Angelica",
-    "imgPath": "/mocks/images/notes/angelica.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/angelica.jpg"
   },
   {
     "description": null,
     "noteId": 142,
     "name": "Frankincense",
-    "imgPath": "/mocks/images/notes/info_uploads_diyFrankincense_main_1200x630_1509397070.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/info_uploads_diyFrankincense_main_1200x630_1509397070.jpg"
   },
   {
     "description": null,
     "noteId": 143,
     "name": "Benzoin",
-    "imgPath": "/mocks/images/notes/benzoin.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/benzoin.jpg"
   },
   {
     "description": null,
     "noteId": 144,
     "name": "Musk",
-    "imgPath": "/mocks/images/notes/2345772502_c1bf3d4016_c.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/2345772502_c1bf3d4016_c.jpg"
   },
   {
     "description": null,
     "noteId": 145,
     "name": "Honey",
-    "imgPath": "/mocks/images/notes/photo-1623018697148-8350cf18e64e.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/photo-1623018697148-8350cf18e64e.jpg"
   },
   {
     "description": null,
     "noteId": 148,
     "name": "Amber",
-    "imgPath": "/mocks/images/notes/amber.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/amber.jpg"
   },
   {
     "description": null,
     "noteId": 151,
     "name": "Galbanum",
-    "imgPath": "/mocks/images/notes/galbanum-Ferula2.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/galbanum-Ferula2.jpg"
   },
   {
     "description": null,
     "noteId": 152,
     "name": "Gardenia",
-    "imgPath": "/mocks/images/notes/19587224_m.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/19587224_m.jpg"
   },
   {
     "description": null,
     "noteId": 153,
     "name": "Sage",
-    "imgPath": "/mocks/images/notes/Salvia_nemorosa-IMG_3624-1024x1024.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/Salvia_nemorosa-IMG_3624-1024x1024.jpg"
   },
   {
     "description": null,
     "noteId": 154,
     "name": "Carnation",
-    "imgPath": "/mocks/images/notes/Dianthus-5.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/Dianthus-5.jpg"
   },
   {
     "description": null,
     "noteId": 155,
     "name": "Narcissus",
-    "imgPath": "/mocks/images/notes/photo-1523708174158-749109885101.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/photo-1523708174158-749109885101.jpg"
   },
   {
     "description": null,
     "noteId": 156,
     "name": "Labdanum",
-    "imgPath": "/mocks/images/notes/labdanum.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/labdanum.jpg"
   },
   {
     "description": null,
     "noteId": 160,
     "name": "Pineapple",
-    "imgPath": "/mocks/images/notes/photo-1490885578174-acda8905c2c6.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/photo-1490885578174-acda8905c2c6.jpg"
   },
   {
     "description": null,
     "noteId": 161,
     "name": "Blackcurrant",
-    "imgPath": "/mocks/images/notes/70.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/70.jpg"
   },
   {
     "description": null,
     "noteId": 162,
     "name": "Birch",
-    "imgPath": "/mocks/images/notes/photo-1507614498949-edbabc86a14f.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/photo-1507614498949-edbabc86a14f.jpg"
   },
   {
     "description": null,
     "noteId": 163,
     "name": "Juniper Berry",
-    "imgPath": "/mocks/images/notes/Juniper-Berry.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/Juniper-Berry.jpg"
   },
   {
     "description": null,
     "noteId": 170,
     "name": "Clary Sage",
-    "imgPath": "/mocks/images/notes/OClarySageOil2_400x400_crop_center@2x.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/OClarySageOil2_400x400_crop_center@2x.jpg"
   },
   {
     "description": null,
     "noteId": 171,
     "name": "Leather",
-    "imgPath": "/mocks/images/notes/leather.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/leather.jpg"
   },
   {
     "description": null,
     "noteId": 179,
     "name": "Brazilian rosewood",
-    "imgPath": "/mocks/images/notes/newly-felled-rosewood-tree.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/newly-felled-rosewood-tree.jpg"
   },
   {
     "description": null,
     "noteId": 180,
     "name": "Agarwood",
-    "imgPath": "/mocks/images/notes/agarwood.jpeg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/agarwood.jpeg"
   },
   {
     "description": null,
     "noteId": 183,
     "name": "Osmanthus",
-    "imgPath": "/mocks/images/notes/shutterstock_1204675573Optimized.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/shutterstock_1204675573Optimized.jpg"
   },
   {
     "description": null,
     "noteId": 184,
     "name": "May Rose",
-    "imgPath": "/mocks/images/notes/Rose%20de%20Mai%20Absolue.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/Rose%20de%20Mai%20Absolue.jpg"
   },
   {
     "description": null,
     "noteId": 189,
     "name": "Myrrh",
-    "imgPath": "/mocks/images/notes/myrrh-gum.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/myrrh-gum.jpg"
   },
   {
     "description": null,
     "noteId": 190,
     "name": "Opoponax",
-    "imgPath": "/mocks/images/notes/opoponax.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/opoponax.jpg"
   },
   {
     "description": null,
     "noteId": 192,
     "name": "Cedarwood",
-    "imgPath": "/mocks/images/notes/Virginia+Cedarwood.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/Virginia+Cedarwood.jpg"
   },
   {
     "description": null,
     "noteId": 193,
     "name": "Gurjum balsam",
-    "imgPath": "/mocks/images/notes/gurjun-balsam-essential-oil-500x500.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/gurjun-balsam-essential-oil-500x500.jpg"
   },
   {
     "description": null,
     "noteId": 198,
     "name": "Pear",
-    "imgPath": "/mocks/images/notes/photo-1607863156356-241cfc99670b.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/photo-1607863156356-241cfc99670b.jpg"
   },
   {
     "description": null,
     "noteId": 199,
     "name": "Praliné",
-    "imgPath": "/mocks/images/notes/photo-1579440676594-3fef6d6ef538.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/photo-1579440676594-3fef6d6ef538.jpg"
   },
   {
     "description": null,
     "noteId": 204,
     "name": "Coffee",
-    "imgPath": "/mocks/images/notes/photo-1540965555-ef9a836372ed.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/photo-1540965555-ef9a836372ed.jpg"
   },
   {
     "description": null,
     "noteId": 209,
     "name": "Black Pepper",
-    "imgPath": "/mocks/images/notes/pepper.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/pepper.jpg"
   },
   {
     "description": null,
     "noteId": 215,
     "name": "Aquatic Notes",
-    "imgPath": "/mocks/images/notes/photo-1488642945284-f5b65425f15a.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/photo-1488642945284-f5b65425f15a.jpg"
   },
   {
     "description": null,
     "noteId": 221,
     "name": "Raspberry",
-    "imgPath": "/mocks/images/notes/photo-1593461802389-d57d73a36913.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/photo-1593461802389-d57d73a36913.jpg"
   },
   {
     "description": null,
     "noteId": 222,
     "name": "Clove",
-    "imgPath": "/mocks/images/notes/cloves.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/cloves.jpg"
   },
   {
     "description": null,
     "noteId": 228,
     "name": "Rosemary",
-    "imgPath": "/mocks/images/notes/photo-1603129624917-3c579e864025.jpg"
+    "imgPath": "/scentdb-ui/mocks/images/notes/photo-1603129624917-3c579e864025.jpg"
   }
 ]

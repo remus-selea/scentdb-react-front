@@ -4,55 +4,55 @@
       "description": null,
       "noteId": 142,
       "name": "Frankincense",
-      "imgPath": "/mocks/images/notes/info_uploads_diyFrankincense_main_1200x630_1509397070.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/info_uploads_diyFrankincense_main_1200x630_1509397070.jpg"
     },
     {
       "description": null,
       "noteId": 151,
       "name": "Galbanum",
-      "imgPath": "/mocks/images/notes/galbanum-Ferula2.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/galbanum-Ferula2.jpg"
     },
     {
       "description": null,
       "noteId": 104,
       "name": "Mandarin Orange",
-      "imgPath": "/mocks/images/notes/mandarin-orange.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/mandarin-orange.jpg"
     },
     {
       "description": null,
       "noteId": 140,
       "name": "Orange Blossom",
-      "imgPath": "/mocks/images/notes/Orange-Blossom-Fragrance-Oil.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/Orange-Blossom-Fragrance-Oil.jpg"
     },
     {
       "description": null,
       "noteId": 221,
       "name": "Raspberry",
-      "imgPath": "/mocks/images/notes/photo-1593461802389-d57d73a36913.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/photo-1593461802389-d57d73a36913.jpg"
     },
     {
       "description": null,
       "noteId": 137,
       "name": "Pimento",
-      "imgPath": "/mocks/images/notes/Pepper_Sweet_Pimento.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/Pepper_Sweet_Pimento.jpg"
     },
     {
       "description": null,
       "noteId": 155,
       "name": "Narcissus",
-      "imgPath": "/mocks/images/notes/photo-1523708174158-749109885101.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/photo-1523708174158-749109885101.jpg"
     },
     {
       "description": null,
       "noteId": 90,
       "name": "Rose",
-      "imgPath": "/mocks/images/notes/photo-1496857239036-1fb137683000.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/photo-1496857239036-1fb137683000.jpg"
     },
     {
       "description": null,
       "noteId": 119,
       "name": "Ambrette Seed",
-      "imgPath": "/mocks/images/notes/s225463559265996286_p7_i1_w736.jpeg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/s225463559265996286_p7_i1_w736.jpeg"
     }
   ],
   "pageable": {

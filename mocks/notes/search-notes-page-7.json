@@ -4,13 +4,13 @@
       "description": null,
       "noteId": 111,
       "name": "Cardamom",
-      "imgPath": "/mocks/images/notes/Cardamon-seminte.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/Cardamon-seminte.jpg"
     },
     {
       "description": null,
       "noteId": 153,
       "name": "Sage",
-      "imgPath": "/mocks/images/notes/Salvia_nemorosa-IMG_3624-1024x1024.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/Salvia_nemorosa-IMG_3624-1024x1024.jpg"
     }
   ],
   "pageable": {

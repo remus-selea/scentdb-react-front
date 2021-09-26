@@ -4,37 +4,37 @@
       "description": null,
       "noteId": null,
       "name": "Bergamot",
-      "imgPath": "/mocks/images/notes/13-bergamot-teaser.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/13-bergamot-teaser.jpg"
     },
     "88": {
       "description": null,
       "noteId": null,
       "name": "Iris",
-      "imgPath": "/mocks/images/notes/Iris_sanguinea_09501.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/Iris_sanguinea_09501.jpg"
     },
     "89": {
       "description": null,
       "noteId": null,
       "name": "Jasmine",
-      "imgPath": "/mocks/images/notes/jasmine-plants.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/jasmine-plants.jpg"
     },
     "90": {
       "description": null,
       "noteId": null,
       "name": "Rose",
-      "imgPath": "/mocks/images/notes/photo-1496857239036-1fb137683000.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/photo-1496857239036-1fb137683000.jpg"
     },
     "91": {
       "description": null,
       "noteId": null,
       "name": "Vanilla",
-      "imgPath": "/mocks/images/notes/Friedas_Vanilla_Bean.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/Friedas_Vanilla_Bean.jpg"
     },
     "92": {
       "description": null,
       "noteId": null,
       "name": "Tonka Bean",
-      "imgPath": "/mocks/images/notes/tonka-beans__63151_1024x1024.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/tonka-beans__63151_1024x1024.jpg"
     }
   },
   "perfumes": [
@@ -50,7 +50,7 @@
         "perfumerId": 86,
         "name": "Jacques Guerlain",
         "details": "\"<p>Jacques Edouard Guerlain was a French perfumer, the third and most famous of the Guerlain family. One of the most prolific and influential perfumers of the 20th century, over eighty of Guerlain's perfumes remain known, though certain estimates suggest he composed some four hundred.</p>\"",
-        "imagePath": "/mocks/images/perfumers/jacques-guerlain.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/jacques-guerlain.jpg"
       },
       "company": {
         "companyId": 85,
@@ -58,7 +58,7 @@
         "website": "https://www.guerlain.com/",
         "description": "\"<p>Guerlain is one of the oldest and largest among international producers of high-quality beauty products.</p>\"",
         "companyType": "NICHE",
-        "imagePath": "/mocks/images/companies/guerlain-logo-png-Transparent-Images.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/guerlain-logo-png-Transparent-Images.jpg"
       },
       "perfumeNotes": [
         {
@@ -86,11 +86,11 @@
       "images": [
         {
           "perfumeImageId": 102,
-          "imagePath": "/mocks/images/perfumes/guerlain-shalimar-eau-de-parfum-pentru-femei___12.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/guerlain-shalimar-eau-de-parfum-pentru-femei___12.jpg"
         },
         {
           "perfumeImageId": 101,
-          "imagePath": "/mocks/images/perfumes/guerlain-shalimar-eau-de-parfum-pentru-femei___12%20(1).jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/guerlain-shalimar-eau-de-parfum-pentru-femei___12%20(1).jpg"
         }
       ]
     }

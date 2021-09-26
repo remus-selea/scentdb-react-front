@@ -12,7 +12,7 @@
         "perfumerId": 200,
         "name": "Olivier Polge",
         "details": null,
-        "imagePath": "/mocks/images/perfumers/Olivier-Polge-3.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/Olivier-Polge-3.jpg"
       },
       "company": {
         "companyId": 196,
@@ -20,7 +20,7 @@
         "website": "",
         "description": null,
         "companyType": "NICHE",
-        "imagePath": "/mocks/images/companies/lancome-3-logo-png-transparent.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/lancome-3-logo-png-transparent.jpg"
       },
       "perfumeNotes": [
         {
@@ -51,11 +51,11 @@
       "images": [
         {
           "perfumeImageId": 202,
-          "imagePath": "/mocks/images/perfumes/18914_t4ou5s_la_vie_est_belle_720.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/18914_t4ou5s_la_vie_est_belle_720.jpg"
         },
         {
           "perfumeImageId": 203,
-          "imagePath": "/mocks/images/perfumes/18914_a1f4d62b950d491f10ddef247201f246_la_vie_est_belle.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/18914_a1f4d62b950d491f10ddef247201f246_la_vie_est_belle.jpg"
         }
       ]
     },
@@ -71,7 +71,7 @@
         "perfumerId": 115,
         "name": "Hamid Merati-Kashani",
         "details": null,
-        "imagePath": "/mocks/images/perfumers/Firmenich_AG_HAMID_MERATI_COULEUR25538.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/Firmenich_AG_HAMID_MERATI_COULEUR25538.jpg"
       },
       "company": {
         "companyId": 113,
@@ -79,7 +79,7 @@
         "website": "",
         "description": null,
         "companyType": "NICHE",
-        "imagePath": "/mocks/images/companies/PARFUM%20DE%20MARLY-Logo-01.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/PARFUM%20DE%20MARLY-Logo-01.jpg"
       },
       "perfumeNotes": [
         {
@@ -114,11 +114,11 @@
       "images": [
         {
           "perfumeImageId": 118,
-          "imagePath": "/mocks/images/perfumes/293829.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/293829.jpg"
         },
         {
           "perfumeImageId": 117,
-          "imagePath": "/mocks/images/perfumes/71892_img-5479-parfums_de_marly-layton_720.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/71892_img-5479-parfums_de_marly-layton_720.jpg"
         }
       ]
     },
@@ -134,7 +134,7 @@
         "perfumerId": 122,
         "name": "François Demachy",
         "details": null,
-        "imagePath": "/mocks/images/perfumers/06Y0184_HR.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/06Y0184_HR.jpg"
       },
       "company": {
         "companyId": 121,
@@ -142,7 +142,7 @@
         "website": "",
         "description": null,
         "companyType": "DESIGNER",
-        "imagePath": "/mocks/images/companies/ac452a99938c35aa0519d215b13ab9ee.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/ac452a99938c35aa0519d215b13ab9ee.jpg"
       },
       "perfumeNotes": [
         {
@@ -167,11 +167,11 @@
       "images": [
         {
           "perfumeImageId": 124,
-          "imagePath": "/mocks/images/perfumes/dior-homme-intense-edp-150ml_big.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/dior-homme-intense-edp-150ml_big.jpg"
         },
         {
           "perfumeImageId": 125,
-          "imagePath": "/mocks/images/perfumes/13889_img-2650-dior-christian-dior-dior-homme-intense-2011_720.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/13889_img-2650-dior-christian-dior-dior-homme-intense-2011_720.jpg"
         }
       ]
     },
@@ -187,7 +187,7 @@
         "perfumerId": 173,
         "name": "Sophie Labbé",
         "details": null,
-        "imagePath": "/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
       },
       "company": {
         "companyId": 191,
@@ -195,7 +195,7 @@
         "website": "",
         "description": null,
         "companyType": "NICHE",
-        "imagePath": "/mocks/images/companies/xerjoff-logo-300x300.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/xerjoff-logo-300x300.jpg"
       },
       "perfumeNotes": [
         {
@@ -227,7 +227,7 @@
       "images": [
         {
           "perfumeImageId": 195,
-          "imagePath": "/mocks/images/perfumes/33185_img-5376-xerjoff-shooting_stars__amber_star_720.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/33185_img-5376-xerjoff-shooting_stars__amber_star_720.jpg"
         }
       ]
     },
@@ -243,7 +243,7 @@
         "perfumerId": 86,
         "name": "Jacques Guerlain",
         "details": "\"<p>Jacques Edouard Guerlain was a French perfumer, the third and most famous of the Guerlain family. One of the most prolific and influential perfumers of the 20th century, over eighty of Guerlain's perfumes remain known, though certain estimates suggest he composed some four hundred.</p>\"",
-        "imagePath": "/mocks/images/perfumers/jacques-guerlain.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/jacques-guerlain.jpg"
       },
       "company": {
         "companyId": 85,
@@ -251,7 +251,7 @@
         "website": "https://www.guerlain.com/",
         "description": "\"<p>Guerlain is one of the oldest and largest among international producers of high-quality beauty products.</p>\"",
         "companyType": "NICHE",
-        "imagePath": "/mocks/images/companies/guerlain-logo-png-Transparent-Images.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/guerlain-logo-png-Transparent-Images.jpg"
       },
       "perfumeNotes": [
         {
@@ -285,7 +285,7 @@
       "images": [
         {
           "perfumeImageId": 136,
-          "imagePath": "/mocks/images/perfumes/50ml-199lei_edttt.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/50ml-199lei_edttt.jpg"
         }
       ]
     },
@@ -301,7 +301,7 @@
         "perfumerId": 205,
         "name": "Nathalie Lorson",
         "details": null,
-        "imagePath": "/mocks/images/perfumers/Firmenich_AG_NATHALIE_LORSON_COULEUR23370_credit_Alexandre_Guirkinger.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/Firmenich_AG_NATHALIE_LORSON_COULEUR23370_credit_Alexandre_Guirkinger.jpg"
       },
       "company": {
         "companyId": 197,
@@ -309,7 +309,7 @@
         "website": "",
         "description": null,
         "companyType": "DESIGNER",
-        "imagePath": "/mocks/images/companies/Yves_Saint_Laurent_logo_and_symbol.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/Yves_Saint_Laurent_logo_and_symbol.jpg"
       },
       "perfumeNotes": [
         {
@@ -338,11 +338,11 @@
       "images": [
         {
           "perfumeImageId": 207,
-          "imagePath": "/mocks/images/perfumes/45685_img-8962-yves_saint_laurent-black_opium_eau_de_parfum_720.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/45685_img-8962-yves_saint_laurent-black_opium_eau_de_parfum_720.jpg"
         },
         {
           "perfumeImageId": 208,
-          "imagePath": "/mocks/images/perfumes/45685_bdb3d32b6e42456b8b8b750bc69646d2_black_opium.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/45685_bdb3d32b6e42456b8b8b750bc69646d2_black_opium.jpg"
         }
       ]
     },
@@ -358,7 +358,7 @@
         "perfumerId": 210,
         "name": "Anne Flipo",
         "details": null,
-        "imagePath": "/mocks/images/perfumers/Anne-Flipo-Portrait-1.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/Anne-Flipo-Portrait-1.jpg"
       },
       "company": {
         "companyId": 197,
@@ -366,7 +366,7 @@
         "website": "",
         "description": null,
         "companyType": "DESIGNER",
-        "imagePath": "/mocks/images/companies/Yves_Saint_Laurent_logo_and_symbol.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/Yves_Saint_Laurent_logo_and_symbol.jpg"
       },
       "perfumeNotes": [
         {
@@ -395,11 +395,11 @@
       "images": [
         {
           "perfumeImageId": 213,
-          "imagePath": "/mocks/images/perfumes/61r32iYtNkL._SL1500_.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/61r32iYtNkL._SL1500_.jpg"
         },
         {
           "perfumeImageId": 212,
-          "imagePath": "/mocks/images/perfumes/1844_img-6527-yves_saint_laurent-la_nuit_de_l_homme_eau_de_toilette_720.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/1844_img-6527-yves_saint_laurent-la_nuit_de_l_homme_eau_de_toilette_720.jpg"
         }
       ]
     },
@@ -415,7 +415,7 @@
         "perfumerId": 227,
         "name": "Lucas Sieuzac",
         "details": null,
-        "imagePath": "/mocks/images/perfumers/post-7.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/post-7.jpg"
       },
       "company": {
         "companyId": 226,
@@ -423,7 +423,7 @@
         "website": "",
         "description": null,
         "companyType": "NICHE",
-        "imagePath": "/mocks/images/companies/6429f3bdb07d4e6594d6c1cab67eb9a8.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/6429f3bdb07d4e6594d6c1cab67eb9a8.jpg"
       },
       "perfumeNotes": [
         {
@@ -455,11 +455,11 @@
       "images": [
         {
           "perfumeImageId": 231,
-          "imagePath": "/mocks/images/perfumes/2057_fdae1df6be376f36390fc9015ac8c9fc_reflection_man.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/2057_fdae1df6be376f36390fc9015ac8c9fc_reflection_man.jpg"
         },
         {
           "perfumeImageId": 230,
-          "imagePath": "/mocks/images/perfumes/2057_img-4648-amouage-reflection_man_720.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/2057_img-4648-amouage-reflection_man_720.jpg"
         }
       ]
     },
@@ -475,7 +475,7 @@
         "perfumerId": 223,
         "name": "Dominique Ropion",
         "details": null,
-        "imagePath": "/mocks/images/perfumers/dominique-ropion-square-1.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/perfumers/dominique-ropion-square-1.jpg"
       },
       "company": {
         "companyId": 220,
@@ -483,7 +483,7 @@
         "website": "",
         "description": null,
         "companyType": "NICHE",
-        "imagePath": "/mocks/images/companies/frederic-malle-1.jpg"
+        "imagePath": "/scentdb-ui/mocks/images/companies/frederic-malle-1.jpg"
       },
       "perfumeNotes": [
         {
@@ -516,7 +516,7 @@
       "images": [
         {
           "perfumeImageId": 225,
-          "imagePath": "/mocks/images/perfumes/10407_img-9893-editions_de_parfums_frederic_malle-portrait_of_a_lady_720.jpg"
+          "imagePath": "/scentdb-ui/mocks/images/perfumes/10407_img-9893-editions_de_parfums_frederic_malle-portrait_of_a_lady_720.jpg"
         }
       ]
     }

@@ -4,55 +4,55 @@
       "description": null,
       "noteId": 134,
       "name": "Cinnamon",
-      "imgPath": "/mocks/images/notes/photo-1601379760561-dabddc5ff4cd.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/photo-1601379760561-dabddc5ff4cd.jpg"
     },
     {
       "description": null,
       "noteId": 193,
       "name": "Gurjum balsam",
-      "imgPath": "/mocks/images/notes/gurjun-balsam-essential-oil-500x500.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/gurjun-balsam-essential-oil-500x500.jpg"
     },
     {
       "description": null,
       "noteId": 105,
       "name": "Lavender",
-      "imgPath": "/mocks/images/notes/photo-1625363402870-2611719e301a.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/photo-1625363402870-2611719e301a.jpg"
     },
     {
       "description": null,
       "noteId": 91,
       "name": "Vanilla",
-      "imgPath": "/mocks/images/notes/Friedas_Vanilla_Bean.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/Friedas_Vanilla_Bean.jpg"
     },
     {
       "description": null,
       "noteId": 112,
       "name": "Pink Pepper",
-      "imgPath": "/mocks/images/notes/ispice_foods_spices_pink_pepper_BG.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/ispice_foods_spices_pink_pepper_BG.jpg"
     },
     {
       "description": null,
       "noteId": 120,
       "name": "Virginia Cedar",
-      "imgPath": "/mocks/images/notes/Virginia+Cedarwood.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/Virginia+Cedarwood.jpg"
     },
     {
       "description": null,
       "noteId": 108,
       "name": "Bulnesia sarmientoi",
-      "imgPath": "/mocks/images/notes/Bois-de-gaiac-1-1-560x560.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/Bois-de-gaiac-1-1-560x560.jpg"
     },
     {
       "description": null,
       "noteId": 145,
       "name": "Honey",
-      "imgPath": "/mocks/images/notes/photo-1623018697148-8350cf18e64e.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/photo-1623018697148-8350cf18e64e.jpg"
     },
     {
       "description": null,
       "noteId": 126,
       "name": "Citrus fruits",
-      "imgPath": "/mocks/images/notes/Flavors-and-colors-what-s-trending-now-and-what-s-next-for-dairy_wrbm_large.jpg"
+      "imgPath": "/scentdb-ui/mocks/images/notes/Flavors-and-colors-what-s-trending-now-and-what-s-next-for-dairy_wrbm_large.jpg"
     }
   ],
   "pageable": {
