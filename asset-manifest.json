@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "https://remus-selea.github.io/scentdb-ui/static/css/main.e5ef4419.chunk.css",
-    "main.js": "https://remus-selea.github.io/scentdb-ui/static/js/main.60183039.chunk.js",
-    "main.js.map": "https://remus-selea.github.io/scentdb-ui/static/js/main.60183039.chunk.js.map",
+    "main.css": "https://remus-selea.github.io/scentdb-ui/static/css/main.ab986cd4.chunk.css",
+    "main.js": "https://remus-selea.github.io/scentdb-ui/static/js/main.1a8d860b.chunk.js",
+    "main.js.map": "https://remus-selea.github.io/scentdb-ui/static/js/main.1a8d860b.chunk.js.map",
     "runtime-main.js": "https://remus-selea.github.io/scentdb-ui/static/js/runtime-main.8b043ad7.js",
     "runtime-main.js.map": "https://remus-selea.github.io/scentdb-ui/static/js/runtime-main.8b043ad7.js.map",
     "static/css/2.343b9c06.chunk.css": "https://remus-selea.github.io/scentdb-ui/static/css/2.343b9c06.chunk.css",
@@ -14,7 +14,7 @@
     "static/js/4.575b955b.chunk.js.map": "https://remus-selea.github.io/scentdb-ui/static/js/4.575b955b.chunk.js.map",
     "index.html": "https://remus-selea.github.io/scentdb-ui/index.html",
     "static/css/2.343b9c06.chunk.css.map": "https://remus-selea.github.io/scentdb-ui/static/css/2.343b9c06.chunk.css.map",
-    "static/css/main.e5ef4419.chunk.css.map": "https://remus-selea.github.io/scentdb-ui/static/css/main.e5ef4419.chunk.css.map",
+    "static/css/main.ab986cd4.chunk.css.map": "https://remus-selea.github.io/scentdb-ui/static/css/main.ab986cd4.chunk.css.map",
     "static/js/2.8cdd468a.chunk.js.LICENSE.txt": "https://remus-selea.github.io/scentdb-ui/static/js/2.8cdd468a.chunk.js.LICENSE.txt",
     "static/js/3.40777a0e.chunk.js.LICENSE.txt": "https://remus-selea.github.io/scentdb-ui/static/js/3.40777a0e.chunk.js.LICENSE.txt",
     "static/media/own.c301e65f.svg": "https://remus-selea.github.io/scentdb-ui/static/media/own.c301e65f.svg",
@@ -30,7 +30,7 @@
     "static/js/runtime-main.8b043ad7.js",
     "static/css/2.343b9c06.chunk.css",
     "static/js/2.8cdd468a.chunk.js",
-    "static/css/main.e5ef4419.chunk.css",
-    "static/js/main.60183039.chunk.js"
+    "static/css/main.ab986cd4.chunk.css",
+    "static/js/main.1a8d860b.chunk.js"
   ]
 }
