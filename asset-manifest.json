@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "https://remus-selea.github.io/scentdb-ui/static/css/main.e5ef4419.chunk.css",
-    "main.js": "https://remus-selea.github.io/scentdb-ui/static/js/main.fdca8542.chunk.js",
-    "main.js.map": "https://remus-selea.github.io/scentdb-ui/static/js/main.fdca8542.chunk.js.map",
+    "main.js": "https://remus-selea.github.io/scentdb-ui/static/js/main.60183039.chunk.js",
+    "main.js.map": "https://remus-selea.github.io/scentdb-ui/static/js/main.60183039.chunk.js.map",
     "runtime-main.js": "https://remus-selea.github.io/scentdb-ui/static/js/runtime-main.8b043ad7.js",
     "runtime-main.js.map": "https://remus-selea.github.io/scentdb-ui/static/js/runtime-main.8b043ad7.js.map",
     "static/css/2.343b9c06.chunk.css": "https://remus-selea.github.io/scentdb-ui/static/css/2.343b9c06.chunk.css",
@@ -31,6 +31,6 @@
     "static/css/2.343b9c06.chunk.css",
     "static/js/2.8cdd468a.chunk.js",
     "static/css/main.e5ef4419.chunk.css",
-    "static/js/main.fdca8542.chunk.js"
+    "static/js/main.60183039.chunk.js"
   ]
 }
