@@ -1,68 +1,1358 @@
 [
-    {
-      "companyId": 85,
-      "name": "Guerlain",
-      "website": "https://www.guerlain.com/",
-      "description": "\"<p>Guerlain is one of the oldest and largest among international producers of high-quality beauty products.</p>\"",
-      "companyType": "NICHE",
-      "imagePath": "http://localhost:8321/scentdb/v1/images/companies/guerlain-logo-png-Transparent-Images.png",
-      "perfumers": [
-        {
+  {
+    "companyId": 85,
+    "name": "Guerlain",
+    "website": "https://www.guerlain.com/",
+    "description": "\"<p>Guerlain is one of the oldest and largest among international producers of high-quality beauty products.</p>\"",
+    "companyType": "NICHE",
+    "imagePath": "/mocks/images/companies/guerlain-logo-png-Transparent-Images.png",
+    "perfumers": [
+      {
+        "perfumerId": 86,
+        "name": "Jacques Guerlain",
+        "details": "\"<p>Jacques Edouard Guerlain was a French perfumer, the third and most famous of the Guerlain family. One of the most prolific and influential perfumers of the 20th century, over eighty of Guerlain's perfumes remain known, though certain estimates suggest he composed some four hundred.</p>\"",
+        "imagePath": "/mocks/images/perfumers/jacques-guerlain.jpg"
+      }
+    ],
+    "perfumes": [
+      {
+        "perfumeId": 100,
+        "title": "Shalimar",
+        "launchYear": "1986",
+        "gender": "FEMALE",
+        "perfumeType": "EAU_DE_PARFUM",
+        "bottleSizes": "50ml,30ml",
+        "description": "<p><strong>Shalimar (Eau de Parfum)</strong>&nbsp;is a popular perfume by&nbsp;<strong>Guerlain&nbsp;</strong>for women and was released in&nbsp;<strong>1986</strong>. The scent is oriental-spicy. Projection and longevity are above-average. It is being marketed by LVMH.</p>",
+        "perfumer": {
           "perfumerId": 86,
           "name": "Jacques Guerlain",
           "details": "\"<p>Jacques Edouard Guerlain was a French perfumer, the third and most famous of the Guerlain family. One of the most prolific and influential perfumers of the 20th century, over eighty of Guerlain's perfumes remain known, though certain estimates suggest he composed some four hundred.</p>\"",
-          "imagePath": "http://localhost:8321/scentdb/v1/images/perfumers/jacques-guerlain.jpg"
-        }
-      ],
-      "perfumes": [
-        {
-          "perfumeId": 100,
-          "title": "Shalimar",
-          "launchYear": "1986",
-          "gender": "FEMALE",
-          "perfumeType": "EAU_DE_PARFUM",
-          "bottleSizes": "50ml,30ml",
-          "description": "<p><strong>Shalimar (Eau de Parfum)</strong>&nbsp;is a popular perfume by&nbsp;<strong>Guerlain&nbsp;</strong>for women and was released in&nbsp;<strong>1986</strong>. The scent is oriental-spicy. Projection and longevity are above-average. It is being marketed by LVMH.</p>",
-          "perfumer": {
-            "perfumerId": 86,
-            "name": "Jacques Guerlain",
-            "details": "\"<p>Jacques Edouard Guerlain was a French perfumer, the third and most famous of the Guerlain family. One of the most prolific and influential perfumers of the 20th century, over eighty of Guerlain's perfumes remain known, though certain estimates suggest he composed some four hundred.</p>\"",
-            "imagePath": "http://localhost:8321/scentdb/v1/images/perfumers/jacques-guerlain.jpg"
+          "imagePath": "/mocks/images/perfumers/jacques-guerlain.jpg"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              92,
+              91
+            ],
+            "type": "base notes"
           },
-          "perfumeNotes": [
-            {
-              "notes": [
-                92,
-                91
-              ],
-              "type": "base notes"
-            },
-            {
-              "notes": [
-                87
-              ],
-              "type": "top notes"
-            },
-            {
-              "notes": [
-                88,
-                90,
-                89
-              ],
-              "type": "middle notes"
-            }
-          ],
-          "images": [
-            {
-              "perfumeImageId": 101,
-              "imagePath": "http://localhost:8321/scentdb/v1/images/perfumes/guerlain-shalimar-eau-de-parfum-pentru-femei___12%20(1).jpg"
-            },
-            {
-              "perfumeImageId": 102,
-              "imagePath": "http://localhost:8321/scentdb/v1/images/perfumes/guerlain-shalimar-eau-de-parfum-pentru-femei___12.jpg"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+          {
+            "notes": [
+              87
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              88,
+              90,
+              89
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 101,
+            "imagePath": "/mocks/images/perfumes/guerlain-shalimar-eau-de-parfum-pentru-femei___12%20(1).jpg"
+          },
+          {
+            "perfumeImageId": 102,
+            "imagePath": "/mocks/images/perfumes/guerlain-shalimar-eau-de-parfum-pentru-femei___12.jpg"
+          }
+        ]
+      },
+      {
+        "perfumeId": 135,
+        "title": "Mitsouko",
+        "launchYear": "1919",
+        "gender": "FEMALE",
+        "perfumeType": "EAU_DE_TOILETTE",
+        "bottleSizes": "50ml",
+        "description": "<p>Mitsouko&nbsp;is a 1919&nbsp;perfume&nbsp;by&nbsp;Guerlain. Its name is derived from the French&nbsp;transliteration&nbsp;of a&nbsp;Japanese female&nbsp;personal name&nbsp;Mitsuko.</p>",
+        "perfumer": {
+          "perfumerId": 86,
+          "name": "Jacques Guerlain",
+          "details": "\"<p>Jacques Edouard Guerlain was a French perfumer, the third and most famous of the Guerlain family. One of the most prolific and influential perfumers of the 20th century, over eighty of Guerlain's perfumes remain known, though certain estimates suggest he composed some four hundred.</p>\"",
+          "imagePath": "/mocks/images/perfumers/jacques-guerlain.jpg"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              132,
+              133,
+              130,
+              131,
+              134
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              90,
+              89,
+              126,
+              87
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              129,
+              128,
+              127
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 136,
+            "imagePath": "/mocks/images/perfumes/50ml-199lei_edttt.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "companyId": 113,
+    "name": "Parfums de Marly",
+    "website": "",
+    "description": null,
+    "companyType": "NICHE",
+    "imagePath": "/mocks/images/companies/PARFUM%20DE%20MARLY-Logo-01.webp",
+    "perfumers": [],
+    "perfumes": [
+      {
+        "perfumeId": 116,
+        "title": "Parfums de Marly",
+        "launchYear": "2016",
+        "gender": "MALE",
+        "perfumeType": "EAU_DE_PARFUM",
+        "bottleSizes": "75ml,125ml",
+        "description": "<p><strong style=\"background-color: rgb(239, 242, 246); color: rgb(34, 34, 34);\">Layton</strong><span style=\"background-color: rgb(239, 242, 246); color: rgb(34, 34, 34);\">&nbsp;is a popular perfume by&nbsp;</span><a href=\"https://www.parfumo.net/Perfumes/Parfums_de_Marly\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: rgb(239, 242, 246); color: rgb(34, 34, 34);\"><strong>Parfums de Marly</strong></a><span style=\"background-color: rgb(239, 242, 246); color: rgb(34, 34, 34);\">&nbsp;for men and was released in&nbsp;</span><a href=\"https://www.parfumo.net/Release_Years/2016\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: rgb(239, 242, 246); color: rgb(34, 34, 34);\"><strong>2016</strong></a><span style=\"background-color: rgb(239, 242, 246); color: rgb(34, 34, 34);\">. The scent is sweet-spicy. Projection and longevity are above-average. It is still available to purchase.</span></p>",
+        "perfumer": {
+          "perfumerId": 115,
+          "name": "Hamid Merati-Kashani",
+          "details": null,
+          "imagePath": "/mocks/images/companies/Firmenich.jpg"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              91,
+              110,
+              112,
+              108,
+              111,
+              109
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              104,
+              105,
+              103,
+              87
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              106,
+              107,
+              89
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 118,
+            "imagePath": "/mocks/images/perfumes/293829.jpg"
+          },
+          {
+            "perfumeImageId": 117,
+            "imagePath": "/mocks/images/perfumes/71892_img-5479-parfums_de_marly-layton_720.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "companyId": 114,
+    "name": "Firmenich",
+    "website": "",
+    "description": null,
+    "companyType": "NICHE",
+    "imagePath": "/mocks/images/companies/Firmenich.jpg",
+    "perfumers": [
+      {
+        "perfumerId": 115,
+        "name": "Hamid Merati-Kashani",
+        "details": null,
+        "imagePath": "/mocks/images/perfumers/Firmenich_AG_HAMID_MERATI_COULEUR25538.jpg"
+      }
+    ],
+    "perfumes": []
+  },
+  {
+    "companyId": 121,
+    "name": "Dior",
+    "website": "",
+    "description": null,
+    "companyType": "DESIGNER",
+    "imagePath": "/mocks/images/companies/ac452a99938c35aa0519d215b13ab9ee.png",
+    "perfumers": [
+      {
+        "perfumerId": 247,
+        "name": "Annick Menardo",
+        "details": null,
+        "imagePath": "/mocks/images/perfumers/annick-menardo-full.jpg"
+      },
+      {
+        "perfumerId": 157,
+        "name": "Edmond Roudnitska",
+        "details": null,
+        "imagePath": "/mocks/images/perfumers/olivier-maure.jpg"
+      },
+      {
+        "perfumerId": 122,
+        "name": "François Demachy",
+        "details": null,
+        "imagePath": "/mocks/images/perfumers/06Y0184_HR.jpg"
+      }
+    ],
+    "perfumes": [
+      {
+        "perfumeId": 158,
+        "title": "Miss Dior",
+        "launchYear": "1947",
+        "gender": "FEMALE",
+        "perfumeType": "EAU_DE_TOILETTE",
+        "bottleSizes": "100ml",
+        "description": null,
+        "perfumer": {
+          "perfumerId": 157,
+          "name": "Edmond Roudnitska",
+          "details": null,
+          "imagePath": "/mocks/images/perfumers/olivier-maure.jpg"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              131,
+              109,
+              110,
+              156
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              153,
+              152,
+              87,
+              151
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              89,
+              90,
+              140,
+              154,
+              155
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 159,
+            "imagePath": "/mocks/images/perfumes/miss-dior-originale.jpg"
+          }
+        ]
+      },
+      {
+        "perfumeId": 248,
+        "title": "Hypnotic Poison",
+        "launchYear": "1998",
+        "gender": "FEMALE",
+        "perfumeType": "EAU_DE_TOILETTE",
+        "bottleSizes": "30ml,50ml,100ml",
+        "description": null,
+        "perfumer": {
+          "perfumerId": 247,
+          "name": "Annick Menardo",
+          "details": null,
+          "imagePath": "/mocks/images/perfumers/annick-menardo-full.jpg"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              91,
+              110
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              137
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              90,
+              179,
+              89
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 249,
+            "imagePath": "/mocks/images/perfumes/675_img-6131-dior-hypnotic_poison_eau_de_toilette_720.jpg"
+          }
+        ]
+      },
+      {
+        "perfumeId": 123,
+        "title": "Dior Homme Intense",
+        "launchYear": "2011",
+        "gender": "MALE",
+        "perfumeType": "EAU_DE_PARFUM",
+        "bottleSizes": "150ml,100ml,50ml",
+        "description": "<p><span style=\"color: rgb(0, 0, 0);\">Dior Homme Intense is the third fragrances in the Homme series, following</span>&nbsp;Dior Homme&nbsp;and&nbsp;Dior Homme Cologne<span style=\"color: rgb(0, 0, 0);\">. The fragrance was originally a limited edition, but is now part of the permanent line up.</span></p>",
+        "perfumer": {
+          "perfumerId": 122,
+          "name": "François Demachy",
+          "details": null,
+          "imagePath": "/mocks/images/perfumers/06Y0184_HR.jpg"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              120
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              88
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              119
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 125,
+            "imagePath": "/mocks/images/perfumes/13889_img-2650-dior-christian-dior-dior-homme-intense-2011_720.jpg"
+          },
+          {
+            "perfumeImageId": 124,
+            "imagePath": "/mocks/images/perfumes/dior-homme-intense-edp-150ml_big.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "companyId": 146,
+    "name": "Chanel",
+    "website": "",
+    "description": null,
+    "companyType": "DESIGNER",
+    "imagePath": "/mocks/images/companies/_1513770089_693_chanel1_3f16706be8a9-desktop.jpg",
+    "perfumers": [
+      {
+        "perfumerId": 147,
+        "name": "Jacques Polge",
+        "details": null,
+        "imagePath": "/mocks/images/perfumers/101850336_2342590866046808_3044476289185480704_n.jpg"
+      }
+    ],
+    "perfumes": [
+      {
+        "perfumeId": 149,
+        "title": "Coco",
+        "launchYear": "1984",
+        "gender": "FEMALE",
+        "perfumeType": "EXTRAIT_DE_PARFUM",
+        "bottleSizes": "15ml",
+        "description": "<h1>Description</h1><p>COCO expresses the intensity of Gabrielle Chanel's personality, her love of all things baroque. The quintessence of this oriental fragrance with floral and spicy notes, the Parfum is housed in an iconic bottle hand-sealed with a baudruche film.</p><p><br></p><h1>Composition</h1><p>A baroque score written with oriental, floral and spicy notes.</p><p>The fragrance opens with a citrus note of Sicilian Mandarin, and reveals a voluptuous heart of Jasmine and May Rose Absolutes. A luxuriant harmony with an enveloping trail tinged with Indonesian Patchouli, Tonka note and Benzoin.</p>",
+        "perfumer": {
+          "perfumerId": 147,
+          "name": "Jacques Polge",
+          "details": null,
+          "imagePath": "/mocks/images/perfumers/101850336_2342590866046808_3044476289185480704_n.jpg"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              144,
+              148,
+              145,
+              143,
+              109,
+              92,
+              142
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              104,
+              139,
+              138,
+              137
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              89,
+              134,
+              141,
+              129,
+              90,
+              140,
+              88
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 150,
+            "imagePath": "/mocks/images/perfumes/coco-parfum-0-5fl-oz--packshot-default-113032-8824202526750.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "companyId": 164,
+    "name": "Creed",
+    "website": "",
+    "description": null,
+    "companyType": "NICHE",
+    "imagePath": "/mocks/images/companies/creed_silver_mountain_water_edp_perfume_for_men_120ml_1_1200x1200.jpg",
+    "perfumers": [
+      {
+        "perfumerId": 165,
+        "name": "Olivier Creed",
+        "details": null,
+        "imagePath": "/mocks/images/perfumers/o.164.jpg"
+      }
+    ],
+    "perfumes": [
+      {
+        "perfumeId": 166,
+        "title": "Aventus",
+        "launchYear": "2010",
+        "gender": "MALE",
+        "perfumeType": "EAU_DE_PARFUM",
+        "bottleSizes": "50ml,100ml",
+        "description": "<p>Aventus&nbsp;is an Eau de Parfum launched by Paris-based perfume house&nbsp;Creed. The fragrance was released in September 2010, as part of the celebrations for Creed's 250th Anniversary.</p>",
+        "perfumer": {
+          "perfumerId": 165,
+          "name": "Olivier Creed",
+          "details": null,
+          "imagePath": "/mocks/images/perfumers/o.164.jpg"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              144,
+              130,
+              131,
+              91
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              103,
+              161,
+              87,
+              160
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              162,
+              163,
+              109,
+              89
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 168,
+            "imagePath": "/mocks/images/perfumes/9438_img-3926-creed-aventus_eau_de_parfum_720.jpg"
+          },
+          {
+            "perfumeImageId": 169,
+            "imagePath": "/mocks/images/perfumes/9438_e3b0786cdb9e3bd42c201f83b425ecf4.jpg"
+          },
+          {
+            "perfumeImageId": 167,
+            "imagePath": "/mocks/images/perfumes/nm_2220365_100000_c.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "companyId": 172,
+    "name": "Valentino",
+    "website": "",
+    "description": null,
+    "companyType": "DESIGNER",
+    "imagePath": "/mocks/images/companies/1024px-Valentino_logo.svg.png",
+    "perfumers": [
+      {
+        "perfumerId": 173,
+        "name": "Sophie Labbé",
+        "details": null,
+        "imagePath": "/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
+      }
+    ],
+    "perfumes": [
+      {
+        "perfumeId": 174,
+        "title": "Valentino Uomo Intense",
+        "launchYear": "2016",
+        "gender": "MALE",
+        "perfumeType": "EAU_DE_PARFUM",
+        "bottleSizes": "100ml",
+        "description": null,
+        "perfumer": {
+          "perfumerId": 173,
+          "name": "Sophie Labbé",
+          "details": null,
+          "imagePath": "/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              91,
+              171
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              104,
+              170
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              88,
+              92
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 175,
+            "imagePath": "/mocks/images/perfumes/73759_img-4379-valentino-valentino_uomo_intense_720.jpg"
+          },
+          {
+            "perfumeImageId": 176,
+            "imagePath": "/mocks/images/perfumes/73759_3cb9cff940e7a342bed5525d0e5e2d5b_valentino_uomo_intense.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "companyId": 177,
+    "name": "Tom Ford",
+    "website": "",
+    "description": null,
+    "companyType": "DESIGNER",
+    "imagePath": "/mocks/images/companies/26163.png",
+    "perfumers": [
+      {
+        "perfumerId": 178,
+        "name": "Richard Herpin",
+        "details": null,
+        "imagePath": "/mocks/images/perfumers/86678ad11433ea382642391440381553.jpg"
+      }
+    ],
+    "perfumes": [
+      {
+        "perfumeId": 181,
+        "title": "Oud Wood",
+        "launchYear": "2007",
+        "gender": "UNISEX",
+        "perfumeType": "EAU_DE_PARFUM",
+        "bottleSizes": "50ml,200ml",
+        "description": "<p><span style=\"background-color: rgb(254, 254, 254); color: rgb(10, 10, 10);\">Private Blend is first and exclusive collection by Tom Ford, which includes twelve eau de parfums, each of them can be used solely or in combination with other fragrances from the collection.</span></p>",
+        "perfumer": {
+          "perfumerId": 178,
+          "name": "Richard Herpin",
+          "details": null,
+          "imagePath": "/mocks/images/perfumers/86678ad11433ea382642391440381553.jpg"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              110,
+              179,
+              92,
+              180,
+              111
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              148
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              133
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 182,
+            "imagePath": "/mocks/images/perfumes/3840_img-6645-tom_ford-oud_wood_eau_de_parfum_720.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "companyId": 185,
+    "name": "Giorgio Armani",
+    "website": "",
+    "description": null,
+    "companyType": "DESIGNER",
+    "imagePath": "/mocks/images/companies/1-giorgio-armani-logo-edit-voros.jpg",
+    "perfumers": [
+      {
+        "perfumerId": 214,
+        "name": "Alberto Morillas",
+        "details": null,
+        "imagePath": "/mocks/images/perfumers/alberto_0.jpg"
+      }
+    ],
+    "perfumes": [
+      {
+        "perfumeId": 186,
+        "title": "Armani Privé - Cuir Majesté",
+        "launchYear": "2016",
+        "gender": "UNISEX",
+        "perfumeType": "EAU_DE_COLOGNE",
+        "bottleSizes": "50ml",
+        "description": null,
+        "perfumer": {
+          "perfumerId": 173,
+          "name": "Sophie Labbé",
+          "details": null,
+          "imagePath": "/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              180,
+              91
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              183,
+              142
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              171,
+              184
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 187,
+            "imagePath": "/mocks/images/perfumes/77511_ktg5kd_armani_prive__cuir_majeste_720.jpg"
+          },
+          {
+            "perfumeImageId": 188,
+            "imagePath": "/mocks/images/perfumes/15787271_28719793_2048.jpg"
+          }
+        ]
+      },
+      {
+        "perfumeId": 216,
+        "title": "Acqua di Giò Profumo",
+        "launchYear": "2015",
+        "gender": "MALE",
+        "perfumeType": "EAU_DE_PARFUM",
+        "bottleSizes": "75ml,125ml",
+        "description": null,
+        "perfumer": {
+          "perfumerId": 214,
+          "name": "Alberto Morillas",
+          "details": null,
+          "imagePath": "/mocks/images/perfumers/alberto_0.jpg"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              109,
+              142
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              215,
+              87,
+              132
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              107,
+              153
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 218,
+            "imagePath": "/mocks/images/perfumes/56294_05e8341af01520f77b58b5c2ca9c7b5f_acqua_di_gio_profumo.jpg"
+          },
+          {
+            "perfumeImageId": 217,
+            "imagePath": "/mocks/images/perfumes/56294_p5vysd_acqua_di_gio_profumo_720.jpg"
+          },
+          {
+            "perfumeImageId": 219,
+            "imagePath": "/mocks/images/perfumes/56294_923b57e613e6f0acbf779d3d3d2bf6ba_acqua_di_gio_profumo.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "companyId": 191,
+    "name": "Xerjoff",
+    "website": "",
+    "description": null,
+    "companyType": "NICHE",
+    "imagePath": "/mocks/images/companies/xerjoff-logo-300x300.jpg",
+    "perfumers": [],
+    "perfumes": [
+      {
+        "perfumeId": 194,
+        "title": "Shooting Stars - Amber Star",
+        "launchYear": "2013",
+        "gender": "UNISEX",
+        "perfumeType": "EAU_DE_COLOGNE",
+        "bottleSizes": "50ml",
+        "description": null,
+        "perfumer": {
+          "perfumerId": 173,
+          "name": "Sophie Labbé",
+          "details": null,
+          "imagePath": "/mocks/images/perfumers/Sophie-Labbe-890x1024.jpg"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              143,
+              190,
+              91,
+              110
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              129,
+              192,
+              130
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              189,
+              193,
+              108
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 195,
+            "imagePath": "/mocks/images/perfumes/33185_img-5376-xerjoff-shooting_stars__amber_star_720.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "companyId": 196,
+    "name": "Lancôme",
+    "website": "",
+    "description": null,
+    "companyType": "NICHE",
+    "imagePath": "/mocks/images/companies/lancome-3-logo-png-transparent.png",
+    "perfumers": [
+      {
+        "perfumerId": 200,
+        "name": "Olivier Polge",
+        "details": null,
+        "imagePath": "/mocks/images/perfumers/Olivier-Polge-3.png"
+      }
+    ],
+    "perfumes": [
+      {
+        "perfumeId": 201,
+        "title": "La Vie est Belle L'Eau de Parfum",
+        "launchYear": "2012",
+        "gender": "FEMALE",
+        "perfumeType": "EAU_DE_PARFUM",
+        "bottleSizes": "100ml,75ml,50ml,30ml",
+        "description": null,
+        "perfumer": {
+          "perfumerId": 200,
+          "name": "Olivier Polge",
+          "details": null,
+          "imagePath": "/mocks/images/perfumers/Olivier-Polge-3.png"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              109,
+              92,
+              91,
+              199
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              161,
+              198
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              88,
+              140,
+              89
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 202,
+            "imagePath": "/mocks/images/perfumes/18914_t4ou5s_la_vie_est_belle_720.jpg"
+          },
+          {
+            "perfumeImageId": 203,
+            "imagePath": "/mocks/images/perfumes/18914_a1f4d62b950d491f10ddef247201f246_la_vie_est_belle.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "companyId": 197,
+    "name": "Yves Saint Laurent",
+    "website": "",
+    "description": null,
+    "companyType": "DESIGNER",
+    "imagePath": "/mocks/images/companies/Yves_Saint_Laurent_logo_and_symbol.png",
+    "perfumers": [
+      {
+        "perfumerId": 205,
+        "name": "Nathalie Lorson",
+        "details": null,
+        "imagePath": "/mocks/images/perfumers/Firmenich_AG_NATHALIE_LORSON_COULEUR23370_credit_Alexandre_Guirkinger.jpg"
+      },
+      {
+        "perfumerId": 210,
+        "name": "Anne Flipo",
+        "details": null,
+        "imagePath": "/mocks/images/perfumers/Anne-Flipo-Portrait-1.jpg"
+      }
+    ],
+    "perfumes": [
+      {
+        "perfumeId": 206,
+        "title": "Black Opium",
+        "launchYear": "2014",
+        "gender": "FEMALE",
+        "perfumeType": "EAU_DE_PARFUM",
+        "bottleSizes": "30ml,50ml",
+        "description": "<iframe class=\"ql-video\" frameborder=\"0\" allowfullscreen=\"true\" src=\"https://www.youtube.com/embed/uh4UURJANdk?showinfo=0\"></iframe><p><br></p>",
+        "perfumer": {
+          "perfumerId": 205,
+          "name": "Nathalie Lorson",
+          "details": null,
+          "imagePath": "/mocks/images/perfumers/Firmenich_AG_NATHALIE_LORSON_COULEUR23370_credit_Alexandre_Guirkinger.jpg"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              192,
+              109,
+              91
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              112,
+              140
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              89,
+              204
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 207,
+            "imagePath": "/mocks/images/perfumes/45685_img-8962-yves_saint_laurent-black_opium_eau_de_parfum_720.jpg"
+          },
+          {
+            "perfumeImageId": 208,
+            "imagePath": "/mocks/images/perfumes/45685_bdb3d32b6e42456b8b8b750bc69646d2_black_opium.jpg"
+          }
+        ]
+      },
+      {
+        "perfumeId": 211,
+        "title": "La Nuit de L'Homme",
+        "launchYear": "2009",
+        "gender": "MALE",
+        "perfumeType": "EAU_DE_TOILETTE",
+        "bottleSizes": "60ml,40ml,100ml",
+        "description": null,
+        "perfumer": {
+          "perfumerId": 210,
+          "name": "Anne Flipo",
+          "details": null,
+          "imagePath": "/mocks/images/perfumers/Anne-Flipo-Portrait-1.jpg"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              92,
+              133
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              111,
+              87
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              105,
+              209,
+              192
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 212,
+            "imagePath": "/mocks/images/perfumes/1844_img-6527-yves_saint_laurent-la_nuit_de_l_homme_eau_de_toilette_720.jpg"
+          },
+          {
+            "perfumeImageId": 213,
+            "imagePath": "/mocks/images/perfumes/61r32iYtNkL._SL1500_.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "companyId": 220,
+    "name": "Editions de Parfums Frédéric Malle",
+    "website": "",
+    "description": null,
+    "companyType": "NICHE",
+    "imagePath": "/mocks/images/companies/frederic-malle-1.png",
+    "perfumers": [
+      {
+        "perfumerId": 223,
+        "name": "Dominique Ropion",
+        "details": null,
+        "imagePath": "/mocks/images/perfumers/dominique-ropion-square-1.jpg"
+      }
+    ],
+    "perfumes": [
+      {
+        "perfumeId": 224,
+        "title": "Portrait of a Lady",
+        "launchYear": "2010",
+        "gender": "FEMALE",
+        "perfumeType": "EXTRAIT_DE_PARFUM",
+        "bottleSizes": "100ml,75ml,50ml",
+        "description": null,
+        "perfumer": {
+          "perfumerId": 223,
+          "name": "Dominique Ropion",
+          "details": null,
+          "imagePath": "/mocks/images/perfumers/dominique-ropion-square-1.jpg"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              143,
+              148,
+              144
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              134,
+              90,
+              161,
+              221,
+              222
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              110,
+              142,
+              109
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 225,
+            "imagePath": "/mocks/images/perfumes/10407_img-9893-editions_de_parfums_frederic_malle-portrait_of_a_lady_720.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "companyId": 226,
+    "name": "Amouage",
+    "website": "",
+    "description": null,
+    "companyType": "NICHE",
+    "imagePath": "/mocks/images/companies/6429f3bdb07d4e6594d6c1cab67eb9a8.png",
+    "perfumers": [
+      {
+        "perfumerId": 227,
+        "name": "Lucas Sieuzac",
+        "details": null,
+        "imagePath": "/mocks/images/perfumers/post-7.jpg"
+      }
+    ],
+    "perfumes": [
+      {
+        "perfumeId": 229,
+        "title": "Reflection Man",
+        "launchYear": "2007",
+        "gender": "MALE",
+        "perfumeType": "ESPIRIT_DE_PARFUM",
+        "bottleSizes": "100ml",
+        "description": null,
+        "perfumer": {
+          "perfumerId": 227,
+          "name": "Lucas Sieuzac",
+          "details": null,
+          "imagePath": "/mocks/images/perfumers/post-7.jpg"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              109,
+              110,
+              133,
+              192
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              112,
+              228
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              89,
+              140,
+              88,
+              129
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 230,
+            "imagePath": "/mocks/images/perfumes/2057_img-4648-amouage-reflection_man_720.jpg"
+          },
+          {
+            "perfumeImageId": 231,
+            "imagePath": "/mocks/images/perfumes/2057_fdae1df6be376f36390fc9015ac8c9fc_reflection_man.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "companyId": 232,
+    "name": "Roja Parfums",
+    "website": "",
+    "description": null,
+    "companyType": "NICHE",
+    "imagePath": "/mocks/images/companies/Roja-logo.jpg",
+    "perfumers": [
+      {
+        "perfumerId": 233,
+        "name": "Roja Dove",
+        "details": null,
+        "imagePath": "/mocks/images/perfumers/ROJA-MOSCOW_Edited.jpg"
+      }
+    ],
+    "perfumes": [
+      {
+        "perfumeId": 234,
+        "title": "Elysium",
+        "launchYear": "2017",
+        "gender": "MALE",
+        "perfumeType": "EAU_DE_COLOGNE",
+        "bottleSizes": "100ml",
+        "description": null,
+        "perfumer": {
+          "perfumerId": 233,
+          "name": "Roja Dove",
+          "details": null,
+          "imagePath": "/mocks/images/perfumers/ROJA-MOSCOW_Edited.jpg"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              192,
+              143,
+              91,
+              163,
+              156,
+              112,
+              151,
+              144,
+              133,
+              171,
+              130
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              105,
+              87
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              103,
+              184,
+              161,
+              89
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 236,
+            "imagePath": "/mocks/images/perfumes/92779_img-8091-roja_parfums-elysium_pour_homme_parfum_cologne_720.jpg"
+          },
+          {
+            "perfumeImageId": 235,
+            "imagePath": "/mocks/images/perfumes/92779_33496f08edfec3d35bcdbf2a5623f701_elysium_pour_homme_parfum_cologne.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "companyId": 237,
+    "name": "Balenciaga",
+    "website": "",
+    "description": null,
+    "companyType": "DESIGNER",
+    "imagePath": "/mocks/images/companies/51861665_1310462502438355_4913243715286233204_n.jpg",
+    "perfumers": [],
+    "perfumes": [
+      {
+        "perfumeId": 238,
+        "title": "Florabotanica",
+        "launchYear": "2012",
+        "gender": "FEMALE",
+        "perfumeType": "EAU_FRAICHE",
+        "bottleSizes": "30ml,50ml,100ml",
+        "description": null,
+        "perfumer": {
+          "perfumerId": 200,
+          "name": "Olivier Polge",
+          "details": null,
+          "imagePath": "/mocks/images/perfumers/Olivier-Polge-3.png"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              133
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              148
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              90,
+              154
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 240,
+            "imagePath": "/mocks/images/perfumes/19424_acsbdy_florabotanica_720.jpg"
+          },
+          {
+            "perfumeImageId": 241,
+            "imagePath": "/mocks/images/perfumes/19424_11bf70aa745552cfd09d746ded877a42_florabotanica.jpg"
+          },
+          {
+            "perfumeImageId": 239,
+            "imagePath": "/mocks/images/perfumes/19424_ecc32fece728516add7be1970f142827_florabotanica.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "companyId": 242,
+    "name": "Chloé",
+    "website": "",
+    "description": null,
+    "companyType": "DESIGNER",
+    "imagePath": "/mocks/images/companies/1b444e01f0ea48cd6bcf10b9324ddff3.jpg",
+    "perfumers": [
+      {
+        "perfumerId": 243,
+        "name": "Michel Almairac",
+        "details": null,
+        "imagePath": "/mocks/images/perfumers/michel-almairac.jpg"
+      }
+    ],
+    "perfumes": [
+      {
+        "perfumeId": 244,
+        "title": "Chloé",
+        "launchYear": "2007",
+        "gender": "FEMALE",
+        "perfumeType": "EAU_DE_PARFUM",
+        "bottleSizes": "20ml,30ml,50ml,75ml",
+        "description": null,
+        "perfumer": {
+          "perfumerId": 243,
+          "name": "Michel Almairac",
+          "details": null,
+          "imagePath": "/mocks/images/perfumers/michel-almairac.jpg"
+        },
+        "perfumeNotes": [
+          {
+            "notes": [
+              192,
+              148
+            ],
+            "type": "base notes"
+          },
+          {
+            "notes": [
+              139
+            ],
+            "type": "top notes"
+          },
+          {
+            "notes": [
+              90
+            ],
+            "type": "middle notes"
+          }
+        ],
+        "images": [
+          {
+            "perfumeImageId": 246,
+            "imagePath": "/mocks/images/perfumes/res_aa0e0c710f01dc743ed2aebd4ab61dfe.webp"
+          },
+          {
+            "perfumeImageId": 245,
+            "imagePath": "/mocks/images/perfumes/P56648_principal.webp"
+          }
+        ]
+      }
+    ]
+  }
+]

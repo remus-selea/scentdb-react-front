@@ -1,0 +1,41 @@
+{
+  "content": [
+    {
+      "description": null,
+      "noteId": 111,
+      "name": "Cardamom",
+      "imgPath": "/mocks/images/notes/Cardamon-seminte.jpg"
+    },
+    {
+      "description": null,
+      "noteId": 153,
+      "name": "Sage",
+      "imgPath": "/mocks/images/notes/Salvia_nemorosa-IMG_3624-1024x1024.jpg"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "unsorted": true,
+      "empty": true
+    },
+    "offset": 63,
+    "pageNumber": 7,
+    "pageSize": 9,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalPages": 8,
+  "totalElements": 65,
+  "last": true,
+  "first": false,
+  "size": 9,
+  "number": 7,
+  "sort": {
+    "sorted": false,
+    "unsorted": true,
+    "empty": true
+  },
+  "numberOfElements": 2,
+  "empty": false
+}
