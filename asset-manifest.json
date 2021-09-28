@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "https://remus-selea.github.io/scentdb-ui/static/css/main.0670cbb4.chunk.css",
+    "main.css": "https://remus-selea.github.io/scentdb-ui/static/css/main.00fc93ac.chunk.css",
     "main.js": "https://remus-selea.github.io/scentdb-ui/static/js/main.5be7e62d.chunk.js",
     "main.js.map": "https://remus-selea.github.io/scentdb-ui/static/js/main.5be7e62d.chunk.js.map",
     "runtime-main.js": "https://remus-selea.github.io/scentdb-ui/static/js/runtime-main.8b043ad7.js",
     "runtime-main.js.map": "https://remus-selea.github.io/scentdb-ui/static/js/runtime-main.8b043ad7.js.map",
-    "static/css/2.343b9c06.chunk.css": "https://remus-selea.github.io/scentdb-ui/static/css/2.343b9c06.chunk.css",
+    "static/css/2.0155d78c.chunk.css": "https://remus-selea.github.io/scentdb-ui/static/css/2.0155d78c.chunk.css",
     "static/js/2.f5bfcfab.chunk.js": "https://remus-selea.github.io/scentdb-ui/static/js/2.f5bfcfab.chunk.js",
     "static/js/2.f5bfcfab.chunk.js.map": "https://remus-selea.github.io/scentdb-ui/static/js/2.f5bfcfab.chunk.js.map",
     "static/js/3.40777a0e.chunk.js": "https://remus-selea.github.io/scentdb-ui/static/js/3.40777a0e.chunk.js",
@@ -13,8 +13,8 @@
     "static/js/4.575b955b.chunk.js": "https://remus-selea.github.io/scentdb-ui/static/js/4.575b955b.chunk.js",
     "static/js/4.575b955b.chunk.js.map": "https://remus-selea.github.io/scentdb-ui/static/js/4.575b955b.chunk.js.map",
     "index.html": "https://remus-selea.github.io/scentdb-ui/index.html",
-    "static/css/2.343b9c06.chunk.css.map": "https://remus-selea.github.io/scentdb-ui/static/css/2.343b9c06.chunk.css.map",
-    "static/css/main.0670cbb4.chunk.css.map": "https://remus-selea.github.io/scentdb-ui/static/css/main.0670cbb4.chunk.css.map",
+    "static/css/2.0155d78c.chunk.css.map": "https://remus-selea.github.io/scentdb-ui/static/css/2.0155d78c.chunk.css.map",
+    "static/css/main.00fc93ac.chunk.css.map": "https://remus-selea.github.io/scentdb-ui/static/css/main.00fc93ac.chunk.css.map",
     "static/js/2.f5bfcfab.chunk.js.LICENSE.txt": "https://remus-selea.github.io/scentdb-ui/static/js/2.f5bfcfab.chunk.js.LICENSE.txt",
     "static/js/3.40777a0e.chunk.js.LICENSE.txt": "https://remus-selea.github.io/scentdb-ui/static/js/3.40777a0e.chunk.js.LICENSE.txt",
     "static/media/own.c301e65f.svg": "https://remus-selea.github.io/scentdb-ui/static/media/own.c301e65f.svg",
@@ -28,9 +28,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8b043ad7.js",
-    "static/css/2.343b9c06.chunk.css",
+    "static/css/2.0155d78c.chunk.css",
     "static/js/2.f5bfcfab.chunk.js",
-    "static/css/main.0670cbb4.chunk.css",
+    "static/css/main.00fc93ac.chunk.css",
     "static/js/main.5be7e62d.chunk.js"
   ]
 }
