@@ -21,6 +21,8 @@ ScentDB UI is a React frontend application that aims to serve as an encyclopedia
 - Image cropper to help add images with a consistent look and aspect ratio
 
 ## Setting up the development environment
+The project requires the ScentDB backend to be set up and running locally.  
+[Head over to the backend repo for instructions on how to set it up.](https://github.com/remus-selea/scentdb)
 - The project requires `npm` to be installed
 - Clone or download an archive of the project
 - Create an empty .env file in the root directory of the project, and copy the contents of the .env.local.example into it. Change the environment variables to your liking.
@@ -28,9 +30,6 @@ ScentDB UI is a React frontend application that aims to serve as an encyclopedia
 - Run the `npm install` if you are running the application for the first time
 - Afterwards run the command `npm start` to start the application
 - The app should now be running on `http://localhost:3000/`
-
-The project requires the ScentDB backend to be set up and running locally.  
-[Head over to the backend repo for instructions on how to set it up.](https://github.com/remus-selea/scentdb)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
