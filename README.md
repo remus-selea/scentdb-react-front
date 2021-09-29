@@ -2,8 +2,8 @@
 ScentDB UI is a React frontend application that aims to serve as an encyclopedia of perfumes, fragrance notes, perfumers and brands. It is a showcase product built in my spare time.
 
 <h3>
-  <a href="https://remus-selea.github.io/scentdb-ui/#/">Visit the showcase app</a> |
-  <a href="https://github.com/remus-selea/scentdb">Visit the backend app</a>
+  <a href="https://remus-selea.github.io/scentdb-ui/#/">Go to the showcase app</a> |
+  <a href="https://github.com/remus-selea/scentdb">Go to the backend repository</a>
 </h3>
 
 -------
